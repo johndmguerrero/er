@@ -115,6 +115,10 @@
           {
             "value": "supermarket",
             "label": "Header 10"
+          },
+          {
+            "value": "11",
+            "label": "Header 11"
           }
         ],
         "default": "default",

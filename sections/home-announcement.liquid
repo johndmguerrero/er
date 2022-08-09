@@ -26,7 +26,7 @@
 </div>
 
 <style>
-  {% assign margin_bottom =  section.settings.margin_bottom %}  
+  {% assign margin_bottom =  section.settings.margin_bottom %}
 
   .home-announcement {
     background-color: {{ section.settings.bg_color_annou }};
@@ -40,9 +40,9 @@
     .announcement-bar span b {
       text-decoration-color: {{ section.settings.color_text|color_modify: 'alpha', 0.3  }} !important;
     }
-  {% endif %} 
+  {% endif %}
 
-  .announcement-bar .btn { 
+  .announcement-bar .btn {
     background-color: {{ section.settings.bg_color_btn }};
     border: 1px solid {{ section.settings.bg_color_border_btn }};
     color: {{ section.settings.color_text_btn }};
@@ -59,7 +59,7 @@
         margin-bottom: {{ section.settings.margin_bottom_tab }}px;
       }
     }
-  
+
     @media (min-width: 1200px) {
       #home-announcement-{{ section.id }} {
         margin-bottom: {{ margin_bottom }}px;
@@ -168,7 +168,7 @@
               "max": 100,
               "step": 1,
               "default": 30
-            },             
+            },
             {
               "type": "range",
               "id": "margin_bottom",
@@ -177,7 +177,7 @@
               "max": 100,
               "step": 1,
               "default": 30
-            }   
+            }
         ],
         "presets": [
             {
