@@ -1,9 +1,9 @@
 <section class="homepage-reviews {{ section.settings.layout_style }}" id="section-{{section.id}}" data-loader-script="{{ 'halo.slide-review.js' | asset_url }}">
   <div class="container">
     {% if section.settings.title != blank %}
-    <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">   
+    <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">
       <h3 class="box-title">
-          <span class="title"> 
+          <span class="title">
             {{ section.settings.title }}
           </span>
       </h3>
@@ -28,10 +28,12 @@
             {% if block.settings.reviews_image != blank %}
               <img data-srcset="{{ block.settings.reviews_image | img_url: img_size }}" alt="{{block.settings.reviews_title}}" {% render 'lazyload' %}>
             {% else %}
-              <div class="not_img">{{img_size}} x {{img_size}}px</div>   
+              <div class="not_img">{{img_size}} x {{img_size}}px</div>
             {% endif %}
           </div>
           {% endif %}
+{% comment %}
+
 
           {% if section.settings.layout_style == 'style_2' %}
           <div class="star-reviews {{block.settings.rating}}">
@@ -42,18 +44,20 @@
             {% render 'icon-star' %}
           </div>
           {% endif %}
-
+ {% endcomment %}
           {% if block.settings.reviews_heading != blank %}
             <h2 class="heading-review">
               {% render 'multilang' with block.settings.reviews_heading %}
             </h2>
           {% endif %}
-          
+
           {% if block.settings.body_review != blank %}
           <div class="body-review">
             {% render 'multilang' with block.settings.body_review %}
           </div>
           {% endif %}
+          {% comment %}
+
           {% if section.settings.layout_style == 'style_1' %}
           <div class="star-reviews {{block.settings.rating}}">
             {% render 'icon-star' %}
@@ -63,6 +67,7 @@
             {% render 'icon-star' %}
           </div>
           {% endif %}
+          {% endcomment %}
 
           {% if block.settings.reviews_title != blank or block.settings.reviews_purchased_text != blank %}
           <div class="title-reviews">
@@ -78,7 +83,7 @@
               </a>
             {% endif %}
           </div>
-          {% endif %}   
+          {% endif %}
 
           {% if block.settings.name != blank %}
           <div class="name-review">
@@ -87,7 +92,7 @@
             </h5>
           </div>
           {% endif %}
-          
+
           {% if block.settings.date_review != blank %}
             <p class="date-review">
               {% render 'multilang' with block.settings.date_review %}
@@ -155,12 +160,12 @@
         "options": [
             {
                 "value": "style_1",
-                "label": "Style 1" 
+                "label": "Style 1"
             },
-            { 
+            {
                 "value": "style_2",
-                "label": "Style 2" 
-            }          
+                "label": "Style 2"
+            }
         ],
         "default": "style_1"
       },
@@ -182,12 +187,12 @@
         "options": [
             {
                 "value": "style_1",
-                "label": "Style 1" 
+                "label": "Style 1"
             },
-            { 
+            {
                 "value": "style_2",
-                "label": "Style 2" 
-            }          
+                "label": "Style 2"
+            }
         ],
         "default": "style_1"
       },
@@ -292,7 +297,7 @@
             "default" : "Wednesday, Jan 26, 2019"
           }
         ]
-      } 
+      }
     ],
     "presets": [
     {
@@ -304,7 +309,7 @@
           },
           {
             "type": "Review"
-          },        
+          },
           {
             "type": "Review"
           }

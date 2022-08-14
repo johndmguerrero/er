@@ -14,24 +14,24 @@
                 {% if section.settings.top_message_text_3 != blank %}
                     <p>{% render 'multilang' with section.settings.top_message_text_3 %}</p>
                 {% endif %}
-            </div>           
+            </div>
         </div>
     </div>
     {% endif %}
-  
+
     <a href="#" class="icon-nav close-menu-mb" title="Menu Mobile Icon" data-menu-mb-toogle>
         <span class="icon-line"></span>
     </a>
 
     <div class="header-bottom" data-sticky-mb>
         <div class="{% if section.settings.style_header == 'style_2' %}container{% else %}container-padd60{% endif %}">
-            {% render 'header-mobile' %} 
+            {% render 'header-mobile' %}
         </div>
     </div>
 
     <div class="is_parallax">
         <div class="wrapper-header-bt" data-sticky-pc>
-            <div class="{% if section.settings.style_header == 'style_2' %}container{% else %}container-padd60{% endif %}">       
+            <div class="{% if section.settings.style_header == 'style_2' %}container{% else %}container-padd60{% endif %}">
                 <div class="header-panel-bt">
                     <div class="left-header header-items">
                         <div class="header-logo" itemscope itemtype="http://schema.org/Organization">
@@ -66,7 +66,7 @@
                                 <div class="mb-area">
                                     <nav class="nav-bar" role="navigation">
                                         {% render 'site-nav' %}
-                                    </nav>  
+                                    </nav>
 
                                     <div class="header-pc" data-header-pc>
                                         <div class="header-links">
@@ -74,10 +74,10 @@
                                             <a class="wishlist" href="{{ pages['wish-list'].url }}" title='{% if settings.enable_multilang %}data-translate="wishlist.general.my_wishlist"{% endif %}'>
                                                 <span class="wishlist-text text-hover"{% if settings.enable_multilang %} data-translate="wishlist.general.my_wishlist"{% endif %}>
                                                     {{ 'wishlist.general.my_wishlist' | t }}
-                                                </span>                  
+                                                </span>
                                             </a>
                                             {% endif %}
-                                            
+
                                             <div class="customer-links">
                                                 {% if customer %}
                                                 <a class="acc-links acc-logout" id="customer_logout_link" href="{{ routes.account_logout_url }}" {% if settings.enable_multilang %}data-translate="layout.customer.log_out"{% endif %}>
@@ -85,16 +85,16 @@
                                                 </a>
                                                 <a class="acc-links acc-title" href="{{ routes.account_url }}"{% if settings.enable_multilang %} data-translate="customer.account.title"{% endif %}>
                                                     {{ 'customer.account.title' | t }}
-                                                </a>                                            
-                                                {% else %}  
-                                                
+                                                </a>
+                                                {% else %}
+
                                                 <a data-dropdown-user class="acc-links acc-sign-in" id="customer_login_link" href="{{ routes.account_login_url }}" {% if settings.enable_multilang %}data-translate="customer.login.sign_in"{% endif %}>
                                                     {{ 'customer.login.sign_in' | t }}
                                                 </a>
                                                 <a class="acc-links acc-regis" id="customer_register_link" href="{{ routes.account_register_url }}"{% if settings.enable_multilang %} data-translate="layout.customer.create_account"{% endif %}>
                                                     {{ 'layout.customer.create_account' | t }}
                                                 </a>
-                                                {% endif %}                                   
+                                                {% endif %}
                                             </div>
 
                                             {% if section.settings.style_header == 'style_1' %}
@@ -117,35 +117,38 @@
                                             {% endif %}
 
 
-                                        </div> 
-                                    </div>              
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>                       
-                        </div>                   
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="right-header header-items header-lang-style2">
+                    <div class="right-header header-items header-lang-style2 custom-flex-column">
 
-                        {% if section.settings.style_header == 'style_2' %}
-                            <div class="lang-currency-groups lang-currency-groups-8">
-                                {% render 'new-currency-picker' %}
-                                {% render 'new-language-picker' %}
-                            </div>
-                        {% endif %}
+                        <div style="margin-bottom: 10px;">
+                            {% if section.settings.style_header == 'style_2' %}
+                                <div class="lang-currency-groups lang-currency-groups-8">
+                                    {% render 'new-currency-picker' %}
+                                    {% render 'new-language-picker' %}
+                                </div>
+                            {% endif %}
+                        </div>
 
                         {% if section.settings.style_header == 'style_1' %}
                             {% if settings.enable_search %}
-                            <div class="nav-search svg-mb">                    
+                            <div class="nav-search svg-mb">
                                 <a href="#" title="Search Icon" class="icon-search" data-search-mobile-toggle>
                                     {% render 'icon-search' %}
                                 </a>
-                              	
+
                                 {% render 'search-bar' %}
-                              	
+
                             </div>
                           	{% endif %}
                         {% endif %}
 
+                        <div style="display: flex;">
                         {% if shop.customer_accounts_enabled %}
                         <div class="acc-mb svg-mb">
                             {% if section.settings.style_header == 'style_1' %}
@@ -162,29 +165,34 @@
                                         <span> / </span>
                                         <a class="acc-links acc-title" href="{{ routes.account_url }}"{% if settings.enable_multilang %} data-translate="customer.account.title"{% endif %}>
                                             {{ 'customer.account.title' | t }}
-                                        </a>                                        
-                                    </div>
-                                    {% else %}  
-                                    <div class="text-top">
-                                        <a data-dropdown-user data-user-mobile-toggle class="acc-links acc-sign-in sign_in_md" id="customer_login_link" href="#" {% if settings.enable_multilang %}data-translate="customer.login.login"{% endif %}>
-                                            {{ 'customer.login.sign_in' | t }}
                                         </a>
                                     </div>
-                                    {% endif %} 
+                                    {% else %}
+                                    <div class="text-top">
+                                        <a data-dropdown-user data-user-mobile-toggle class="acc-links acc-sign-in sign_in_md" id="customer_login_link" href="#" {% if settings.enable_multilang %}data-translate="customer.login.login"{% endif %}>
+                                            {% comment %} {{ 'customer.login.sign_in' | t }} {% endcomment %}
+                                            <div style="padding-top: 8px">
+                                                {% render 'icon-user' %}
+                                            </div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
                                 </div>
                             {% endif %}
                         </div>
                         {% endif %}
+                        {% comment %}
+
 
                         {% if section.settings.style_header == 'style_2' %}
                             {% if settings.enable_search %}
-                            <div class="nav-search svg-mb">                    
+                            <div class="nav-search svg-mb">
                                 <a href="#" title="Search Icon" class="icon-search" data-search-mobile-toggle>
                                     {% render 'icon-search' %}
                                 </a>
-                                
+
                                 {% render 'search-bar' %}
-                                
+
                             </div>
                             {% endif %}
                         {% endif %}
@@ -197,18 +205,23 @@
                                 {% else %}
                                     {% render 'icon-heart-2' %}
                                 {% endif %}
-                            </a>                   
+                            </a>
                         </div>
                         {% endif %}
+                         {% endcomment %}
+
 
                         <div class="cart-icon svg-mb" data-cart-header-parallax>
-                            <a href="#" title="Cart Icon" data-cart-toggle>       
+                            <a href="#" title="Cart Icon" data-cart-toggle>
                                 {% render 'icon-cart' %}
-
+                                {% comment %}
                                 <span class="cartCount" data-cart-count>
                                 {{ cart.item_count }}
                                 </span>
-                            </a>                    
+                                {% endcomment %}
+                            </a>
+                        </div>
+
                         </div>
                         {% if settings.enable_multilang_shopify or settings.enable_multiple_currencies or settings.enable_shopify_payments_currencies %}
                         <div class="hamburger-icon svg-mb">
@@ -220,11 +233,25 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
 </header>
 
-<script> 
+<style>
+
+.custom-flex-column{
+    flex-direction: column-reverse;
+}
+@media (min-width: 1200px){
+    .wrapper_header_parallax .header-parallax.style_header_2 .lang-currency-groups{
+        background-color: #F5F5F5;
+        border-radius: 25px;
+        border: solid 1px #F5F5F5;
+    }
+}
+</style>
+
+<script>
     window.fixtop_menu = {{ section.settings.display_fixtop_menu }};
 
     var appendPrependMenuMobile = function() {
@@ -422,7 +449,7 @@
                 "type": "text",
                 "id": "max_height_logo_pc",
                 "label": "Max Width of Logo PC",
-                "default": "33px" 
+                "default": "33px"
             },
             {
             "type": "image_picker",
@@ -433,7 +460,7 @@
                 "type": "text",
                 "id": "max_height_logo_mb",
                 "label": "Max Width of Logo Mobile",
-                "default": "26px" 
+                "default": "26px"
             },
             {
                 "type": "header",
@@ -450,7 +477,7 @@
                 "type": "image_picker",
                 "id": "logo_parallax",
                 "label": "Logo Parallax image"
-            },	
+            },
             {
                 "type": "color",
                 "id": "menu_parallax_color",
@@ -460,7 +487,7 @@
             {
                 "type": "header",
                 "content": "Language & Currency"
-            },  
+            },
             {
                 "type": "color",
                 "id": "text_color_lang_currency",
@@ -498,13 +525,13 @@
                 "id": "bg_search_color",
                 "label": "Background Color",
                 "default": "#f8f8f8"
-            },      
+            },
             {
                 "type": "color",
                 "id": "search_color",
                 "label": "Search Color",
                 "default": "#787878"
-            },    
+            },
             {
                 "type": "color",
                 "id": "search_color_btn",
@@ -520,7 +547,7 @@
                 "id": "wishlist_color",
                 "label": "Color Icon",
                 "default": "#000000"
-            },  
+            },
             {
                 "type": "header",
                 "content": "Cart Header"
@@ -559,7 +586,7 @@
                 "id": "display_fixtop_menu",
                 "label": "Display Fix Top Menu?",
                 "default": true
-            },           
+            },
             {
                 "type": "header",
                 "content": "Navigation Text alignment"
@@ -593,7 +620,7 @@
                 "id" : "bg_menu",
                 "label" : "Background Main Menu",
                 "default" : "#fff"
-            },		  
+            },
             {
                 "type" : "color",
                 "id" : "bg_dropdown_menu",
@@ -684,7 +711,7 @@
             {
                 "type": "paragraph",
                 "content": "Menu Level 2"
-            },     
+            },
             {
                 "type" : "color",
                 "id" : "color_menu_lv2",
@@ -975,7 +1002,7 @@
                         "id": "megamenu_items_1",
                         "label": "Mega Menu Items for Style 1",
                         "default": "Catalog"
-                    },		  		  
+                    },
                     {
                         "type" : "header",
                         "content" : "Product"
@@ -994,7 +1021,7 @@
                     {
                         "type" : "header",
                         "content" : "Banner"
-                    },	  
+                    },
                     {
                         "type": "image_picker",
                         "id": "banner_first_style_1",
@@ -1007,7 +1034,7 @@
                         "label": "Link image "
                     }
                 ]
-            },	  
+            },
             {
                 "type": "style_2",
                 "name": "Style 2",
@@ -1037,7 +1064,7 @@
                         "id": "link_banner_first_style_2",
                         "label": "Link image 1 ",
                         "info": "=============="
-                    },	  
+                    },
                     {
                         "type": "image_picker",
                         "id": "banner_second_style_2",
@@ -1049,7 +1076,7 @@
                         "id": "link_banner_second_style_2",
                         "label": "Link image 2 ",
                         "info": "=============="
-                    },		  
+                    },
                     {
                         "type": "image_picker",
                         "id": "banner_third_style_2",
@@ -1062,11 +1089,11 @@
                         "label": "Link image 3"
                     }
                 ]
-            },	  
+            },
             {
                 "type": "style_3",
                 "name": "Style 3",
-                "settings": [		  
+                "settings": [
                     {
                         "type": "text",
                         "id": "megamenu_items_3",
@@ -1149,7 +1176,7 @@
                         "label": "Link image"
                     }
                 ]
-            },	
+            },
             {
                 "type": "style_4",
                 "name": "Style 4",
@@ -1163,11 +1190,11 @@
                         "id": "megamenu_items_4",
                         "label": "Mega Menu Items for Style 4",
                         "default": "Catalog"
-                    },		  		  		  
+                    },
                     {
                         "type" : "header",
                         "content" : "Banner"
-                    },	  
+                    },
                     {
                         "type": "image_picker",
                         "id": "banner_first_style_4",
@@ -1238,7 +1265,7 @@
                   {
                     "type" : "header",
                     "content" : "Banner 1(Use For Layout 5,7,8)"
-                  },      
+                  },
                   {
                     "type": "image_picker",
                     "id": "banner_first_style_5",
@@ -1253,7 +1280,7 @@
                   {
                     "type" : "header",
                     "content" : "Banner 2 (Use For Layout 7)"
-                  },      
+                  },
                   {
                     "type": "image_picker",
                     "id": "banner_second_style_5",
@@ -1274,7 +1301,7 @@
                     "id": "title_brand",
                     "label": "Title Brands",
                     "default" : "Brands by alphabet"
-                  }, 
+                  },
                   {
                     "type": "text",
                     "id": "link_brand",
@@ -1291,7 +1318,7 @@
             {
                 "type": "style_6",
                 "name": "Style 6",
-                "settings": [         
+                "settings": [
                   {
                     "type": "text",
                     "id": "megamenu_items_6",
@@ -1357,7 +1384,7 @@
                     "type": "url",
                     "id": "link_banner_four_style_6",
                     "label": "Link image"
-                  }, 
+                  },
                   {
                     "type" : "header",
                     "content" : "Banner Image 5"
@@ -1374,9 +1401,9 @@
                     "label": "Link image"
                   }
                 ]
-            }  
+            }
 
         ]
-            
+
     }
 {% endschema %}

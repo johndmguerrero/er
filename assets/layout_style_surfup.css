@@ -1241,7 +1241,7 @@ input[type=checkbox]+label:before {
     border: 1px solid #fff;
     font-size: 13px;
 }
-.footer-4 .footer-social .social-icons li.facebook a i, 
+.footer-4 .footer-social .social-icons li.facebook a i,
 .footer-4 .footer-social .social-icons li.youtube a i,
 .footer-4 .footer-social .social-icons li a i {
     font-size: 18px;
@@ -1359,7 +1359,7 @@ input[type=checkbox]+label:before {
     content: '/';
 }
 .product-template .breadcrumb {
-    justify-content: center;
+    /* justify-content: center; */
 }
 .product-template .breadcrumb > *:not(.arrow) {
     text-decoration: underline;
@@ -2276,7 +2276,7 @@ input[type=checkbox]+label:before {
         align-items: center;
     }
 
-    .sidebar-filter .sidebar-title .clear, 
+    .sidebar-filter .sidebar-title .clear,
     .sidebar-filter .sidebar-title .clear-all {
         border-bottom: 1px solid #787878;
         color: #787878;

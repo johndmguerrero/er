@@ -38,10 +38,10 @@
                               {% when 'model' %}
                               <div class="thum">
                                 <div class="product-single__media model-viewer-click" style="padding-top: 100%" data-media-id="{{ media.id }}">
-                                  {{ media | model_viewer_tag: image_size: '1024x', 
-                                  reveal: 'interaction', 
-                                  toggleable: true, 
-                                  data-model-id: media.id, 
+                                  {{ media | model_viewer_tag: image_size: '1024x',
+                                  reveal: 'interaction',
+                                  toggleable: true,
+                                  data-model-id: media.id,
                                   auto-rotate: true,
                                   id: 'paused-change-demo'
                                   }}
@@ -52,7 +52,7 @@
                                   </div>
                                 </div>
                               </div>
-                              
+
                               {% else %}
                               <div class="thumb filter-{{ media.alt | handle }}">
                                 <div class="product-single__media" data-media-id="{{ media.id }}">
@@ -116,10 +116,10 @@
                         {% when 'model' %}
                         <div class="item">
                           <div class="product-single__media" data-media-id="{{ media.id }}">
-                            {{ media | model_viewer_tag: image_size: image_size, 
-                            reveal: 'interaction', 
-                            toggleable: true, 
-                            data-model-id: media.id, 
+                            {{ media | model_viewer_tag: image_size: image_size,
+                            reveal: 'interaction',
+                            toggleable: true,
+                            data-model-id: media.id,
                             auto-rotate: true
                             }}
                           </div>
@@ -138,14 +138,14 @@
 
               <div class="product-shop {% unless current_variant.available and section.settings.display_qty %}no_quantity{% endunless %}">
                 {% render 'breadcrumb' %}
-                  
+
                   <div class="group-title {% if collection %}has-next_prev{% endif %}">
                     <h1 class="product-title" data-main-product-handle="{{ product.handle }}">
                       {% render 'multilang' with product.title %}
                   </h1>
                   {% if collection %}
                   <div class="next_prev-groups">
-                    {% render 'next-prev-product' %}  
+                    {% render 'next-prev-product' %}
                   </div>
                   {% endif %}
                   </div>
@@ -231,7 +231,7 @@
                   </div>
                   {% endif %}
                   {% if section.settings.enable_countdown %}
-                
+
                   {% if section.settings.option_countdown == 'all_product' %}
                     {% assign count_down_final = section.settings.count_down_timer %}
                     {% if section.settings.countdown == 'countdown_1' %}
@@ -243,9 +243,9 @@
                     {% else %}
                     {% render 'countdown-progressbar', count_down_final: count_down_final %}
                     {% endif %}
-                
+
                   {% else %}
-                
+
                     {% if product.metafields.c_f.countdown %}
                       {% capture count_down_final %}{{ product.metafields.c_f.countdown }}{% endcapture %}
 
@@ -260,9 +260,9 @@
 
                     {% endif %}
                   {% endif %}
-                
-                  
-                
+
+
+
                   {% if section.settings.custombox_text != blank %}
                   <div class="product-custombox hide-for-small-only">
                     <span class="rte">
@@ -270,7 +270,7 @@
                     </span>
                   </div>
                   {% endif %}
-                
+
                   {% endif %}
 
                   <div class="prices">
@@ -311,11 +311,11 @@
                   </div>
                   {% else %}
                   {% assign word_numbeer = 50 %}
-                
+
                   <div class="short-description">
                       {{ des | split: '[lang2]' | first | strip_html | replace: '&nbsp;', ' ' | truncatewords: word_numbeer }}
                   </div>
-                
+
                   {% endif %}
 
                   {% elsif section.settings.show_desc == 'full' %}
@@ -338,7 +338,7 @@
                       </a>
                     {% endif %}
                   {% endif %}
-                  
+
                   <div id="product-variants">
                       {% if variantCount > 0  and product.variants[0].title != 'Default Title'  %}
                       <select id="product-selectors" name="id" style="display: none;">
@@ -381,7 +381,7 @@
                         {% if current_variant.available and section.settings.display_qty %}
                         <div class="quantity">
                             <div class="qty-group qty-arrow">
-                                <a href="#" data-minus-qtt class="minus button-arrow"></a> 
+                                <a href="#" data-minus-qtt class="minus button-arrow"></a>
                                 <input type="number" data-qtt-id="quantity__{{ product.id }}" name="quantity" value="1" min="1" inputmode="numeric" pattern="[0-9]*">
                                 <a href="#" data-plus-qtt class="plus button-arrow"></a>
                             </div>
@@ -390,20 +390,20 @@
 
                         <div class="wrapper-button">
                           {% if current_variant.available %}
-                        
+
                           {% if current_variant.inventory_management %}
                           {% assign first_inventory = current_variant.inventory_quantity %}
-                        
+
                           {% if first_inventory > 0 %}
                           <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
                           {% else %}
                           <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.pre_order"{%endif%} id="product-add-to-cart" value="{{ 'products.product.pre_order' | t }}" data-form-id="#add-to-cart-form">
                           {% endif %}
-                        
+
                           {% else %}
                           <input data-btn-addToCart type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
                           {% endif %}
-                        
+
                           {% else %}
                           <input type="submit" name="add" class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}" >
                           {% endif %}
@@ -427,7 +427,7 @@
                           </a>
                           {% endif %}
                       </div>
-                      <div class="btn-checkout show"> 
+                      <div class="btn-checkout show">
                       {% if section.settings.enable_payment_button and current_variant.available %}
                           {{ form | payment_button }}
                       {% endif %}
@@ -458,10 +458,10 @@
 
                           <div class="wrapper-button">
                             {% if current_variant.available %}
-                          
+
                             {% if current_variant.inventory_management %}
                             {% assign first_inventory = current_variant.inventory_quantity %}
-                          
+
                             {% if first_inventory > 0 %}
                             <input data-btn-addToCart type="submit" name="add" class="btn" id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
                             {% else %}
@@ -470,7 +470,7 @@
                             {% else %}
                             <input data-btn-addToCart type="submit" name="add" class="btn" id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}" data-form-id="#add-to-cart-form">
                             {% endif %}
-                          
+
                             {% else %}
                             <input type="submit" name="add" class="btn" id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}" >
                             {% endif %}
@@ -481,7 +481,7 @@
                               <a class="icon-share" href="javascript:void(0)">{% render 'icon-share' %}</a>
                             {% endif %}
                           </div>
-                          
+
                         </div>
 
                         {% if section.settings.enable_payment_button and current_variant.available %}
@@ -511,11 +511,11 @@
                       </span>
                   </div>
                   {% endif %}
-                  
+
                   {% endform %}
 
                   {% render 'nofify-sold-out', product: product, variantCount: variantCount, current_variant: current_variant %}
-                  
+
                   {%- if show_customInfo -%}
                       {% render 'halo-custom-information-product' %}
                   {%- endif -%}
@@ -572,9 +572,9 @@
               {% endif %}
             {% endif %}
             {%- if section.settings.display_product_detail_description -%}
-              {%- liquid 
+              {%- liquid
                 assign des = product.description
-                if des contains '[countdown]' or product.description contains '[custom tab]'            
+                if des contains '[countdown]' or product.description contains '[custom tab]'
                   assign des = product.description | split:'[/countdown]</p>' | last
                   assign des = des | split:'[custom tab]' | first
                 endif
@@ -613,7 +613,7 @@
             <div class="container">
               {% render 'related-products', block: block, product: product %}
             </div>
-          {% endif %}         
+          {% endif %}
       </div>
   </div>
 </div>

@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "blocks": {
         "307ce11e-4d2b-4852-a057-df936d11e6d7": {
           "type": "sidebar_product",
@@ -99,7 +100,7 @@
             "title": "Special Offers",
             "des": "Sale up to 60% off on selected items. End ins:",
             "countdown": "2020\/01\/7 0:0:00",
-            "color": "#fff"
+            "color": "#ffffff"
           }
         },
         "1067d629-245a-4169-a257-1744429518ea": {
@@ -110,7 +111,7 @@
             "title": "Special Offers",
             "des": "Sale up to 60% off on selected items. End ins:",
             "countdown": "2020\/01\/7 0:0:00",
-            "color": "#fff"
+            "color": "#ffffff"
           }
         },
         "1e6c3edb-ed9a-4648-946e-de70582832eb": {
@@ -121,7 +122,7 @@
             "title": "Special Offers",
             "des": "Sale up to 60% off on selected items. End ins:",
             "countdown": "2020\/01\/7 0:0:00",
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -143,9 +144,200 @@
         "style_categories": "style_little",
         "bg_color": "#fafafa"
       }
+    },
+    "16603250107324b7dd": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "16602263451c6a75e9": {
+      "type": "home-custom-sub-banner",
+      "blocks": {
+        "1660226345885420d7-1": {
+          "type": "oneImage",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_109.png",
+            "title": "",
+            "des": "",
+            "countdown": "",
+            "color": "#ffffff",
+            "link": "",
+            "title_2": "",
+            "des_2": "",
+            "countdown_2": "",
+            "color_2": "#ffffff",
+            "link_2": ""
+          }
+        },
+        "1660226345885420d7-2": {
+          "type": "twoImage",
+          "disabled": true,
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/Group_109_2.png",
+            "title_1": "",
+            "des_1": "",
+            "color_1": "#ffffff",
+            "button_1": "",
+            "link_1": "",
+            "bg_button_1": "#ffffff",
+            "border_button_1": "#ffffff",
+            "color_button_1": "#232323",
+            "image_2": "shopify:\/\/shop_images\/Group_109_1.png",
+            "title_2": "",
+            "des_2": "",
+            "color_2": "#ffffff",
+            "button_2": "",
+            "link_2": "",
+            "bg_button_2": "#ffffff",
+            "border_button_2": "#ffffff",
+            "color_button_2": "#232323"
+          }
+        },
+        "21ff3f71-0e8e-4ee3-bbf3-4a4ecd84b88e": {
+          "type": "oneImage",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_47.png",
+            "title": "",
+            "des": "",
+            "countdown": "",
+            "color": "#ffffff",
+            "link": "",
+            "title_2": "",
+            "des_2": "",
+            "countdown_2": "",
+            "color_2": "#ffffff",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660226345885420d7-1",
+        "1660226345885420d7-2",
+        "21ff3f71-0e8e-4ee3-bbf3-4a4ecd84b88e"
+      ],
+      "settings": {
+        "font_size_title": "20px",
+        "font_size_desc": "12px",
+        "block_des": "",
+        "block_style": "style_1",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 30
+      }
+    },
+    "166031843426f66009": {
+      "type": "home-custom-sub-banner",
+      "blocks": {
+        "16603184345b292b50-0": {
+          "type": "twoImage",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/Group_111.png",
+            "title_1": "",
+            "des_1": "",
+            "color_1": "#ffffff",
+            "button_1": "",
+            "link_1": "",
+            "bg_button_1": "#ffffff",
+            "border_button_1": "#ffffff",
+            "color_button_1": "#232323",
+            "image_2": "shopify:\/\/shop_images\/Group_111_1.png",
+            "title_2": "",
+            "des_2": "",
+            "color_2": "#ffffff",
+            "button_2": "",
+            "link_2": "",
+            "bg_button_2": "#ffffff",
+            "border_button_2": "#ffffff",
+            "color_button_2": "#232323"
+          }
+        },
+        "16603184345b292b50-1": {
+          "type": "oneImage",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_49.png",
+            "title": "",
+            "des": "",
+            "countdown": "",
+            "color": "#ffffff",
+            "link": "",
+            "title_2": "",
+            "des_2": "",
+            "countdown_2": "",
+            "color_2": "#ffffff",
+            "link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "16603184345b292b50-0",
+        "16603184345b292b50-1"
+      ],
+      "settings": {
+        "font_size_title": "20px",
+        "font_size_desc": "12px",
+        "block_des": "",
+        "block_style": "style_1",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 30
+      }
+    },
+    "1660319517aadb28e2": {
+      "type": "home-custom-sub-banner",
+      "blocks": {
+        "bfea255c-c815-4e68-a957-6578e5ac29eb": {
+          "type": "oneImage",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_111_2.png",
+            "title": "",
+            "des": "",
+            "countdown": "",
+            "color": "#ffffff",
+            "link": "",
+            "title_2": "",
+            "des_2": "",
+            "countdown_2": "",
+            "color_2": "#ffffff",
+            "link_2": ""
+          }
+        },
+        "212eb22b-4aea-468f-9bdd-3b35be84a238": {
+          "type": "oneImage",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_88.png",
+            "title": "",
+            "des": "",
+            "countdown": "",
+            "color": "#ffffff",
+            "link": "",
+            "title_2": "",
+            "des_2": "",
+            "countdown_2": "",
+            "color_2": "#ffffff",
+            "link_2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "bfea255c-c815-4e68-a957-6578e5ac29eb",
+        "212eb22b-4aea-468f-9bdd-3b35be84a238"
+      ],
+      "settings": {
+        "font_size_title": "20px",
+        "font_size_desc": "12px",
+        "block_des": "",
+        "block_style": "style_1",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 30
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16603250107324b7dd",
+    "16602263451c6a75e9",
+    "166031843426f66009",
+    "1660319517aadb28e2"
   ]
 }

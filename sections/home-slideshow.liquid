@@ -15,21 +15,21 @@
     endfor
 -%}
 
-<section class="home-slideshow {% if check_video or section.blocks.size == 1 %}hasvideo{% endif %}" id="slideshow-{{section.id}}" 
+<section class="home-slideshow {% if check_video or section.blocks.size == 1 %}hasvideo{% endif %}" id="slideshow-{{section.id}}"
 {% if section.blocks.size > 1 %}data-loader-script="{% if check_video %}{{ 'halo.slide-show-hasvideo.js' | asset_url }}{% else %}{{ 'halo.slide-show.js' | asset_url }}{% endif %}"{% endif %}>
     <div class="{% if section.settings.layout == 'default' %}container{% elsif section.settings.layout == 'padd_60' %}container-padd60{% else %}container-fluid{% endif %}">
 
         {% if section.settings.widget_title != blank %}
-        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">   
+        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">
             <h3 class="box-title">
-                <span class="title"> 
+                <span class="title">
                     {% render 'multilang' with section.settings.widget_title %}
                 </span>
             </h3>
             {% if section.settings.widget_des != blank %}
             <p>
                 {% render 'multilang' with section.settings.widget_des %}
-            </p>        
+            </p>
             {% endif %}
         </div>
         {% endif %}
@@ -50,8 +50,8 @@
                                     <span class="icon-img">
                                         <img src="{{ img }}" alt="{{ link.title }}" onError="style.display = 'none';">
                                     </span>
-                                    <span>{{ link.title }}</span>    
-                                </a>      
+                                    <span>{{ link.title }}</span>
+                                </a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -71,7 +71,7 @@
                         {%- assign img_url = block.settings.image_slide | img_url: 'master' -%}
                         <div class="adaptive_height {% if block.settings.image_slide_mb != blank %} slide-pc{% endif %}" style="padding-top: {{ 1 | divided_by: preview_img.aspect_ratio | times: 100 }}%">
                             <a {% if block.settings.lb_product_1 != blank or block.settings.lb_product_2 != blank or block.settings.lb_product_3 != blank %}href="javascript:void(0)"{% else %}href="{{ block.settings.link }}"{% endif %} class="slide-image">
-                                <img data-srcset="{{ img_url }}" alt="{{ block.settings.image_slide.alt | default: shop.name }}" class="lazyload" data-sizes="auto">
+                                <img data-srcset="{{ img_url }}" style="min-height: auto !important" alt="{{ block.settings.image_slide.alt | default: shop.name }}" class="lazyload" data-sizes="auto">
                             </a>
                         </div>
 
@@ -325,7 +325,7 @@
                             }
                         }
                     {% endif %}
-                    
+
                     @media (max-width: 1199px) {
                         #block-{{block.id}} .slide-content .slide-heading {
                              font-size: {{block.settings.font_size_heading_mb}} !important;
@@ -577,7 +577,7 @@
             border-color: {{ section.settings.dots_active_color }};
         }
     {% endif %}
-    
+
     {% if settings.layout_style == 'layout_style_suppermarket' %}
         #slideshow-{{section.id}} .slick-dots li.slick-active button {
             background: {{ section.settings.dots_active_color }} !important;
@@ -634,12 +634,12 @@
                 "options": [
                     {
                         "value": "style_1",
-                        "label": "Style 1" 
+                        "label": "Style 1"
                     },
-                    { 
+                    {
                         "value": "style_2",
-                        "label": "Style 2" 
-                    }          
+                        "label": "Style 2"
+                    }
                 ],
                 "default": "style_1"
             },
