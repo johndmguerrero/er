@@ -1,19 +1,19 @@
 <div class="container">
   {% render 'breadcrumb' %}
-  
+
   <header class="page-header">
     <h1>
       {% render 'multilang' with page.title %}
-    </h1>  
+    </h1>
   </header>
-  
+
   <section id="faqs_page">
     {% if section.settings.des_faqs != blank %}
     <div class="des_faqs">
       {% render 'multilang' with section.settings.des_faqs %}
     </div>
     {% endif %}
-    
+
     <div class="panel-group">
       {% for block in section.blocks %}
       {% if block.settings.question_faqs_1 != blank %}
@@ -34,7 +34,7 @@
               </span>
               {% endif %}
             </a>
-          </h4>    
+          </h4>
         </div>
         <div id="faqs-1-{{block.id}}" class="panel-collapse collapse{% if forloop.first %} show{% endif %}">
           <div class="panel-body">
@@ -78,7 +78,7 @@
               </span>
               {% endif %}
             </a>
-          </h4>    
+          </h4>
         </div>
         <div id="faqs-2-{{block.id}}" class="panel-collapse collapse">
           <div class="panel-body">
@@ -122,7 +122,7 @@
               </span>
               {% endif %}
             </a>
-          </h4>    
+          </h4>
         </div>
         <div id="faqs-3-{{block.id}}" class="panel-collapse collapse">
           <div class="panel-body">
@@ -166,7 +166,7 @@
               </span>
               {% endif %}
             </a>
-          </h4>    
+          </h4>
         </div>
         <div id="faqs-4-{{block.id}}" class="panel-collapse collapse">
           <div class="panel-body">
@@ -210,7 +210,7 @@
               </span>
               {% endif %}
             </a>
-          </h4>    
+          </h4>
         </div>
         <div id="faqs-5-{{block.id}}" class="panel-collapse collapse">
           <div class="panel-body">
@@ -239,7 +239,7 @@
 
       {% endfor %}
     </div>
-    
+
     {% if section.settings.contact_text != blank or section.settings.contact_link_text != blank %}
     <div class="contact-link">
       {% if section.settings.contact_text != blank %}
@@ -262,35 +262,41 @@
   .faqs-page .panel-title {
     font-size: {{ section.settings.font_size_qs }}px;
   }
-  
+
   .faqs-page .panel-title > a {
     color: {{ section.settings.color_question }};
     background-color: {{ section.settings.bg_question }};
+    border-left: 5px solid #00ADEF;
   }
-  
+
   .faqs-page .panel-title > a span:before {
     content: attr(data-title) "";
     background-color: {{ section.settings.bg_icon_qs }};
     color: {{ section.settings.color_icon_qs }};
-  }  
-  
+  }
+
   .faqs-page .panel-title > a:not(.collapsed) {
     background-color: {{ section.settings.bg_question_acitve }};
     color: {{ section.settings.color_question_acitve }};
   }
-  
+
   .faqs-page .panel-group .panel-body {
     font-size: {{ section.settings.font_size_answer }}px;
     color: {{ section.settings.color_question_answer }};
+    border-left: 5px solid #8CC63E;
   }
-  
+
   .faqs-page .panel-group .panel-body > div:before {
     content: attr(data-title) "";
     background-color: {{ section.settings.bg_icon_answer }};
     color: {{ section.settings.color_icon_answer }};
     border-color: {{ section.settings.color_icon_answer }};
+    font-size: 60px;
   }
-  
+  .faqs-page .panel-group .panel-title a span::before{
+    font-size: 60px;
+  }
+
   .faqs-page .des_faqs a,
   .faqs-page.panel-group .panel-body a {
     color: {{ section.settings.color_question_link }};
@@ -403,7 +409,7 @@
        "id" : "color_icon_answer",
        "label" : "Icon Color",
        "default" : "#FF8B21"
-      },      
+      },
       {
        "type" : "color",
        "id" : "color_question_answer",

@@ -974,6 +974,7 @@ input[type=checkbox]+label:before {
 }
 
 .slide-content.style_4 .slide-text {
+    margin: 0;
     margin-bottom: 48px;
 }
 
@@ -1506,8 +1507,15 @@ input[type=checkbox]+label:before {
     width: 100%;
 }
 
-.products-grid .grid-item {
+.products-grid .grid-item .color-border{
+    padding: 8px;
+    background: linear-gradient(to bottom, #8CC63E, transparent, transparent);
+    border-radius: 5px;
     margin-bottom: 15px;
+}
+
+.products-grid .grid-item .color-border-wrapper{
+    background-color: #fff;
 }
 
 .collection-testimonials {

@@ -358,7 +358,7 @@
 	}
 
 	.wrapper_header_08.enable_vertical_menu .vertical-menu .mega-menu .menu-lv-2.col-xl-4:not(:nth-child(-n+4)):before {
-		content: none;	
+		content: none;
 	}
 
 	.wrapper_header_08.enable_vertical_menu .vertical-menu .mega-menu > .sub-menu-mobile {

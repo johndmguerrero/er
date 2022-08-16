@@ -3029,6 +3029,8 @@ h1.product-title, h2.product-title {
     color: var(--color_2);
     border-color: var(--border_2);
     width: 100%
+    width: 150px;
+    border-radius: 10px;
 }
 
 .product-item .btn:hover,
@@ -4146,13 +4148,16 @@ h1.product-title, h2.product-title {
  .style_product_grid_6 .product-label {
     position: absolute;
     right: auto;
-    left: 0;
+    left: 10px;
+    top: 10px;
     text-align: left;
  }
 
  .style_product_grid_6 .product-item .add-to-cart-btn {
     font-size: var(--font_size);
-    width: 100%;
+    {% comment %} width: 100%; {% endcomment %}
+    width: 150px;
+    border-radius: 10px;
   }
 
   .style_product_grid_6 .product-item .add-to-cart-btn:not('[disabled]'):hover {
@@ -4178,7 +4183,7 @@ h1.product-title, h2.product-title {
     top: auto;
     bottom: 0;
     transform: none;
-    background: #fff;
+    background: transparent;
   }
   .style_product_grid_6 .show-popup-qs .product-card__button_cancel_mobile {
     top: -21px;
@@ -16826,6 +16831,7 @@ h1.product-title, h2.product-title {
 
 .home-custom-banner-3.banner_style_4 .banner-item .content-box {
     position: relative;
+    text-align: left;
     top: auto;
     left: auto;
     transform: none;
@@ -18818,7 +18824,7 @@ h1.product-title, h2.product-title {
 .homepage-reviews .heading-review {
     font-weight: 500;
     color: #232323;
-    font-size: 20px;
+    font-size: 35px;
     letter-spacing: .02em;
     margin-bottom: 18px
 }
