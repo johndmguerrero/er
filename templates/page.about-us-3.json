@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16607464507b47e4d1": {
+      "type": "home-slideshow",
+      "blocks": {
+        "1660746450096415eb-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/Group_111_3.png",
+            "style_content": "style_4",
+            "alignment": "left",
+            "alignment_custom": "35%",
+            "text_alignment": "left",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "About Us",
+            "font_size_heading": "40px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#ffffff",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#fff",
+            "sub_heading": "",
+            "font_size_sub_heading": "10px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "<span>Earth Rangers is the Kids’ Conservation Organization, dedicated to educating children and their families about biodiversity, inspiring them to adopt sustainable behaviours, and empowering them to become directly involved in protecting animals and their habitats. We achieve these goals through the success of our ongoing programs, which include the Earth Rangers Membership Program and School Outreach Program. <\/span>",
+            "font_size_des": "20px",
+            "font_size_des_mb": "12px",
+            "color_des": "#ffffff",
+            "color_des_mb": "#fff",
+            "button_slide": "",
+            "link": "",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#232323",
+            "border_button": "#232323",
+            "color_button": "#fff",
+            "bg_button_mb": "#232323",
+            "border_button_mb": "#232323",
+            "color_button_mb": "#fff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#fff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#fff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#fff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#fff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#fff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "1660746450096415eb-0"
+      ],
+      "settings": {
+        "layout": "full",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 20,
+        "margin_bottom_tab": 20,
+        "margin_bottom": 30,
+        "style_slideshow": "style_2",
+        "autoplay": false,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#fff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "270px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
+      }
+    },
+    "16607555449a4430f4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin: 30px 0;\"><p style=\"font-size: 23px;line-height: 2rem;\">From big cities to remote communities, Earth Rangers engages children all across Canada through our School Outreach and Membership programs. <span style=\"font-weight: bold;\"> We currently have over 300,000 members and alumni in every province and territory.<\/span><\/p><\/div>"
+      }
+    },
+    "16607557946a797223": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\">\n  <h4> Our Vision<\/h4>\n<p>Picture every person you know working to protect biodiversity. Picture all of these people acknowledging the impacts of their small, daily actions. Picture our planet thriving because a new generation of leaders is mindful about its health. At Earth Rangers we imagine this every day. We believe children can make it a reality.<\/p>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin: 40px 0;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4_1.png?v=1660755943\" width=\"100%\" >\n<\/div>\n<\/div>"
+      }
+    },
+    "16607559868946218d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_63.png?v=1660756112\" width=\"100%\" >\n<\/div>\n<div class=\"col-md-6\">\n  <h4> Our Mission<\/h4>\n<p>When it comes to media reports about our natural world, headlines today are dominated by tales of doom and gloom.  Increasing pollution in our air and waterways, diminishing biodiversity the world over, and the ever-present threat of climate change all conspire to create images of a bleak future that can at times seem inevitable.  These are the reports our children have been faced with all their lives – but we have yet to meet even one that responds with despair.<br><br>\n\nThat’s because there’s an even stronger environmental narrative emerging from Canada’s youth today; one of realistic optimism.  The next generation is a hopeful generation, and one who is ready to roll up their sleeves and do what it takes to make a better future their reality.<br><br>\n\nEarth Rangers is the kids’ conservation organization, committed to instilling environmental knowledge, positivity, and the confidence to take action in every child in Canada. We do this through a variety of free programming that children can participate in at school, at home, and in their communities. All of these programs are educational and engaging – but more importantly, they show children that it’s not too late to help the planet, and the things we do today will matter tomorrow.<\/p>\n <\/div>\n<\/div>"
+      }
+    },
+    "1660756081b58c4bb0": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\">\n  <h4> Conservation<\/h4>\n<p>Each year, Earth Rangers works with a variety of national, regional and local conservation organizations to identify Canadian species that are facing threats in the wild. We then develop tangible projects to protect those animals, ranging from conservation research, to land acquisition, to habitat stewardship.<br><br>\n\nEarth Rangers Members are encouraged to make a symbolic adoption of one of the animals to help them. Through the program, our members learn about the full breadth and depth of the conservation issue and are given the tools to make a meaningful contribution. To date, Earth Rangers members have raised more than $3 million to help Canadian species at risk!<\/p>\n<a style=\"display: block; margin-top: 30px; font-size: 20px; color: #8CC63E; font-weight: bold; text-decoration: underline; text-transform: uppercase;\">Our Current Projects<\/a>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_64.png?v=1660756151\" width=\"100%\" >\n<\/div>\n<\/div>"
+      }
+    },
+    "1660756668f43e4900": {
+      "type": "home-slideshow",
+      "blocks": {
+        "1660756668397a93a3-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/Rectangle_19_6.png",
+            "style_content": "style_4",
+            "alignment": "left",
+            "alignment_custom": "35%",
+            "text_alignment": "left",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "Shop and Show Your <br> Support",
+            "font_size_heading": "40px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#232323",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#fff",
+            "sub_heading": "",
+            "font_size_sub_heading": "30px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous.",
+            "font_size_des": "18px",
+            "font_size_des_mb": "12px",
+            "color_des": "#232323",
+            "color_des_mb": "#fff",
+            "button_slide": "Shop The Collection",
+            "link": "",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#fff",
+            "bg_button_mb": "#232323",
+            "border_button_mb": "#232323",
+            "color_button_mb": "#fff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#fff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#fff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#fff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#fff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#fff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "1660756668397a93a3-0"
+      ],
+      "settings": {
+        "layout": "padd_60",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 20,
+        "margin_bottom_tab": 20,
+        "margin_bottom": 30,
+        "style_slideshow": "style_1",
+        "autoplay": true,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#fff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "270px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
+      }
+    },
+    "1660756870028efec9": {
+      "type": "home-brands",
+      "blocks": {
+        "1f9de9dd-5d65-472e-b101-d29713420d8c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "ec519c67-1141-48cc-beaf-9f962ce0b0f7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "d9a811d1-6721-4b87-8a08-c5f0ab130ec3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "0da4bcde-7121-4b66-aa0c-994d85c39148": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "3ebb9b64-d0b6-4ca8-bb85-20e6a37a7eda": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        },
+        "6049575c-ce04-468c-86c0-a11e1f9a4e48": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_107.png",
+            "title": "Loremous",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1f9de9dd-5d65-472e-b101-d29713420d8c",
+        "ec519c67-1141-48cc-beaf-9f962ce0b0f7",
+        "d9a811d1-6721-4b87-8a08-c5f0ab130ec3",
+        "0da4bcde-7121-4b66-aa0c-994d85c39148",
+        "3ebb9b64-d0b6-4ca8-bb85-20e6a37a7eda",
+        "6049575c-ce04-468c-86c0-a11e1f9a4e48"
+      ],
+      "settings": {
+        "layout": "default",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0,
+        "display_brand_border": true,
+        "display_bg_banner": false,
+        "bg_color_banner": "#f5f5f5",
+        "brand_title": "Awards",
+        "color_title": "#232323",
+        "fontsize_title": "",
+        "fontsize_title_mb": "",
+        "font_weight_title": "700",
+        "text_transform_title": "capitalize",
+        "brand_des": "",
+        "brands_view_all": "",
+        "brands_view_all_link": "",
+        "title_style": "style_2",
+        "brand_rows": "5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16607464507b47e4d1",
+    "16607555449a4430f4",
+    "16607557946a797223",
+    "16607559868946218d",
+    "1660756081b58c4bb0",
+    "1660756668f43e4900",
+    "1660756870028efec9"
+  ]
+}

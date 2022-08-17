@@ -1,0 +1,135 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1660750361eb276d32": {
+      "type": "home-slideshow",
+      "blocks": {
+        "1660750361c7a2c6fa-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/Rectangle_32_2.png",
+            "style_content": "style_4",
+            "alignment": "left",
+            "alignment_custom": "35%",
+            "text_alignment": "left",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "Join the Earth Rangers Club, <br> Get a Club Starter Kit Today!",
+            "font_size_heading": "40px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#ffffff",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#fff",
+            "sub_heading": "",
+            "font_size_sub_heading": "30px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "You and your kids can influence others to protect animals. \nGet your ‘I am an Earth Ranger’ t-shirt today.",
+            "font_size_des": "18px",
+            "font_size_des_mb": "12px",
+            "color_des": "#ffffff",
+            "color_des_mb": "#fff",
+            "button_slide": "Buy One Today",
+            "link": "",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#fff",
+            "bg_button_mb": "#232323",
+            "border_button_mb": "#232323",
+            "color_button_mb": "#fff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#fff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#fff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#fff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#fff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#fff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "1660750361c7a2c6fa-0"
+      ],
+      "settings": {
+        "layout": "full",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 20,
+        "margin_bottom_tab": 20,
+        "margin_bottom": 51,
+        "style_slideshow": "style_1",
+        "autoplay": true,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#fff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "270px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
+      }
+    },
+    "16607505100ac6175f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span style=\"font-style: italic; font-size: 18px;\">Earth Rangers Clubs are made up of elementary students\/educators who have committed to taking action to help animals and the environment! Clubs take on Missions which are engaging activities that help students learn about important environmental issues. Register your Eco Club or form a new Club by going to <span style=\"font-weight:bold;\">clubs.earthrangers.com<\/span> and gain access to additional resources and support.<\/span>"
+      }
+    },
+    "1660751083d1e79d9c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "16607511975e8605e9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\">\n  <h4> About Clubs<\/h4>\n<p>Earth Rangers Clubs are made up of elementary students, educators, and community groups who want to take action and help animals and the environment. The program is recommended for grades K-6 and can be adapted to 7 and 8.<br><br>\nClubs take on Club Missions throughout the year.<br><br>\n\nMissions include engaging and tangible environmental lessons, activities, and worksheets that help your Club take action for important environmental issues. <br><br>\n\nExplore all the Missions available to registered Clubs, then <span style=\"font-weight: bold;\">sign-up for free!<\/span><\/p>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin: 40px 0;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4.png?v=1660751568\" >\n<\/div>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660750361eb276d32",
+    "16607505100ac6175f",
+    "1660751083d1e79d9c",
+    "16607511975e8605e9"
+  ]
+}

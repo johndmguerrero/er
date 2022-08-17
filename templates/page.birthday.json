@@ -1,0 +1,326 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "166074731188f262a5": {
+      "type": "home-slideshow",
+      "blocks": {
+        "166074731000a6b17a-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/ATF_Banner_4.png",
+            "style_content": "style_4",
+            "alignment": "left",
+            "alignment_custom": "35%",
+            "text_alignment": "left",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "Earth Rangers <br> Birthdays",
+            "font_size_heading": "50px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#ffffff",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#fff",
+            "sub_heading": "",
+            "font_size_sub_heading": "30px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "Birthdays only come once a year, but they can make a difference that lasts a lifetime. Wondering how?",
+            "font_size_des": "18px",
+            "font_size_des_mb": "12px",
+            "color_des": "#ffffff",
+            "color_des_mb": "#fff",
+            "button_slide": "Get Started",
+            "link": "",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#fff",
+            "bg_button_mb": "#232323",
+            "border_button_mb": "#232323",
+            "color_button_mb": "#fff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#fff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#fff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#fff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#fff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#fff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "166074731000a6b17a-0"
+      ],
+      "settings": {
+        "layout": "full",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 20,
+        "margin_bottom_tab": 20,
+        "margin_bottom": 30,
+        "style_slideshow": "style_1",
+        "autoplay": true,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#fff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "270px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
+      }
+    },
+    "1660747474061ac308": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<p style=\"font-size: 20px; font-style: italic;\">It’s simple. When you host an Earth Rangers Birthday, <span style=\"font-weight:bold; text-decoration: underline;\">or purchase an Earth Rangers Premium Party Kit,<\/span> you’re helping protect the animals you love. By asking your family and friends to donate to your party instead of bringing a gift, you’ll help make a big difference to animals everywhere!<\/p>"
+      }
+    },
+    "1660747714c5a99c75": {
+      "type": "home-about-us",
+      "blocks": {
+        "8d4d43ba-0277-436b-8224-dceeb2401fa8": {
+          "type": "block",
+          "settings": {
+            "icon_type": "image",
+            "image": "shopify:\/\/shop_images\/Rectangle_85.png",
+            "text_icon": "Step 1",
+            "content": "<p>Step 1<\/p>",
+            "description": "<span style=\"text-decoration: none;\">Visit Echoage.com\/charities\/earth-rangers to set up your party<\/span>",
+            "text_button": "",
+            "link_icon": "",
+            "color_content": "#000000",
+            "color_content_hover": "#307058"
+          }
+        },
+        "719324bb-facd-49af-bb6b-9e985791e4f8": {
+          "type": "block",
+          "settings": {
+            "icon_type": "image",
+            "image": "shopify:\/\/shop_images\/Rectangle_86.png",
+            "text_icon": "Step 2",
+            "content": "<p>Step 2<\/p>",
+            "description": "Choose custom invitations and RSVPs to send to party guests",
+            "text_button": "",
+            "link_icon": "",
+            "color_content": "#000000",
+            "color_content_hover": "#307058"
+          }
+        },
+        "36c1ab71-6785-4be2-8364-17c8986fb75c": {
+          "type": "block",
+          "settings": {
+            "icon_type": "image",
+            "image": "shopify:\/\/shop_images\/Rectangle_87.png",
+            "text_icon": "Step 3",
+            "content": "<p>Step 3<\/p>",
+            "description": "Get ready to party!",
+            "text_button": "",
+            "link_icon": "",
+            "color_content": "#000000",
+            "color_content_hover": "#307058"
+          }
+        }
+      },
+      "block_order": [
+        "8d4d43ba-0277-436b-8224-dceeb2401fa8",
+        "719324bb-facd-49af-bb6b-9e985791e4f8",
+        "36c1ab71-6785-4be2-8364-17c8986fb75c"
+      ],
+      "settings": {
+        "style_about": "style_6",
+        "display_border_top": false,
+        "bg_color": "transparent",
+        "border_bg_color": "#f5f5f5",
+        "bg_color_item_style_3": "#fff",
+        "style_title": "style_3",
+        "title": "How It Works",
+        "color_title": "#232323",
+        "font_size_title": "25px",
+        "font_size_title_mb": "",
+        "font_weight_title": "700",
+        "text_transform_title": "capitalize",
+        "title_sub": "",
+        "font_size_title_sub": "12px",
+        "color_title_sub": "",
+        "des": "",
+        "color_des": "#787878",
+        "font_size_des": "14px",
+        "button_text": "",
+        "button_text_link": "#",
+        "color_button": "#202020",
+        "color_border_button": "#ffffff",
+        "bg_color_button": "#ffffff",
+        "font_size_title_item": "",
+        "font_size_desc_item": "",
+        "font_size_button_item": "",
+        "margin_bottom": 13,
+        "margin_bottom_mb": 30
+      }
+    },
+    "1660747692b34bfb2a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-bottom: 40px;\"><a class=\"btn\" style=\"display: block; margin: auto; background-color: #8CC63E; border-radius: 10px; max-width: 356px; color: white; \">SET UP YOUR PARTY<\/a>\n<br>\n<span style=\"display: block; text-align: center; color: #8CC63E; text-decoration: underline; \">Done setting up your party? Purchase our birthday kit!<\/span>\n<\/div>"
+      }
+    },
+    "1660748661719585d4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "Guests can RSVP and donate online, and once the party is over, you’ll receive half the funds in the mail from EchoAge and the rest will be donated to Earth Rangers. Plus, when you register, you can use code GIVE10 to get you started with a $10 donation from EchoAge!"
+      }
+    },
+    "1660748726da2e29c2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"margin-top: 60px;\"><hr style=\"border-color: #8CC63E; border-width: 5px; \"><\/div>"
+      }
+    },
+    "16607488282fa486e5": {
+      "type": "home-slideshow",
+      "blocks": {
+        "16607488270aabd631-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/Rectangle_19_4.png",
+            "style_content": "style_4",
+            "alignment": "right",
+            "alignment_custom": "35%",
+            "text_alignment": "right",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "Looking to party like a true <br> animal-saving hero?",
+            "font_size_heading": "30px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#fffafa",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#fff",
+            "sub_heading": "",
+            "font_size_sub_heading": "30px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous",
+            "font_size_des": "16px",
+            "font_size_des_mb": "12px",
+            "color_des": "#ffffff",
+            "color_des_mb": "#fff",
+            "button_slide": "Buy your kit",
+            "link": "",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#fff",
+            "bg_button_mb": "#232323",
+            "border_button_mb": "#232323",
+            "color_button_mb": "#fff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#fff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#fff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#fff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#fff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#fff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "16607488270aabd631-0"
+      ],
+      "settings": {
+        "layout": "padd_60",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 20,
+        "margin_bottom_tab": 20,
+        "margin_bottom": 30,
+        "style_slideshow": "style_1",
+        "autoplay": true,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#fff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "270px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166074731188f262a5",
+    "1660747474061ac308",
+    "1660747714c5a99c75",
+    "1660747692b34bfb2a",
+    "1660748661719585d4",
+    "1660748726da2e29c2",
+    "16607488282fa486e5"
+  ]
+}

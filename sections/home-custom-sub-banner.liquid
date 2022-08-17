@@ -3,16 +3,16 @@
     <div class="container">
         <div class="row">
             {% for block in section.blocks %}
-            
+
             {% case section.blocks.size %}
                 {% when 1 %}
                 {%- assign column_size = 'col-12 one-block' -%}
                 {% when 2 %}
                 {%- assign column_size = 'col-12 col-md-6 two-blocks' -%}
                 {% when 3 %}
-                    {%- assign column_size = 'col-12 col-md-6 col-lg-4 three-blocks' -%}      
+                    {%- assign column_size = 'col-12 col-md-6 col-lg-4 three-blocks' -%}
             {% endcase %}
-            
+
             {% if block.type == 'oneImage' %}
             <div class="{{ column_size }} oneImage" {% if block.settings.image_2 != blank %}data-init-slideshow{% endif %} data-dots="true" data-autoplay="true" data-autoplaySpeed="10000" data-fade="true">
                 <div class="item">
@@ -24,12 +24,6 @@
                                     {%- assign img_url = block.settings.image | img_url: '600x', crop: 'center' -%}
                                     <img data-src="{{ img_url }}" alt="{{ block.settings.image.alt | default: shop.name }}" class="lazyload" data-sizes="auto">
                                 </a>
-                            {% else %}
-                                <a href="{{ block.settings.link }}" class="animate-scale">
-                                    <div class="not_img">
-                                        370 x 510px
-                                    </div>
-                                </a>
                             {% endif %}
                         </div>
 
@@ -37,23 +31,23 @@
                         <div class="content-box" style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
                             {% if block.settings.title != blank %}
                             <h3 class="banner-title">
-                                {% render 'multilang' with block.settings.title %} 
+                                {% render 'multilang' with block.settings.title %}
 
                                 <span class="border-bt-hover" style="{% if block.settings.color != blank %}background-color: {{ block.settings.color }};{% endif %}"></span>
                             </h3>
                             {% endif %}
-                            
+
                             {% if block.settings.des != blank %}
                             <p class="des{% if block.settings.countdown == blank %} no-countdown{% endif %}">
-                                {% render 'multilang' with block.settings.des %} 
+                                {% render 'multilang' with block.settings.des %}
                             </p>
                             {% endif %}
-                            
+
                             {% if block.settings.countdown != blank %}
                             <div class="sub-banner-countdown countdown-{{ block.id }}" data-countdown data-countdown-value="{{ block.settings.countdown }}"></div>
                             {% endif %}
                         </div>
-                        
+
                         <style>
                             .countdown-{{ block.id }} .clock-item {
                                 border-color: {{ block.settings.color | color_modify: 'alpha', 0.8 }};
@@ -78,23 +72,23 @@
                         <div class="content-box" style="{% if block.settings.color_2 != blank %}color: {{ block.settings.color_2 }};{% endif %}">
                             {% if block.settings.title_2 != blank %}
                             <h3 class="banner-title">
-                                {% render 'multilang' with block.settings.title_2 %} 
+                                {% render 'multilang' with block.settings.title_2 %}
 
                                 <span class="border-bt-hover" style="{% if block.settings.color_2 != blank %}background-color: {{ block.settings.color_2 }};{% endif %}"></span>
                             </h3>
                             {% endif %}
-                            
+
                             {% if block.settings.des_2 != blank %}
                             <p class="des{% if block.settings.countdown_2 == blank %} no-countdown{% endif %}">
-                                {% render 'multilang' with block.settings.des_2 %} 
+                                {% render 'multilang' with block.settings.des_2 %}
                             </p>
                             {% endif %}
-                            
+
                             {% if block.settings.countdown_2 != blank %}
                             <div class="sub-banner-countdown countdown-{{ block.id }}" data-countdown data-countdown-value="{{ block.settings.countdown_2 }}"></div>
                             {% endif %}
                         </div>
-                        
+
                         <style>
                             .countdown-{{ block.id }} .clock-item {
                                 border-color: {{ block.settings.color | color_modify: 'alpha', 0.8 }};
@@ -106,7 +100,7 @@
                 {% endif %}
 
             </div>
-            
+
             {% elsif block.type == 'twoImage' %}
             <div class="{{ column_size }} twoImage">
                 <div class="row">
@@ -119,12 +113,6 @@
                                         {%- assign img_url = block.settings.image_1 | img_url: '600x', crop: 'center' -%}
                                         <img data-src="{{ img_url }}" alt="{{ block.settings.image_1.alt | default: shop.name }}" class="lazyload" data-sizes="auto">
                                     </a>
-                                {% else %}
-                                    <a href="{{ block.settings.link_1 }}" class="animate-scale">
-                                        <div class="not_img">
-                                            370 x 240px
-                                        </div>
-                                    </a>
                                 {% endif %}
                             </div>
 
@@ -133,7 +121,7 @@
 
                                 {% if block.settings.title_1 != blank %}
                                     <h3 class="banner-title">
-                                    {% render 'multilang' with block.settings.title_1 %} 
+                                    {% render 'multilang' with block.settings.title_1 %}
 
                                     <span class="border-bt-hover" style="{% if block.settings.color_1 != blank %}background-color: {{ block.settings.color_1 }};{% endif %}"></span>
                                     </h3>
@@ -141,7 +129,7 @@
 
                                 {% if block.settings.des_1 != blank %}
                                     <p class="des{% if block.settings.button_1 == blank %} no-button{% endif %}">
-                                        {% render 'multilang' with block.settings.des_1 %} 
+                                        {% render 'multilang' with block.settings.des_1 %}
                                     </p>
                                 {% endif %}
                             </div>
@@ -164,8 +152,8 @@
                             </div>
                             {% endif %}
                         </div>
-                    </div>	
-                                
+                    </div>
+
                     <div class="item col-6 col-md-12">
                         <div class="sub-banner banner-item">
                             <div class="img-box">
@@ -175,12 +163,6 @@
                                         {%- assign img_url = block.settings.image_2 | img_url: '600x', crop: 'center' -%}
                                         <img data-src="{{ img_url }}" alt="{{ block.settings.image_2.alt | default: shop.name }}" class="lazyload" data-sizes="auto">
                                     </a>
-                                {% else %}
-                                    <a href="{{ block.settings.link_2 }}" class="animate-scale">
-                                        <div class="not_img">
-                                            370 x 240px
-                                        </div>
-                                    </a>
                                 {% endif %}
                             </div>
 
@@ -188,14 +170,14 @@
                             <div class="content-box" style="{% if block.settings.color_2 != blank %}color: {{ block.settings.color_2 }};{% endif %}">
                                 {% if block.settings.title_2 != blank %}
                                     <h3 class="banner-title">
-                                    {% render 'multilang' with block.settings.title_2 %} 
+                                    {% render 'multilang' with block.settings.title_2 %}
 
                                     <span class="border-bt-hover" style="{% if block.settings.color_2 != blank %}background-color: {{ block.settings.color_2 }};{% endif %}"></span>
                                     </h3>
                                 {% endif %}
                                 {% if block.settings.des_2 != blank %}
                                     <p class="des{% if block.settings.button_2 == blank %} no-button{% endif %}">
-                                        {% render 'multilang' with block.settings.des_2 %} 
+                                        {% render 'multilang' with block.settings.des_2 %}
                                     </p>
                                 {% endif %}
                             </div>
@@ -219,9 +201,9 @@
                             {% endif %}
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-            
+
             {% elsif block.type == 'fourImage' %}
             <div class="{{ column_size }} fourImage">
                 <div class="row">
@@ -241,7 +223,7 @@
 
                             <div class="not_img">
                                 270 x 270px
-                            </div>   
+                            </div>
                             {% endif %}
                             </a>
                         </div>
@@ -249,15 +231,15 @@
                         {% if block.settings.title_1 != blank %}
                         <div class="content-box" style="{% if block.settings.color_1 != blank %}color: {{ block.settings.color_1 }};{% endif %}">
                             <h3 class="banner-title">
-                            {% render 'multilang' with block.settings.title_1 %} 
+                            {% render 'multilang' with block.settings.title_1 %}
 
                             <span class="border-bt-hover" style="{% if block.settings.color_1 != blank %}background-color: {{ block.settings.color_1 }};{% endif %}"></span>
                             </h3>
                         </div>
                         {% endif %}
                         </div>
-                    </div>	
-                                
+                    </div>
+
                     <div class="item col-6">
                         <div class="sub-banner banner-item">
                         <div class="img-box">
@@ -274,7 +256,7 @@
 
                             <div class="not_img">
                                 270 x 270px
-                            </div>   
+                            </div>
                             {% endif %}
                             </a>
                         </div>
@@ -282,7 +264,7 @@
                         {% if block.settings.title_2 != blank %}
                         <div class="content-box" style="{% if block.settings.color_2 != blank %}color: {{ block.settings.color_2 }};{% endif %}">
                             <h3 class="banner-title">
-                            {% render 'multilang' with block.settings.title_2 %} 
+                            {% render 'multilang' with block.settings.title_2 %}
 
                             <span class="border-bt-hover" style="{% if block.settings.color_2 != blank %}background-color: {{ block.settings.color_2 }};{% endif %}"></span>
                             </h3>
@@ -290,7 +272,7 @@
                         {% endif %}
                         </div>
                     </div>
-                    
+
                     <div class="item col-6">
                         <div class="sub-banner banner-item">
                         <div class="img-box">
@@ -307,7 +289,7 @@
 
                             <div class="not_img">
                                 270 x 270px
-                            </div>   
+                            </div>
                             {% endif %}
                             </a>
                         </div>
@@ -315,7 +297,7 @@
                         {% if block.settings.title_3 != blank %}
                         <div class="content-box" style="{% if block.settings.color_3 != blank %}color: {{ block.settings.color_3 }};{% endif %}">
                             <h3 class="banner-title">
-                            {% render 'multilang' with block.settings.title_3 %} 
+                            {% render 'multilang' with block.settings.title_3 %}
 
                             <span class="border-bt-hover" style="{% if block.settings.color_3 != blank %}background-color: {{ block.settings.color_3 }};{% endif %}"></span>
                             </h3>
@@ -323,7 +305,7 @@
                         {% endif %}
                         </div>
                     </div>
-                    
+
                     <div class="item col-6">
                         <div class="sub-banner banner-item">
                         <div class="img-box">
@@ -340,7 +322,7 @@
 
                             <div class="not_img">
                                 270 x 270px
-                            </div>   
+                            </div>
                             {% endif %}
                             </a>
                         </div>
@@ -348,7 +330,7 @@
                         {% if block.settings.title_4 != blank %}
                         <div class="content-box" style="{% if block.settings.color_4 != blank %}color: {{ block.settings.color_4 }};{% endif %}">
                             <h3 class="banner-title">
-                            {% render 'multilang' with block.settings.title_4 %} 
+                            {% render 'multilang' with block.settings.title_4 %}
 
                             <span class="border-bt-hover" style="{% if block.settings.color_4 != blank %}background-color: {{ block.settings.color_4 }};{% endif %}"></span>
                             </h3>
@@ -356,18 +338,18 @@
                         {% endif %}
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
             {% endif %}
 
             {% endfor %}
         </div>
-        
+
         {% if section.settings.block_des != blank %}
         <div class="row">
             <div class="col-12">
                 <p class="des">
-                {% render 'multilang' with section.settings.block_des %} 
+                {% render 'multilang' with section.settings.block_des %}
                 </p>
             </div>
         </div>
@@ -378,7 +360,7 @@
 <style>
     {% assign font_size_title =  section.settings.font_size_title %}
     {% assign font_size_desc =  section.settings.font_size_desc %}
-    
+
     {% assign margin_bottom =  section.settings.margin_bottom %}
 
     @media (max-width: 767px) {
@@ -392,7 +374,7 @@
             margin-bottom: {{ section.settings.margin_bottom_tab }}px;
         }
     }
-   
+
     @media (min-width: 1200px) {
         #custom-sub-banner-{{section.id}} .banner-title {
             font-size: {{ font_size_title }};
@@ -403,11 +385,11 @@
         #custom-sub-banner-{{section.id}} .des {
             font-size: {{ font_size_desc }};
         }
-        
+
         #custom-sub-banner-{{section.id}} {
             margin-bottom: {{ margin_bottom }}px;
         }
-    }	
+    }
 </style>
 {% endif %}
 
@@ -482,14 +464,14 @@
                 "max": 100,
                 "step": 1,
                 "default": 30
-            }	
+            }
         ],
 
         "blocks": [
             {
                 "type": "oneImage",
                 "name": "One Image",
-                "settings": [		  	
+                "settings": [
                     {
                         "type": "image_picker",
                         "id": "image",
@@ -567,7 +549,7 @@
             {
                 "type": "twoImage",
                 "name": "Two Image",
-                "settings": [		  	
+                "settings": [
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -583,7 +565,7 @@
                         "type" : "textarea",
                         "id" : "des_1",
                         "label" : "Description 1"
-                    },     
+                    },
                     {
                         "type" : "color",
                         "id" : "color_1",
@@ -618,7 +600,7 @@
                         "id" : "color_button_1",
                         "label" : "Button Color 1",
                         "default" : "#232323"
-                    },                 
+                    },
                     {
                         "type": "image_picker",
                         "id": "image_2",
@@ -634,7 +616,7 @@
                         "type" : "textarea",
                         "id" : "des_2",
                         "label" : "Description 2"
-                    },	      
+                    },
                     {
                         "type" : "color",
                         "id" : "color_2",
@@ -676,7 +658,7 @@
             {
                 "type": "fourImage",
                 "name": "Four Image",
-                "settings": [		  	
+                "settings": [
                     {
                         "type": "image_picker",
                         "id": "image_1",
@@ -687,7 +669,7 @@
                         "id" : "title_1",
                         "label" : "Title 1",
                         "default" : "Loremous"
-                    },	      
+                    },
                     {
                         "type" : "color",
                         "id" : "color_1",
@@ -710,7 +692,7 @@
                         "id" : "title_2",
                         "label" : "Title 2",
                         "default" : "Cosmopolis"
-                    },	      
+                    },
                     {
                         "type" : "color",
                         "id" : "color_2",
@@ -733,7 +715,7 @@
                         "id" : "title_3",
                         "label" : "Title 3",
                         "default" : "Loremous"
-                    },	      
+                    },
                     {
                         "type" : "color",
                         "id" : "color_3",
@@ -756,7 +738,7 @@
                         "id" : "title_4",
                         "label" : "Title 4",
                         "default" : "Cosmopolis"
-                    },	      
+                    },
                     {
                         "type" : "color",
                         "id" : "color_4",
@@ -783,7 +765,7 @@
                     },
                     {
                         "type": "oneImage"
-                    },        
+                    },
                     {
                         "type": "twoImage"
                     }

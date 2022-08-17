@@ -2593,7 +2593,7 @@
           "fontsize_title_mb": "",
           "font_weight_title": "700",
           "text_transform_title": "capitalize",
-          "brand_des": "",
+          "brand_des": "<script>console.log('hello worlds') <\/script>",
           "brands_view_all": "",
           "brands_view_all_link": "",
           "title_style": "style_2",
