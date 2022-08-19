@@ -9,66 +9,66 @@
     "16602397967557b574": {
       "type": "home-slideshow",
       "blocks": {
-        "166023979588483ca5-0": {
+        "f38b1245-94be-4200-9535-657037d93ec6": {
           "type": "image",
           "settings": {
             "dpl_slide_img": true,
-            "image_slide": "shopify:\/\/shop_images\/ATF_Banner_2.png",
-            "style_content": "style_1",
+            "image_slide": "shopify:\/\/shop_images\/ATF_Banner_5.png",
+            "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "bg_color_box": "#ffffff",
             "color_border_box": "#bcbcbc",
-            "heading": "",
+            "heading": "New Earth Ranger <br> Youth T-shirts For Your Kids",
             "font_size_heading": "40px",
             "font_size_heading_mb": "24px",
-            "color_heading": "#232323",
+            "color_heading": "#000000",
             "color_heading_style_4": "#10ffda",
-            "color_heading_mb": "#ffffff",
+            "color_heading_mb": "#fff",
             "sub_heading": "",
             "font_size_sub_heading": "30px",
             "font_size_sub_heading_mb": "18px",
-            "color_sub_heading": "#ffffff",
-            "color_sub_heading_mb": "#ffffff",
-            "slide-des": "",
-            "font_size_des": "12px",
+            "color_sub_heading": "#fff",
+            "color_sub_heading_mb": "#fff",
+            "slide-des": "You and your kids can influence others to protect animals. \nGet your ‘I am an Earth Ranger’ t-shirt today.",
+            "font_size_des": "16px",
             "font_size_des_mb": "12px",
-            "color_des": "#232323",
-            "color_des_mb": "#ffffff",
-            "button_slide": "",
+            "color_des": "#000000",
+            "color_des_mb": "#fff",
+            "button_slide": "Buy one today",
             "link": "",
             "button_slide_2": "",
             "link_2": "",
-            "bg_button": "#232323",
-            "border_button": "#232323",
-            "color_button": "#ffffff",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#fff",
             "bg_button_mb": "#232323",
             "border_button_mb": "#232323",
-            "color_button_mb": "#ffffff",
+            "color_button_mb": "#fff",
             "lb_product_1": "",
             "top_position_1": "10",
             "left_position_1": "10",
-            "dots_color_1": "#ffffff",
+            "dots_color_1": "#fff",
             "dots_bg_color_1": "#323232",
-            "dots_shadow_color_1": "#ffffff",
+            "dots_shadow_color_1": "#fff",
             "lb_product_2": "",
             "top_position_2": "10",
             "left_position_2": "10",
-            "dots_color_2": "#ffffff",
+            "dots_color_2": "#fff",
             "dots_bg_color_2": "#323232",
-            "dots_shadow_color_2": "#ffffff",
+            "dots_shadow_color_2": "#fff",
             "lb_product_3": "",
             "top_position_3": "10",
             "left_position_3": "10",
-            "dots_color_3": "#ffffff",
+            "dots_color_3": "#fff",
             "dots_bg_color_3": "#323232",
-            "dots_shadow_color_3": "#ffffff"
+            "dots_shadow_color_3": "#fff"
           }
         }
       },
       "block_order": [
-        "166023979588483ca5-0"
+        "f38b1245-94be-4200-9535-657037d93ec6"
       ],
       "settings": {
         "layout": "full",
@@ -77,7 +77,7 @@
         "title_style": "style_1",
         "margin_bottom_mb": 20,
         "margin_bottom_tab": 20,
-        "margin_bottom": 30,
+        "margin_bottom": 50,
         "style_slideshow": "style_1",
         "autoplay": true,
         "slideshow_speed": "5000",
@@ -106,100 +106,75 @@
         "enable_banner": false
       }
     },
-    "1660239841b75f722f": {
-      "type": "brand-tab-block",
+    "166075926547f5d146": {
+      "type": "home-product-tabs",
       "blocks": {
-        "c787fefc-64a5-41da-8d34-8c150558a8ef": {
-          "type": "tab",
+        "9d4c51e1-5e58-4fcc-9421-58562b293ddd": {
+          "type": "ProductTabs",
           "settings": {
-            "title": "Shop All",
-            "menu": "homepage-menu"
+            "title": "Shop",
+            "collection": "all-products"
           }
         },
-        "ea211859-0274-4f99-bd99-b1dbfd01c0ca": {
-          "type": "tab",
+        "c4de4b63-164e-4270-b15e-88993d23a1a5": {
+          "type": "ProductTabs",
           "settings": {
             "title": "Apparel",
-            "menu": ""
+            "collection": "all-products"
           }
         },
-        "b7583863-e419-4b4d-b664-e2cd31ff74ec": {
-          "type": "tab",
+        "f225841c-fe02-492b-9cc5-cf8aceace9a1": {
+          "type": "ProductTabs",
           "settings": {
             "title": "Adoption Kits",
-            "menu": ""
+            "collection": "all-products"
           }
         },
-        "5dda0286-6bd3-4c22-b5f5-2e7b60c27d80": {
-          "type": "tab",
+        "1718fe83-e023-4e79-a56b-46eb30c8b432": {
+          "type": "ProductTabs",
           "settings": {
             "title": "Merch",
-            "menu": ""
+            "collection": "all-products"
           }
         },
-        "4e6e7843-168f-4486-85a5-e342cc0298bd": {
-          "type": "tab",
+        "345971d3-98c3-49ec-8647-62018f4f9b38": {
+          "type": "ProductTabs",
           "settings": {
             "title": "Mission Items",
-            "menu": ""
+            "collection": "all-products"
           }
         },
-        "a3530ad3-2d3c-4685-8035-32a345465f50": {
-          "type": "tab",
+        "ef91474b-2114-4b06-ad36-2e1f889c427a": {
+          "type": "ProductTabs",
           "settings": {
             "title": "For Teachers",
-            "menu": ""
+            "collection": "all-products"
           }
         }
       },
       "block_order": [
-        "c787fefc-64a5-41da-8d34-8c150558a8ef",
-        "ea211859-0274-4f99-bd99-b1dbfd01c0ca",
-        "b7583863-e419-4b4d-b664-e2cd31ff74ec",
-        "5dda0286-6bd3-4c22-b5f5-2e7b60c27d80",
-        "4e6e7843-168f-4486-85a5-e342cc0298bd",
-        "a3530ad3-2d3c-4685-8035-32a345465f50"
+        "9d4c51e1-5e58-4fcc-9421-58562b293ddd",
+        "c4de4b63-164e-4270-b15e-88993d23a1a5",
+        "f225841c-fe02-492b-9cc5-cf8aceace9a1",
+        "1718fe83-e023-4e79-a56b-46eb30c8b432",
+        "345971d3-98c3-49ec-8647-62018f4f9b38",
+        "ef91474b-2114-4b06-ad36-2e1f889c427a"
       ],
       "settings": {
-        "layout": "default",
-        "display_brand_border": false,
-        "brand_bg": "#ffffff",
-        "brand_title": "",
-        "color_title": "#232323",
-        "fontsize_title": 24,
-        "fontsize_title_mb": 24,
-        "font_weight_title": "700",
-        "text_transform_title": "capitalize",
-        "title_style": "style_1",
-        "brand_des": "",
-        "color_des": "#3c3c3c",
-        "fontsize_des": 16,
-        "title_align": "center",
-        "brand_item_limit": 18,
-        "brand_rows": "5",
-        "fontsize_tab": 16,
-        "fontsize_tab_mb": 16,
-        "font_weight_tab": "600",
-        "bg_tab": "#ffffff",
-        "color_tab": "#051c42",
-        "border_tab": "#051c42",
-        "bg_tab_active": "#e1732c",
-        "color_tab_active": "#ffffff",
-        "border_active": "#e1732c",
-        "fontsize_text": 16,
-        "fontsize_text_mb": 16,
-        "font_weight_text": "600",
-        "text_color": "#051c42",
-        "text_color_hover": "#234bbb",
-        "brand_button_text": "Show More",
-        "brand_button_text_less": "Show Less",
-        "brand_button_icon": "",
-        "button_color": "#ffffff",
-        "button_bg_color": "#4dac8b",
-        "button_border_color": "#4dac8b",
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "product_tabs_title": "<span style=\"text-transform: capitalize;\">Shop by Collection<\/span>",
+        "product_tabs_des": "",
+        "title_style": "style_2",
+        "collection_results_per_row": "4",
+        "tabs_style": "style_1",
+        "margin_bottom_mb": 40,
+        "margin_bottom_tab": 40,
+        "margin_bottom": 10
+      }
+    },
+    "1660916906f79ccb71": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3 style=\"text-align: center;\">Featured Products<\/h3>"
       }
     },
     "1660239944ded7f844": {
@@ -209,14 +184,14 @@
           "type": "twoImage",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/Rectangle_16.png",
-            "title_1": "Earth Ranger <br> Signature Tee <br> For Kids",
+            "title_1": "<span style=\"text-transform: capitalize;\">Earth Ranger <br> Signature Tee <br> For Kids<\/span>",
             "des_1": "Available in different colors",
             "color_1": "#ffffff",
             "button_1": "Shop Now",
             "link_1": "",
-            "bg_button_1": "#ffffff",
-            "border_button_1": "#ffffff",
-            "color_button_1": "#232323",
+            "bg_button_1": "#8cc63e",
+            "border_button_1": "#8cc63e",
+            "color_button_1": "#ffffff",
             "title_2": "",
             "des_2": "",
             "color_2": "#ffffff",
@@ -231,23 +206,23 @@
           "type": "twoImage",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/Rectangle_16_2.png",
-            "title_1": "Squirrel <br> Adoption Kit <br> Plush Bundle",
+            "title_1": "<span style=\"text-transform: capitalize;\">Squirrel <br> Adoption Kit <br> Plush Bundle<\/span>",
             "des_1": "Just $75",
             "color_1": "#ffffff",
             "button_1": "Shop Now",
             "link_1": "",
-            "bg_button_1": "#ffffff",
-            "border_button_1": "#ffffff",
-            "color_button_1": "#232323",
+            "bg_button_1": "#8cc63e",
+            "border_button_1": "#8cc63e",
+            "color_button_1": "#ffffff",
             "image_2": "shopify:\/\/shop_images\/Rectangle_16_4.png",
-            "title_2": "Merry <br> North Pole <br> Collection",
+            "title_2": "<span style=\"text-transform: capitalize;\">Merry <br> North Pole <br> Collection<\/span>",
             "des_2": "Now only $99",
             "color_2": "#ffffff",
             "button_2": "View Collection",
             "link_2": "",
-            "bg_button_2": "#ffffff",
-            "border_button_2": "#ffffff",
-            "color_button_2": "#232323"
+            "bg_button_2": "#8cc63e",
+            "border_button_2": "#8cc63e",
+            "color_button_2": "#ffffff"
           }
         }
       },
@@ -351,7 +326,8 @@
   "order": [
     "main",
     "16602397967557b574",
-    "1660239841b75f722f",
+    "166075926547f5d146",
+    "1660916906f79ccb71",
     "1660239944ded7f844",
     "16602400277bfbadb9"
   ]

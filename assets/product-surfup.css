@@ -248,6 +248,7 @@
 }
 
 .product-shop .shopify-payment-button button.shopify-payment-button__button {
+    width: 315px;
     text-transform: uppercase;
     padding: 14px 15px 11px;
     border-radius: 3px;
@@ -466,7 +467,7 @@
     background-color: var(--border_bt_sidebar);
 }
 .product-template-surfup .tabs__product-page .list-tabs {
-    justify-content: center;
+    /* justify-content: center; */
     border: 0;
 }
 .product-template-surfup .tabs__product-page .list-tabs .tab-title {

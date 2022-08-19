@@ -2752,7 +2752,7 @@ h1.product-title, h2.product-title {
 
 .price-box {
     font-size: var(--font_size_plus1);
-    font-weight: 600;
+    {% comment %} font-weight: 600; {% endcomment %}
     line-height: var(--font_size_plus10);
     letter-spacing: normal;
     margin-bottom: 12px
@@ -6716,7 +6716,7 @@ h1.product-title, h2.product-title {
 }
 
 .list-product-tabs li {
-    margin: 0 5px 10px
+    margin: 30px 10px 48px
 }
 
 .list-product-tabs li:first-of-type {
@@ -6728,15 +6728,18 @@ h1.product-title, h2.product-title {
 }
 
 .list-product-tabs .tab-links {
-    text-transform: uppercase;
+    text-transform: normal;
+    font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0);
     display: block;
-    padding: 5px 15px 3px;
+    background-color: #e8f4d8;
+    padding: 10px 25px 10px;
+
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     -ms-border-radius: 1px;
     -o-border-radius: 1px;
-    border-radius: 1px;
+    border-radius: 25px;
     color: #828282
 }
 
@@ -6767,8 +6770,9 @@ h1.product-title, h2.product-title {
 }
 
 .list-product-tabs .tab-links.active {
-    border-color: #646464;
-    color: #000
+    border-color: #8CC63E;
+    color: #fff;
+    background: #8CC63E;
 }
 
 .policies-block .policy-text {
@@ -15761,7 +15765,7 @@ h1.product-title, h2.product-title {
 }
 
 .home-custom-sub-banner-sections .action-link {
-    bottom: 16.5%
+    bottom: 5.5%
 }
 
 .home-custom-block-sub-banner .action-link {
@@ -16849,7 +16853,7 @@ h1.product-title, h2.product-title {
     visibility: visible;
 }
 .home-custom-banner-3.banner_style_4 .widget-title {
-    margin-bottom: 34px;
+    margin-bottom: 60px;
 }
 .home-custom-banner-3.banner_style_4 .banner-item .banner-title {
     margin-top: 16px;
@@ -18953,7 +18957,6 @@ h1.product-title, h2.product-title {
 .homepage-reviews.style_2 {
     padding-top: 40px;
     padding-bottom: 53px;
-    border-bottom: 5px solid #f6f6f6;
 }
 
 .homepage-reviews.style_2 .not_img {
