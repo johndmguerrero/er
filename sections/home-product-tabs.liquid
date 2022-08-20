@@ -9,7 +9,7 @@
 	{%- assign row = 'five-items' -%}
 {% endcase %}
 {%- liquid
-    if sectionId == blank 
+    if sectionId == blank
         assign sectionId = section.id
     endif
 -%}
@@ -17,20 +17,20 @@
 <div class="home-product-tabs" id="product-tabs-{{section.id}}" data-home-product-tabs sectionId="{{section.id}}">
     <div class="container">
         {% if section.settings.product_tabs_title != blank %}
-        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">   
+        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">
             <h3 class="box-title">
-                <span class="title"> 
+                <span class="title">
                 {% render 'multilang' with section.settings.product_tabs_title %}
                 </span>
             </h3>
             {% if section.settings.product_tabs_des != blank %}
             <p>
                 {% render 'multilang' with section.settings.product_tabs_des %}
-            </p>        
+            </p>
             {% endif %}
         </div>
         {% endif %}
-        
+
         <div class="widget-product">
             <ul class="list-product-tabs{% if section.settings.tabs_style == 'style_2' %} product-tabs-style2{% elsif section.settings.tabs_style == 'style_3' %} product-tabs-style3{% elsif section.settings.tabs_style == 'style_4' %} product-tabs-style4{% endif %}">
                 {% for block in section.blocks %}
@@ -41,11 +41,11 @@
                 </li>
                 {% endfor %}
             </ul>
-            
+
             <div class="product-tabs-content">
                 {% for block in section.blocks %}
                 <div class="tab-content{% if forloop.first %} active{% endif %}" data-product-TabContent id="product-tab-{{ block.id }}">
-                    <div class="products-grid row {{ row }}" data-row="{{ section.settings.collection_results_per_row }}">
+                    <div class="products-grid row {{ row }}" data-row="4">
                         <div class="loading col-12"></div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
 </div>
 
 <style>
-  {% assign margin_bottom =  section.settings.margin_bottom %} 
+  {% assign margin_bottom =  section.settings.margin_bottom %}
 
     @media (max-width: 767px) {
         #product-tabs-{{section.id}} {
@@ -74,18 +74,33 @@
         #product-tabs-{{section.id}} {
             margin-bottom: {{ margin_bottom }}px;
         }
-    }	
+        .home-product-tabs .product-tabs-content .products-grid[data-row="4"] .col5{
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .home-product-tabs .products-grid:not(.slick-slider) .grid-item{
+        display: block;
+    }
+
+
+    .home-product-tabs .products-grid.four-items:not(.slick-slider) .grid-item:nth-child(+n+9){
+        display: none;
+    }
 </style>
 
 {% schema %}
   {
     "name": "Product Tabs 01",
 	"class": "home-product-tabs-sections",
-    "settings": [  
+    "settings": [
         {
             "type": "header",
             "content": "Header"
-        },	  
+        },
         {
             "type": "text",
             "id": "product_tabs_title",
@@ -105,19 +120,19 @@
             "options": [
                 {
                     "value": "style_1",
-                    "label": "Style 1" 
+                    "label": "Style 1"
                 },
-                { 
+                {
                     "value": "style_2",
-                    "label": "Style 2" 
-                }          
+                    "label": "Style 2"
+                }
             ],
             "default": "style_1"
-        },     
+        },
         {
             "type": "header",
             "content": "Content"
-        }, 
+        },
         {
             "type": "select",
             "id": "collection_results_per_row",
@@ -150,20 +165,20 @@
             "options": [
                 {
                     "value": "style_1",
-                    "label": "Style 1" 
+                    "label": "Style 1"
                 },
-                { 
+                {
                     "value": "style_2",
-                    "label": "Style 2" 
+                    "label": "Style 2"
                 },
-                { 
+                {
                     "value": "style_3",
-                    "label": "Style 3" 
+                    "label": "Style 3"
                 },
-                { 
+                {
                     "value": "style_4",
-                    "label": "Style 4" 
-                }          
+                    "label": "Style 4"
+                }
             ],
             "default": "style_1"
         },
@@ -197,7 +212,7 @@
             "max": 100,
             "step": 1,
             "default": 10
-        } 	  
+        }
 	],
     "blocks" : [
         {
@@ -214,14 +229,14 @@
                 "type" : "collection",
                 "id" : "collection",
                 "label" : "Collection to use"
-            }          
+            }
             ]
         }
     ],
 	"presets": [
         {
             "name": "Product Tabs 01",
-            "category": "Collection"     
+            "category": "Collection"
         }
     ]
   }
