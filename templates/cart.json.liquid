@@ -8,99 +8,103 @@
 </div>
 
 <div class="cart-form wrapper-cart">
-  <div class="scroll-content">
-    <div class="left-col quick-cart">
-      <div class="box-title"{% if settings.enable_multilang %} data-translate="cart.label.quick_cart"{%endif%}>
-        {{ 'cart.label.quick_cart' | t }} 
+  <div class="row flex-column-reverse">
+    <div class="row">
+      <div class="col-8">
+        {% include 'donation' %}
       </div>
-      
-      <div class="des">
-        <span class="cartCount" data-cart-count>
-          {{ cart.item_count }}
-        </span>
-        <span {% if settings.enable_multilang %}data-translate="cart.ajax_cart.items_in_your_cart"{%endif%}>
-          {{ 'cart.ajax_cart.items_in_your_cart' | t }} 
-        </span>      	
-      </div>
-      
-      <div class="cart-popup-action">
-        
-        {% assign cartDiscounts = 'template ' | split: ' ' %}
-        {% if cart.cart_level_discount_applications.size > 0 %}
-            {% assign cartDiscounts = cart.cart_level_discount_applications %}
-        {% endif %}
-        <div{% if cart.cart_level_discount_applications.size == 0 %} style="display: none"{% endif %} data-cart-discount-wrapper>
-            <div class="order-discount-card-wrapper" data-cart-discount>
-                {% for discount_application in cartDiscounts limit: 1 %}
-                    <span class="order-discount order-discount--title order-discount--cart">
-                        <svg class="icon icon-saletag" id="icon-saletag">
-                            <path d="M10 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-3H7a1 1 0 0 0-.71.29l-6 6a1 1 0 0 0 0 1.42l4 4a1 1 0 0 0 1.42 0c.19-.2 5.8-5.81 6-6A1 1 0 0 0 12 5V2a2 2 0 0 0-2-2z" fill="#231F20"></path>
-                        </svg>
-                        <span data-cart-discount-title>{{- discount_application.title -}}</span>
-                    </span>
-                    <span class="order-discount order-discount--cart order-discount--cart-total">
-                        -<span data-cart-discount-amount>{{ discount_application.total_allocated_amount | money }}</span>
-                    </span>
-                {% endfor %}
-            </div>
+      <div class="left-col quick-cart col-4">
+        <div class="box-title"{% if settings.enable_multilang %} data-translate="cart.label.quick_cart"{%endif%}>
+          {{ 'cart.label.quick_cart' | t }}
         </div>
 
-        <div class="total">
-          <span class="label">
-            <span {% if settings.enable_multilang %}data-translate="cart.label.total"{% endif %}>
-              {{ 'cart.label.total' | t }}:
-            </span>
+        <div class="des">
+          <span class="cartCount" data-cart-count>
+            {{ cart.item_count }}
           </span>
-          <span class="price">
-            {{ cart.total_price | money }}
-          </span> 
-        </div>
-        
-        <div class="btn-actions">
-          <a class="btn btn-continue sa" {% if settings.redirect_button == 'go_back' %}href="javascript:void(0)" onclick="window.history.back();"{% elsif settings.redirect_button == 'link_to' %} href="{{ settings.link_to_redirect }}"{% else %}href="javascript:void(0)" id="reload_page1"{% endif %} {% if settings.enable_multilang %}data-translate="cart.ajax_cart.continue_shopping"{% endif %}>
-            {{ 'cart.ajax_cart.continue_shopping' | t }}
-          </a>
-          <a class="btn btn-view-cart" href="{{ routes.cart_url }}" {% if settings.enable_multilang %}data-translate="cart.general.view_cart"{% endif %}>
-            {{ 'cart.general.view_cart' | t }}
-          </a>
-
-          {% if settings.enable_checkbox %}
-            <div class="checkbox-group">
-              <input class="conditions" type="checkbox" name="conditions">
-              <label class="title" for="conditions">
-                {{settings.checkbox_text}}
-              </label>
-              {% if settings.terms_conditions_text_link != blank %}
-                <a data-toggle="modal" data-target="#terms_condition_modal" href="javascript:void(0)" aria-label="link" aria-describedby="a11y-external-message">
-                    {{ settings.terms_conditions_text_link }}
-                </a>
-              {% endif %}
-            </div>
-            <a class="btn btn-checkout show" href="{{ routes.cart_url | split: '/cart' | first }}/checkout" {% if settings.enable_multilang %}data-translate="cart.general.button_checkout"{% endif %}>
-              {{ 'cart.general.button_checkout' | t }}
-            </a> 
-          {% else %}
-             <a class="btn btn-checkout" href="{{ routes.cart_url | split: '/cart' | first }}/checkout" {% if settings.enable_multilang %}data-translate="cart.general.button_checkout"{% endif %}>
-              {{ 'cart.general.button_checkout' | t }}
-            </a> 
-          {% endif %}
-          
-          {% if additional_checkout_buttons %}
-          <div>{{ content_for_additional_checkout_buttons }}</div>
-          {% endif %}
+          <span {% if settings.enable_multilang %}data-translate="cart.ajax_cart.items_in_your_cart"{%endif%}>
+            {{ 'cart.ajax_cart.items_in_your_cart' | t }}
+          </span>
         </div>
 
+        <div class="cart-popup-action">
+
+          {% assign cartDiscounts = 'template ' | split: ' ' %}
+          {% if cart.cart_level_discount_applications.size > 0 %}
+              {% assign cartDiscounts = cart.cart_level_discount_applications %}
+          {% endif %}
+          <div{% if cart.cart_level_discount_applications.size == 0 %} style="display: none"{% endif %} data-cart-discount-wrapper>
+              <div class="order-discount-card-wrapper" data-cart-discount>
+                  {% for discount_application in cartDiscounts limit: 1 %}
+                      <span class="order-discount order-discount--title order-discount--cart">
+                          <svg class="icon icon-saletag" id="icon-saletag">
+                              <path d="M10 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-3H7a1 1 0 0 0-.71.29l-6 6a1 1 0 0 0 0 1.42l4 4a1 1 0 0 0 1.42 0c.19-.2 5.8-5.81 6-6A1 1 0 0 0 12 5V2a2 2 0 0 0-2-2z" fill="#231F20"></path>
+                          </svg>
+                          <span data-cart-discount-title>{{- discount_application.title -}}</span>
+                      </span>
+                      <span class="order-discount order-discount--cart order-discount--cart-total">
+                          -<span data-cart-discount-amount>{{ discount_application.total_allocated_amount | money }}</span>
+                      </span>
+                  {% endfor %}
+              </div>
+          </div>
+
+          <div class="total">
+            <span class="label">
+              <span {% if settings.enable_multilang %}data-translate="cart.label.total"{% endif %}>
+                {{ 'cart.label.total' | t }}:
+              </span>
+            </span>
+            <span class="price">
+              {{ cart.total_price | money }}
+            </span>
+          </div>
+
+          <div class="btn-actions">
+            <a class="btn btn-continue sa" {% if settings.redirect_button == 'go_back' %}href="javascript:void(0)" onclick="window.history.back();"{% elsif settings.redirect_button == 'link_to' %} href="{{ settings.link_to_redirect }}"{% else %}href="javascript:void(0)" id="reload_page1"{% endif %} {% if settings.enable_multilang %}data-translate="cart.ajax_cart.continue_shopping"{% endif %}>
+              {{ 'cart.ajax_cart.continue_shopping' | t }}
+            </a>
+            <a class="btn btn-view-cart" href="{{ routes.cart_url }}" {% if settings.enable_multilang %}data-translate="cart.general.view_cart"{% endif %}>
+              {{ 'cart.general.view_cart' | t }}
+            </a>
+
+            {% if settings.enable_checkbox %}
+              <div class="checkbox-group">
+                <input class="conditions" type="checkbox" name="conditions">
+                <label class="title" for="conditions">
+                  {{settings.checkbox_text}}
+                </label>
+                {% if settings.terms_conditions_text_link != blank %}
+                  <a data-toggle="modal" data-target="#terms_condition_modal" href="javascript:void(0)" aria-label="link" aria-describedby="a11y-external-message">
+                      {{ settings.terms_conditions_text_link }}
+                  </a>
+                {% endif %}
+              </div>
+              <a class="btn btn-checkout show" href="{{ routes.cart_url | split: '/cart' | first }}/checkout" {% if settings.enable_multilang %}data-translate="cart.general.button_checkout"{% endif %}>
+                {{ 'cart.general.button_checkout' | t }}
+              </a>
+            {% else %}
+              <a class="btn btn-checkout" href="{{ routes.cart_url | split: '/cart' | first }}/checkout" {% if settings.enable_multilang %}data-translate="cart.general.button_checkout"{% endif %}>
+                {{ 'cart.general.button_checkout' | t }}
+              </a>
+            {% endif %}
+
+            {% if additional_checkout_buttons %}
+            <div>{{ content_for_additional_checkout_buttons }}</div>
+            {% endif %}
+          </div>
+
+        </div>
       </div>
     </div>
-    
-    <div class="right-col cart_items">
+    <div class="right-col cart_items col-12" style="margin-bottom: 25px;">
       <div class="box-title"{% if settings.enable_multilang %} data-translate="cart.label.your_order"{%endif%}>
-        {{ 'cart.label.your_order' | t }} 
+        {{ 'cart.label.your_order' | t }}
       </div>
       <ul class="cart-list">
         {% for item in cart.items %}
         <li data-product-id="{{ item.variant.id }}" data-key="{{ item.key }}">
-          <div class="details"> 
+          <div class="details">
             <div class="cart-thumb">
               <a class="product-img" href="{{ item.url }}">
                 <img src="{{ item | img_url: '160x' }}"  alt="{{ item.title | escape }}" />
@@ -116,7 +120,7 @@
                 {{ item.vendor }}
               </div>
               {% endif %}
-              <div class="size">  
+              <div class="size">
                 {% if item.product.variants.size != 0 %}
                 {% unless item.variant.title contains 'Default' %}
                 <small>
@@ -144,11 +148,11 @@
                 {% endfor %}
               </div>
               {% endif %}
-              
+
             </div>
           </div>
-          
-          <div class="flex_row">           
+
+          <div class="flex_row">
             <div class="cart-price">
               <div class="price-box">
                 <span>
@@ -171,7 +175,7 @@
                   {{ item.line_price | money }}
                 </span>
               </div>
-            </div>                    
+            </div>
 
             <div class="cart-remove">
               <a href="{{ routes.cart_url }}/change?line={{ forloop.index }}&amp;quantity=0" title="Remove this item" data-id="{{ item.id }}">
@@ -207,7 +211,7 @@
 </script>
 {% endif %}
 <script>
-  var inputWrapper = $('.checkbox-group label');  
+  var inputWrapper = $('.checkbox-group label');
 
     inputWrapper.off('click').on('click', function (e) {
         var inputTrigger= $(this).parent().find('.conditions'),

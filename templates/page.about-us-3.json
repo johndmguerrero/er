@@ -127,7 +127,7 @@
     "1660756081b58c4bb0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\">\n  <h4> Conservation<\/h4>\n<p>Each year, Earth Rangers works with a variety of national, regional and local conservation organizations to identify Canadian species that are facing threats in the wild. We then develop tangible projects to protect those animals, ranging from conservation research, to land acquisition, to habitat stewardship.<br><br>\n\nEarth Rangers Members are encouraged to make a symbolic adoption of one of the animals to help them. Through the program, our members learn about the full breadth and depth of the conservation issue and are given the tools to make a meaningful contribution. To date, Earth Rangers members have raised more than $3 million to help Canadian species at risk!<\/p>\n<a style=\"display: block; margin-top: 30px; font-size: 20px; color: #8CC63E; font-weight: bold; text-decoration: underline; text-transform: uppercase;\">Our Current Projects<\/a>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_64.png?v=1660756151\" width=\"100%\" >\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px; margin-bottom: 40px;\">\n<div class=\"col-md-6\">\n  <h4> Conservation<\/h4>\n<p>Each year, Earth Rangers works with a variety of national, regional and local conservation organizations to identify Canadian species that are facing threats in the wild. We then develop tangible projects to protect those animals, ranging from conservation research, to land acquisition, to habitat stewardship.<br><br>\n\nEarth Rangers Members are encouraged to make a symbolic adoption of one of the animals to help them. Through the program, our members learn about the full breadth and depth of the conservation issue and are given the tools to make a meaningful contribution. To date, Earth Rangers members have raised more than $3 million to help Canadian species at risk!<\/p>\n<a style=\"display: block; margin-top: 30px; font-size: 20px; color: #8CC63E; font-weight: bold; text-decoration: underline; text-transform: uppercase;\">Our Current Projects<\/a>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_64.png?v=1660756151\" width=\"100%\" >\n<\/div>\n<\/div>"
       }
     },
     "1660756668f43e4900": {
@@ -137,7 +137,7 @@
           "type": "image",
           "settings": {
             "dpl_slide_img": true,
-            "image_slide": "shopify:\/\/shop_images\/Rectangle_19_6.png",
+            "image_slide": "shopify:\/\/shop_images\/Rectangle_19_12.png",
             "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",

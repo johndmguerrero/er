@@ -21,21 +21,21 @@
       {% render 'icon_currency', currency_iso: currency_iso %}
       <span class="text">
         {{ cart.currency.iso_code }}
-      </span>      
+      </span>
     </label>
     <div class="dropdown-menu currency-menu" id="currencies">
-     
+
       {%- for currency in shop.enabled_currencies -%}
       <a class="dropdown-item{% if currency == cart.currency %} active {% endif %}" href="#" data-currency="{{currency.iso_code}}">
         {% assign currency_iso = currency.iso_code %}
         {% render 'icon_currency', currency_iso: currency_iso %}
         <span class="text">
           {{currency.iso_code}}
-        </span>       
-      </a>      
+        </span>
+      </a>
       {%- endfor -%}
     </div>
-  </div>       
+  </div>
 </div>
 
 {% else %}
@@ -48,11 +48,11 @@
   <div class="btn-group currency-dropdown">
     <label class="dropdown-toggle dropdown-label" data-currency-label>
       <span class="img-icon">
-        <img data-srcset="{{"i-currency-1.png" | asset_img_url: '23x'}}" alt="{{ settings.currency_1_unit }}" {% render 'lazyload' %} />
+        <img data-srcset="{{"i-currency-1.png" | asset_img_url }}" alt="{{ settings.currency_1_unit }}" {% render 'lazyload' %} />
       </span>
       <span class="text">
         {{ settings.currency_1_unit }}
-      </span>      
+      </span>
     </label>
 
     <div class="dropdown-menu currency-menu" id="currencies">
@@ -71,12 +71,12 @@
         </span>
         <span class="text">
           {{ settings[currency_unit] }}
-        </span>       
+        </span>
       </a>
-      {% endif %}  
+      {% endif %}
       {% endfor %}
     </div>
-  </div>       
+  </div>
 </div>
 	{% endif %}
 {% endif %}

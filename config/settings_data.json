@@ -2074,7 +2074,7 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/Rectangle_19_6.png",
+              "image_slide": "shopify:\/\/shop_images\/Rectangle_19_10.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -2082,7 +2082,7 @@
               "bg_color_box": "#ffffff",
               "color_border_box": "#f5f5f5",
               "heading": "Get Your Earth Ranger Shirt <br>Today For Just $17.99",
-              "font_size_heading": "40px",
+              "font_size_heading": "35px",
               "font_size_heading_mb": "24px",
               "color_heading": "#232323",
               "color_heading_style_4": "#10ffda",
