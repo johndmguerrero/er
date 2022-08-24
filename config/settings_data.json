@@ -81,7 +81,7 @@
     "display_product_detail_share": true,
     "ajax_popup_cart": "upsell",
     "cart_popup_related_title": "YOU MAY ALSO LIKE",
-    "show_shipping_calculator": true,
+    "show_shipping_calculator": false,
     "shipping_calculator_heading": "Get shipping estimates | Holen Versand Schätzungen",
     "shipping_calculator_default_country": "United States",
     "fonts_name_2": "Jost",

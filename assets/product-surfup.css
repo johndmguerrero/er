@@ -252,9 +252,9 @@
     text-transform: uppercase;
     padding: 14px 15px 11px;
     border-radius: 3px;
-    background: var(--background_2);
-    color: var(--color_2);
-    border-color: var(--border_2);
+    background: #000;
+    color: #fff;
+    border-color: #000;
     font-weight: 600;
 }
 

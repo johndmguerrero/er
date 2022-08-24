@@ -1,6 +1,6 @@
 {% if settings.layout_style == 'layout_style_1170' %}
   <header class="page-header">
-    <h1>
+    <h1 style="text-align: center;">
       {{ 'cart.general.title' | t }}
     </h1>
   </header>
@@ -8,7 +8,7 @@
 {% else %}
   {% render 'breadcrumb' %}
   <header class="page-header">
-    <h1>
+    <h1 style="text-align: center;">
       {{ 'cart.general.title' | t }}
     </h1>
   </header>
@@ -31,10 +31,10 @@
 {% if cart.item_count > 0 %}
 <form class="cart-form wrapper-cart-template" action="{{ routes.cart_url }}" method="post" novalidate>
   <div class="left-col cart_items">
-    
+
     <div class="cart-header">
       <div class="cart--title">
-        {{ 'cart.label.product' | t }} 
+        {{ 'cart.label.product' | t }}
       </div>
       <div class="cart--price">
         {{ 'cart.label.price' | t }}
@@ -46,24 +46,24 @@
         {{ 'cart.label.total' | t }}
       </div>
       <div class="cart--remove h-mobile">
-        
+
       </div>
     </div>
-    
+
     <ul class="cart-list">
       {% for item in cart.items %}
       <li class="cart-product-item" data-product_id="{{item.product_id}}" data-item-id="{{item.id}}" data-key="{{ item.key }}">
-        <div class="details">   
+        <div class="details">
           <div class="cart-thumb cart--title">
             <a class="product-img" href="{{ item.url }}">
               <img src="{{ item | img_url: '160x' }}"  alt="{{ item.title | escape }}" />
-            </a> 
+            </a>
             <div class="cart--info">
               <a href="{{ item.url }}" class="product-name">
                 {% render 'multilang' with item.product.title %}
               </a>
-              
-              <div class="size">  
+
+              <div class="size">
                 {% if item.product.variants.size != 0 %}
                 {% unless item.variant.title contains 'Default' %}
                 <small>
@@ -129,7 +129,7 @@
             <span class="price" data-price="{{item.original_price}}">
               {{ item.original_price | times: item.quantity | money }}
             </span>
-            
+
           </div>
           <div class="cart--remove h-mobile">
               <a class="remove" href="{{ routes.cart_url }}/change?line={{ forloop.index }}&amp;quantity=0" data-id="{{ item.id }}">
@@ -148,27 +148,27 @@
           {{ 'cart.general.label_text' | t }}
         </span>
       </label>
-      
+
       <textarea name="note" class="input-full" id="cartSpecialInstructions" placeholder="{{ 'cart.general.note_placeholder' | t }}">{{ cart.note }}</textarea>
     {% endif %}
-    
+
     {% if section.settings.img_trust != blank %}
     <div class="secure-shopping-guarantee">
       <div class="secure-text">
         {% render 'multilang' with section.settings.secure_text %}
       </div>
-      <img src="{{ section.settings.img_trust | img_url: '800x'  }}">      
+      <img src="{{ section.settings.img_trust | img_url: '800x'  }}">
     </div>
     {% endif %}
   </div>
-  
+
   <div class="right-col">
     <div class="cart-header">
       <div class="cart--title summary">
-        {{ 'cart.label.order_summary' | t }} 
+        {{ 'cart.label.order_summary' | t }}
       </div>
     </div>
-    
+
     <div class="groued-info">
       {% assign cartDiscounts = 'template ' | split: ' ' %}
       {% if cart.cart_level_discount_applications.size > 0 %}
@@ -197,7 +197,7 @@
         </span>
         <span class="price">
           {{ cart.total_price | money }}
-        </span> 
+        </span>
       </div>
 
       {% unless cart.item_count == 0 %}
@@ -216,7 +216,7 @@
         </span>
         <span class="price">
           {{ cart.total_price | money }}
-        </span> 
+        </span>
       </div>
       <div class="btn-actions">
         {% if settings.enable_checkbox %}
@@ -241,6 +241,9 @@
         {% if additional_checkout_buttons %}
         <div>{{ content_for_additional_checkout_buttons }}</div>
         {% endif %}
+        <div class="donation-box">
+          {% render 'donation' %}
+        </div>
       </div>
     </div>
   </div>
