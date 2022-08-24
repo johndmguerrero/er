@@ -1600,6 +1600,13 @@
       "footer-9": {
         "type": "footer-9",
         "blocks": {
+          "d1026982-26e5-4af6-9398-7d9551eeb9eb": {
+            "type": "footer_text_content",
+            "settings": {
+              "custom_footer_title": "About Earth Rangers",
+              "custom_footer_liquid": "Earth Rangers is the kids’ conservation organization, dedicated to educating children and their families about biodiversity, inspiring them to adopt sustainable behaviours, and empowering them to become directly involved in protecting animals and their habitats.\n<br><br>\nEarth Rangers is a registered Canadian charity (#8922 00528 RR0001)."
+            }
+          },
           "59860b83-08c5-4b12-8bcc-7e090a864f43": {
             "type": "footer_link",
             "settings": {
@@ -1634,6 +1641,7 @@
           }
         },
         "block_order": [
+          "d1026982-26e5-4af6-9398-7d9551eeb9eb",
           "59860b83-08c5-4b12-8bcc-7e090a864f43",
           "fc1fa83c-fd76-4143-9803-744064c02322",
           "cb06cbdc-e8c1-4dcf-8f4a-7e4828b97a35",

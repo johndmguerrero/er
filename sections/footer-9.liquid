@@ -17,7 +17,7 @@
                     {% render 'multilang' with section.settings.des_newslette %}
                 </p>
                 {% endif %}
-                
+
                 {% render 'homepage-block-newsletter' %}
             </div>
             {% endif %}
@@ -47,9 +47,9 @@
                         {% render 'multilang' with block.settings.footer_title %}
                     </h3>
                     {% endif %}
-                    
+
                     {%- assign footer_linklist = block.settings.footer_linklist -%}
-                    
+
                     {% if linklists[footer_linklist].links.size > 0 %}
                     <ul>
                         {% for link in linklists[footer_linklist].links %}
@@ -68,7 +68,7 @@
                     {% if block.settings.footer_logo != blank %}
                     <h3 class="foot-title">
                         <a href="/" class="logo-ft">
-                            <img data-src="{{ block.settings.footer_logo | img_url:'master' }}" {% render 'lazyload' %}>            
+                            <img data-src="{{ block.settings.footer_logo | img_url:'master' }}" {% render 'lazyload' %}>
                         </a>
                     </h3>
                     {% endif %}
@@ -88,7 +88,7 @@
                                 </div>
                             </li>
                             {% endif %}
-                            
+
                             {% if block.settings.info_text_2 != blank %}
                             <li class="text">
                                 {% if block.settings.info_icon_2 != blank %}
@@ -115,21 +115,30 @@
                                     {% render 'multilang' with block.settings.info_text_3 %}
                                 </div>
                             </li>
-                            {% endif %}                       
+                            {% endif %}
                         </ul>
                     </div>
                     {% if section.settings.footer_social_enable %}
-                        {% render 'social-media' %} 
+                        {% render 'social-media' %}
                     {% endif %}
                     {% if block.settings.guarantee_img != blank %}
                     <a href="javascript:void(0)" class="guarantee-img">
-                        <img data-src="{{ block.settings.guarantee_img | img_url:'master' }}" {% render 'lazyload' %}>            
+                        <img data-src="{{ block.settings.guarantee_img | img_url:'master' }}" {% render 'lazyload' %}>
                     </a>
-                    {% endif %} 
+                    {% endif %}
+                </div>
+                {% elsif block.type == 'footer_text_content' %}
+                <div class="col-footer {{ column_size }}">
+                    {% if block.settings.custom_footer_title != blank %}
+                        <h3 class="foot-title dropdow-mb">
+                            {% render 'multilang' with block.settings.custom_footer_title %}
+                        </h3>
+                    {% endif %}
+                    {{ block.settings.custom_footer_liquid }}
                 </div>
                 {% endif %}
 
-                {% endfor %} 
+                {% endfor %}
             </div>
             {% endif %}
 
@@ -143,7 +152,7 @@
                             <img data-src="{{ section.settings.img_1 | img_url: 'x37' }}" {% render 'lazyload' %}>
                         </a>
                         {% endif %}
-                        
+
                         {% if section.settings.img_2 != blank %}
                         <a href="javascript:void(0)">
                             <img data-src="{{ section.settings.img_2 | img_url: 'x37' }}" {% render 'lazyload' %}>
@@ -186,7 +195,7 @@
                     {% assign payment_string = 'visa,visa_electron,master,maestro,american_express,solo,amazon_payments,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,paypal,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,stripe,sage,wallet,western' %}
                     {% assign methods = payment_string | split: ',' %}
 
-                    <ul class="payment-methods">	
+                    <ul class="payment-methods">
                         {% for method in methods %}
                         {%- assign display_current_method = method | prepend: 'payment_display_' -%}
                         {% if section.settings[display_current_method] %}
@@ -200,7 +209,7 @@
                 </div>
                 {% endif %}
             </div>
-       
+
         </div>
     </div>
     {% endif %}
@@ -211,7 +220,7 @@
     {
         "name": "Footer 09",
         "max_blocks": 9,
-        "blocks": [	  
+        "blocks": [
             {
                 "type": "footer_link",
                 "name": "Footer Link",
@@ -226,7 +235,23 @@
                         "id": "footer_linklist",
                         "label": "Footer Link",
                         "default": "footer"
-                    }		  
+                    }
+                ]
+            },
+            {
+                "type": "footer_text_content",
+                "name": "Custom Footer Content",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "custom_footer_title",
+                        "label": "Custom Footer Title"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "custom_footer_liquid",
+                        "label": "Custom Footer Content"
+                    }
                 ]
             },
             {
@@ -270,7 +295,7 @@
                         "type" : "textarea",
                         "id" : "info_text_3",
                         "label" : "Text 3"
-                    }	  
+                    }
                 ]
             }
         ],
@@ -284,7 +309,7 @@
                 "id": "footer_border_top",
                 "label": "Display Border Top?",
                 "default": false
-            }, 
+            },
             {
                 "type": "radio",
                 "id": "bg_footer_img",
@@ -386,7 +411,7 @@
                 "type": "image_picker",
                 "id": "bg-footer-img",
                 "label": "Upload a new image"
-            },      
+            },
             {
                 "type": "header",
                 "content": "Text Color"
@@ -396,7 +421,7 @@
                 "id": "footer_title_color",
                 "label": "Footer Title",
                 "default": "#141414"
-            },	  
+            },
             {
                 "type": "color",
                 "id": "footer_link_color",
@@ -434,7 +459,7 @@
                 "type": "textarea",
                 "id": "des_newslette",
                 "label": "Footer Newsletter Descriptions"
-            },  
+            },
             {
                 "type": "color",
                 "id": "bg_newsletter_color",
@@ -464,7 +489,7 @@
                 "id": "newsletter_button_color",
                 "label": "Newsletter Button Color",
                 "default": "#fff"
-            },  
+            },
             {
                 "type": "header",
                 "content": "Social"
@@ -480,13 +505,13 @@
                 "id": "footer_social_color",
                 "label": "Social Icon Color",
                 "default": "#fff"
-            }, 
+            },
             {
                 "type": "color",
                 "id": "footer_social_bg",
                 "label": "Social Icon Background",
                 "default": "#4b4b4b"
-            }, 
+            },
             {
                 "type" : "header",
                 "content" : "Typography Label"
@@ -506,7 +531,7 @@
                 "type": "image_picker",
                 "id": "img_2",
                 "label": "Image 2"
-            },                                 
+            },
             {
                 "type": "header",
                 "content": "Footer Address"
@@ -527,7 +552,7 @@
                 "type": "textarea",
                 "id": "footer_address_code",
                 "label": "Footer Address Code"
-            },           
+            },
             {
                 "type": "header",
                 "content": "Footer Payment"
@@ -687,7 +712,7 @@
                 "id": "icon_maestro",
                 "label": "Maestro image"
             },
-            
+
             {
                 "type": "image_picker",
                 "id": "icon_solo",
@@ -783,6 +808,6 @@
               "id": "icon_western",
               "label": "Western Union image"
             }
-        ]	
+        ]
     }
 {% endschema %}
