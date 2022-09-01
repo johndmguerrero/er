@@ -247,7 +247,7 @@
           "type": "block",
           "settings": {
             "icon_type": "image",
-            "image": "shopify:\/\/shop_images\/Polygon_1.png",
+            "image": "shopify:\/\/shop_images\/Free_Shipping_1.png",
             "text_icon": "Free Shipping over $90",
             "content": "<p>Free Shipping over $90<\/p>",
             "description": "",
@@ -261,7 +261,7 @@
           "type": "block",
           "settings": {
             "icon_type": "image",
-            "image": "shopify:\/\/shop_images\/Polygon_1_1.png",
+            "image": "shopify:\/\/shop_images\/Easy_Return___Exchange_1.png",
             "text_icon": "Easy Returns & Exchanges",
             "content": "<p>Easy Returns & Exchanges<\/p>",
             "description": "",
@@ -275,7 +275,7 @@
           "type": "block",
           "settings": {
             "icon_type": "image",
-            "image": "shopify:\/\/shop_images\/Polygon_1_2.png",
+            "image": "shopify:\/\/shop_images\/Ships_Internationally_1.png",
             "text_icon": "Ships Internationally",
             "content": "<p>Ships Internationally<\/p>",
             "description": "",

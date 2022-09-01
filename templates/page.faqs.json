@@ -7,35 +7,36 @@
         "1ecf4d3c-1dfd-45d7-88d2-ec0a35229b03": {
           "type": "text",
           "settings": {
-            "question_faqs_1": "Will your template be fully compatible with Shopify?",
-            "answer_faqs_1": "Yes it is.",
-            "question_faqs_2": "I cannot upload the theme to my Shopify store \/ Shopify alerts that the file is too big to upload, what is the problem?",
-            "answer_faqs_2": "<p>Please make sure that you follow below steps:<\/p>\n\n<p>1\/ Download the package from themeforest.net (The file is in zip format)\n<br>\n<br>\n2\/ Extract the file you've just downloaded (Don't forget this step).\n<br>\n<br>\n3\/ Find this file: <strong>ella-x.x.x-sections-ready.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready.zip<\/strong> file to your Shopify store.\n<br>\n<br>\n- If you would like to use Ella RTL version. Please find this file: <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> in the folder <strong>Ella Sections Ready x.x.x RTL<\/strong>, then you just need to upload <strong>ella-x.x.x-sections-ready-rtl.zip<\/strong> file to your Shopify store\n<br>\n<br>\n- If you want to install <strong>child theme<\/strong>, please go to the corresponding theme folder\n<\/p>",
-            "question_faqs_3": "What I have to do when I need your support?",
-            "answer_faqs_3": "<p>To save your time and reach our support quickly, please follow below steps:\n<\/p><p>1\/ Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><\/p>\n<p>2\/ Capture screenshot or video for the issue you get.<\/p>\n<p>3\/ Specify which template and version you are using.<\/p>\n<p>4\/ Describe clearly how to reproduce the issue.<\/p>\n<p>5\/ Send all information (staff account, screenshot, video, template name and version, description of the issues, link) to <a href=\"mailto:email@domain.com\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">email@domain.com<\/a><\/p>\n<p><\/p>",
-            "question_faqs_4": "I purchased Ella theme but cannot find the Skin layout?",
-            "answer_faqs_4": "<p>Please help us to follow this instruction to import Skin\/ Homepage layout you want: <a href=\"http:\/\/themes.halothemes.com\/marketplace\/shopify-ella-documentation\/Read_me.html#!\/settings_data\" target=\"_blank\" style=\"color: #e66f65;\" rel=\"noopener noreferrer\">http:\/\/themes.halothemes.com\/marketplace\/shopify-ella-documentation\/Read_me.html#!\/settings_data<\/a><\/p>",
-            "question_faqs_5": "Do you guys offer customisation services for your themes?",
-            "answer_faqs_5": "Yes, we do. Please send your customisation requests to email@domain.com, we will give you our quote. Thank you."
+            "question_faqs_1": "What is the cost for shipping?",
+            "answer_faqs_1": "Free shipping is available for any order with an order value over $60 and a shipping address located within Canada. Please see below for shipping options for orders being sent to the USA and other International locations.",
+            "question_faqs_2": "What are my options for shipping within Canada?",
+            "answer_faqs_2": "We use Canada Post to ship within Canada,<a href=\"https:\/\/www.canadapost.ca\/web\/en\/pages\/parcelscon\/default.page\"> click here <\/a>for the details.\nFor holiday shipping deadlines, <a href=\"https:\/\/www.canadapost.ca\/web\/en\/kb\/details.page?article=send_your_cards_and_&cattype=kb&cat=sending&subcat=generalinformation&ecid=murl%7Cpdn%7Csmc%7C673\">click here.<\/a>",
+            "question_faqs_3": "Do you ship outside of Canada?",
+            "answer_faqs_3": "Yes, you can select to ship to locations outside of Canada via Canada Post. Please allow additional time for shipping to locations outside of Canada.",
+            "question_faqs_4": "I want to ship my order to a rural address in Canada and I’m concerned that it may not be delivered. What are my options?",
+            "answer_faqs_4": "In order to ensure delivery of your order please confirm your full mailing address with correct postal code using the search option available on the <a href=\"http:\/\/www.canadapost.ca\/cpo\/mc\/default.jsf?LOCALE=en\">Canada Post<\/a> website.",
+            "question_faqs_5": "I entered the wrong address when I completed the shipping information, what should I do?",
+            "answer_faqs_5": "If you realize that you entered an incorrect shipping address for your order, respond to the confirmation email you received when you processed your order. Responding immediately is imperative as orders are being sent out on a daily basis. If Earth Rangers is not notified of the mistake before the item is shipped Earth Rangers will not refund or replace the order or pay for re-shipping."
           }
         },
         "44484dfc-4fe0-49ce-8ce4-8249083fb097": {
           "type": "text",
           "settings": {
-            "question_faqs_1": "Does the theme support image resizing and cropping?",
-            "answer_faqs_1": "Yes. Normally, the theme will resize images to a default size (based on your width\/height ratio setting). We also have Crop setting if you don’t want to scale the image.",
-            "question_faqs_2": "Can I add borders around our product images?",
-            "answer_faqs_2": "Yes, you can. You can also set image border colours.",
-            "question_faqs_3": "Can I have multi level menu?",
-            "answer_faqs_3": "Yes, you can. Just simply follow the instructions in our Manual Guide, you will be able to easily create a multi-level menu.",
-            "question_faqs_4": "Do you guys provide customer support during weekends \/ holidays?",
-            "answer_faqs_4": "Normally we don't provide support during weekends, except for urgent cases. In these cases, you only need to mark “Urgent” in your email, we will get back to you ASAP.",
-            "question_faqs_5": "Does the theme support Variant Image?",
-            "answer_faqs_5": "Yes, it does. Please check it out here to see how it works: <a href=\"https:\/\/new-ella.myshopify.com\/products\/dinterdum-pretium-condimento?variant=16867481452642\">https:\/\/new-ella.myshopify.com\/products\/dinterdum-pretium-condimento?variant=16867481452642<\/a>"
+            "question_faqs_1": "What is the cost for shipping?",
+            "answer_faqs_1": "The cost for shipping depends on the service you chose and where the order is being shipped to. The cost of shipping will be calculated for you upon check out.",
+            "question_faqs_2": "Can I pick up my order to avoid shipping costs?",
+            "answer_faqs_2": "Unfortunately Earth Rangers is not set up to have orders picked up from our offices.",
+            "question_faqs_3": "Can I track my delivery?",
+            "answer_faqs_3": "Yes, you can track your delivery through Canada Post. You will need the tracking number that was emailed to you after you placed your order.",
+            "question_faqs_4": "",
+            "answer_faqs_4": "",
+            "question_faqs_5": "",
+            "answer_faqs_5": ""
           }
         },
         "f81bf414-6295-400b-984a-35e56a9923e9": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "question_faqs_1": "Can I turn on\/off Item Animation \/ Effect if item on theme?",
             "answer_faqs_1": "Yes, we do. Please send your customisation requests to email@domain.com, we will give you our quote. Thank you.",
@@ -51,6 +52,7 @@
         },
         "383fe220-c5af-4539-ac0a-6fec317a0590": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "question_faqs_1": "I notice that the images used in the theme are all portrait. Will that be a problem if I use square images for our products? How will they be displayed in the theme?",
             "answer_faqs_1": "That is not a problem. You just need to modify the width\/height ratio in theme settings.",
@@ -76,7 +78,7 @@
         "contact_text": "Unable to find satisfactory answers ?",
         "contact_link_text": "Contact Support",
         "contact_link": "",
-        "icon_faqs": "Q.",
+        "icon_faqs": "Q",
         "bg_icon_qs": "#e6f7fd",
         "color_icon_qs": "#00adef",
         "bg_question": "#e6f7fd",
@@ -84,7 +86,7 @@
         "font_size_qs": "16",
         "bg_question_acitve": "#e6f7fd",
         "color_question_acitve": "#000000",
-        "icon_answer": "A.",
+        "icon_answer": "A",
         "bg_icon_answer": "#ffffff",
         "color_icon_answer": "#8cc63e",
         "color_question_answer": "#3c3c3c",

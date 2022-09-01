@@ -79,7 +79,7 @@
     "title_view_qv": "customers are viewing this product",
     "number_view_qv": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
     "display_product_detail_share": true,
-    "ajax_popup_cart": "upsell",
+    "ajax_popup_cart": "none",
     "cart_popup_related_title": "YOU MAY ALSO LIKE",
     "show_shipping_calculator": false,
     "shipping_calculator_heading": "Get shipping estimates | Holen Versand Schätzungen",
@@ -2282,7 +2282,7 @@
             "type": "block",
             "settings": {
               "icon_type": "image",
-              "image": "shopify:\/\/shop_images\/Polygon_1.png",
+              "image": "shopify:\/\/shop_images\/Free_Shipping_1.png",
               "text_icon": "",
               "content": "<p>Free Shipping over $90<\/p>",
               "description": "",
@@ -2296,7 +2296,7 @@
             "type": "block",
             "settings": {
               "icon_type": "image",
-              "image": "shopify:\/\/shop_images\/Polygon_1_1.png",
+              "image": "shopify:\/\/shop_images\/Easy_Return___Exchange_1.png",
               "text_icon": "",
               "content": "<p>Easy Returns & Exchanges<\/p>",
               "description": "",
@@ -2310,7 +2310,7 @@
             "type": "block",
             "settings": {
               "icon_type": "image",
-              "image": "shopify:\/\/shop_images\/Polygon_1_2.png",
+              "image": "shopify:\/\/shop_images\/Ships_Internationally_1.png",
               "text_icon": "",
               "content": "<p>Ships Internationally<\/p>",
               "description": "",

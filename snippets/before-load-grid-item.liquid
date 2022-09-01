@@ -50,7 +50,7 @@
           {% endif %}
         {% endif %}
       </div>
-     
+
       <div class="wrapper-size">
         {% if settings.display_product_reviews %}
           <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
@@ -71,7 +71,7 @@
         <a href="{{ product.url | within: collection }}" class="animation-load-image product-grid-image adaptive_height" data-collections-related="{{ routes.collections_url }}/{{collection.handle}}?view=related" {% unless settings.product_image_resize %}style="padding-top: {{ 1 | divided_by: product.featured_image.aspect_ratio | times: 100 }}%"{% endunless %}>
           <!-- <img data-srcset="" class="lazyloading" alt="{{product.featured_image.alt | default: product.title}}" /> -->
         </a>
-      </div> 
+      </div>
     </div>
     <div class="product-bottom">
       <div class="wrapper-compare">
@@ -81,6 +81,7 @@
           </div>
         {% endif %}
       </div>
+      <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
       <a class="product-title {% if select != blank %}change-text{% endif %}" href="{{ product.url | within: collection }}">
         {% render 'multilang' with product.title %}
       </a>

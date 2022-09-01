@@ -189,7 +189,7 @@
               {% endfor %}
           </div>
       </div>
-      <div class="total">
+      <div class="total" style="display: none;">
         <span class="label">
           <span>
             {{ 'cart.label.sub_total' | t }}:
@@ -219,6 +219,9 @@
         </span>
       </div>
       <div class="btn-actions">
+        <a class="btn btn-continue" {% if settings.redirect_button == 'go_back' %}href="javascript:void(0)" onclick="window.history.back();"{% elsif settings.redirect_button == 'link_to' %} href="{{ settings.link_to_redirect }}"{% else %}href="javascript:void(0)" id="reload_page"{% endif %}>
+          {{ 'cart.ajax_cart.continue_shopping' | t }}
+        </a>
         {% if settings.enable_checkbox %}
           <div class="checkbox-group">
             <input class="conditions" type="checkbox" name="conditions">
@@ -235,9 +238,6 @@
         {% else %}
           <input class="btn btn-checkout" type="submit"  name="checkout" value="{{ 'cart.general.button_checkout' | t }}">
         {% endif %}
-        <a class="btn btn-continue" {% if settings.redirect_button == 'go_back' %}href="javascript:void(0)" onclick="window.history.back();"{% elsif settings.redirect_button == 'link_to' %} href="{{ settings.link_to_redirect }}"{% else %}href="javascript:void(0)" id="reload_page"{% endif %}>
-          {{ 'cart.ajax_cart.continue_shopping' | t }}
-        </a>
         {% if additional_checkout_buttons %}
         <div>{{ content_for_additional_checkout_buttons }}</div>
         {% endif %}
@@ -250,6 +250,25 @@
   <input type="hidden" id="invoice_language" name="attributes[lang]" value="{{ routes.cart_url | split: 'cart' | first | remove: '/'}}">
 </form>
 {% endif %}
+
+<style>
+  .donation_button{
+    margin: 0;
+    height: auto;
+  }
+  .btn-continue{
+    border: #8cc63e 1px solid !important;
+    color: #8cc63e !important;
+    background-color: #fff !important;
+  }
+  .fontpreview{
+    box-shadow: none;
+  }
+  .price-slider{
+    padding: 0px !important;
+  }
+
+</style>
 
 <div class="no-item-cart" {% if cart.item_count > 0 %}style="display: none"{% endif %}>
   <p class="alert alert-warning">

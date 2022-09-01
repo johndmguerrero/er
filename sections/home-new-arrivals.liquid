@@ -15,9 +15,9 @@
 <div class="new-arrivals-product" id="new-arrivals-{{section.id}}" data-new-arrivals-product {% if section.settings.product_list_collection != blank %}data-loader-product data-collection="{{section.settings.product_list_collection}}" data-limit="{{ section.settings.product_list_limit_all }}" data-grid="{{ section.settings.collection_results_per_row1 }}" data-layout="" sectionId="{{section.id}}"{% endif %}>
     <div class="{% if section.settings.layout == 'default' %}container{% elsif section.settings.layout == 'padd_60' %}container-padd60{% else %}container-fluid{% endif %}">
         {% if section.settings.new_arrivals_title != blank %}
-        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before {% elsif section.settings.title_style == 'style_3' %} style_3{% endif %}">   
+        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before {% elsif section.settings.title_style == 'style_3' %} style_3{% endif %}">
             <h3 class="box-title">
-                <span class="title"> 
+                <span class="title">
                 {% render 'multilang' with section.settings.new_arrivals_title %}
                 </span>
             </h3>
@@ -26,7 +26,7 @@
                 <a class="view_all" href="{{ section.settings.link_view_all }}" title="{{section.settings.view_all}}">
                     {% render 'multilang' with section.settings.view_all %}
                 </a>
-                {% endif %}  
+                {% endif %}
             {% else %}
                 {% if section.settings.new_arrivals_des != blank %}
                 <p>
@@ -36,29 +36,29 @@
                     <a class="view_all" href="{{ section.settings.link_view_all }}" title="{{section.settings.view_all}}">
                         {% render 'multilang' with section.settings.view_all %}
                     </a>
-                    {% endif %}  
+                    {% endif %}
 
-                </p>        
+                </p>
                 {% endif %}
             {% endif %}
         </div>
         {% endif %}
-        
+
         <div class="widget-product">
-            <div class="products-grid row column-{{section.settings.collection_results_per_row1}}" data-products-to-show="{{ section.settings.product_list_limit_all | plus:0 }}">        
+            <div class="products-grid row column-{{section.settings.collection_results_per_row1}}" data-products-to-show="{{ section.settings.product_list_limit_all | plus:0 }}">
                 {% assign product_limitation = 0 %}
                 {% if section.settings.display_infinite_scrolling_homepage %}
                 {% assign product_limitation = section.settings.product_list_limit_all | plus: 0 %}
                 {% endif %}
-                
+
                 {% for product in collections[section.settings.product_list_collection].products limit:section.settings.product_list_limit_all %}
-            
+
                 <div class="grid-item {{ grid_item_width }}{% if settings.product_image_border %} grid-item-border{% endif %} ">
                     {% render 'before-load-grid-item', product: product %}
                 </div>
-            
+
                 {% else %}
-                
+
                 {% for product in (1..section.settings.product_list_limit_all) %}
                 <div class="grid-item {{ grid_item_width }}">
                 <div class="grid-view-item no-product">
@@ -67,14 +67,14 @@
                         Product Img
                     </div>
                     </div>
-                    
+
                     <div class="product-bottom">
                     <div class="product-title">
                         <span>
                         Your product's name
                         </span>
                     </div>
-                    
+
                     <div class="price-box">
                         <span> $250.00 </span>
                     </div>
@@ -84,9 +84,9 @@
                 {% endfor %}
                 {% endfor %}
             </div>
-            
-            {% if section.settings.display_infinite_scrolling_homepage and collections[section.settings.product_list_collection].handle != '' %}      
-            {% assign collection = collections[section.settings.product_list_collection] %} 
+
+            {% if section.settings.display_infinite_scrolling_homepage and collections[section.settings.product_list_collection].handle != '' %}
+            {% assign collection = collections[section.settings.product_list_collection] %}
             {%- assign product_limit = product_limit | default: section.settings.product_list_limit_all -%}
             {% if collections[section.settings.product_list_collection].all_products_count > product_limit %}
             <div class="infinite-scrolling-homepage">
@@ -101,7 +101,7 @@
 </div>
 
 <style>
-    {% assign margin_bottom =  section.settings.margin_bottom %} 
+    {% assign margin_bottom =  section.settings.margin_bottom %}
     @media (max-width: 767px) {
         #new-arrivals-{{ section.id }} {
             margin-bottom: {{ section.settings.margin_bottom_mb }}px;
@@ -118,7 +118,7 @@
         #new-arrivals-{{ section.id }} {
             margin-bottom: {{ margin_bottom }}px;
         }
-    }   
+    }
 </style>
 
 {% schema %}
@@ -169,16 +169,16 @@
                 "options": [
                     {
                         "value": "style_1",
-                        "label": "Style 1" 
+                        "label": "Style 1"
                     },
-                    { 
+                    {
                         "value": "style_2",
-                        "label": "Style 2" 
+                        "label": "Style 2"
                     },
-                    { 
+                    {
                         "value": "style_3",
-                        "label": "Style 3" 
-                    }          
+                        "label": "Style 3"
+                    }
                 ],
                 "default": "style_1"
             },
@@ -269,7 +269,7 @@
                 "max": 100,
                 "step": 1,
                 "default": 40
-            },             
+            },
             {
                 "type": "range",
                 "id": "margin_bottom",
@@ -278,12 +278,12 @@
                 "max": 100,
                 "step": 1,
                 "default": 50
-            }	  	  
+            }
         ],
         "presets": [
             {
                 "name": "New Arrival Products 01",
-                "category": "Collection"     
+                "category": "Collection"
             }
         ]
     }
