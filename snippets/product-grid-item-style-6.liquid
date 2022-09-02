@@ -78,16 +78,15 @@
             </div>
             {% endif %}
           </div>
-
+          {% if settings.display_product_reviews %}
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+          {% endif %}
           <a class="product-title {% if settings.product_variant_name %}{% if select != blank %}change-text{% endif %}{% endif %}" href="{{ product.url | within: collection }}">
             {% render 'multilang' with product.title %}
             {% if settings.product_variant_name %}
               {% if select != blank %}<span data-change-title> {% unless settings.layout_style == 'layout_style_surfup' %}<span class="line">-</span>{% endunless %} {{ select }}</span>{% endif %}
             {% endif %}
           </a>
-          {% if settings.display_product_reviews %}
-            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-          {% endif %}
           <div class="price-box">
             {% if on_sale %}
             <div class="price-sale">

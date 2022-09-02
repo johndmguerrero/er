@@ -115,19 +115,19 @@
     "16607557946a797223": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\">\n  <h4> Our Vision<\/h4>\n<p>Picture every person you know working to protect biodiversity. Picture all of these people acknowledging the impacts of their small, daily actions. Picture our planet thriving because a new generation of leaders is mindful about its health. At Earth Rangers we imagine this every day. We believe children can make it a reality.<\/p>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4_1.png?v=1660755943\" width=\"100%\" >\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\" style=\"padding-right: 30px;\">\n  <h4> Our Vision<\/h4>\n<p>Picture every person you know working to protect biodiversity. Picture all of these people acknowledging the impacts of their small, daily actions. Picture our planet thriving because a new generation of leaders is mindful about its health. At Earth Rangers we imagine this every day. We believe children can make it a reality.<\/p>\n <\/div>\n<div class=\"col-md-6\" style=\"padding-left: 30px;\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4_1.png?v=1660755943\" width=\"100%\" >\n<\/div>\n<\/div>"
       }
     },
     "16607559868946218d": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_63.png?v=1660756112\" width=\"100%\" >\n<\/div>\n<div class=\"col-md-6\">\n  <h4> Our Mission<\/h4>\n<p>When it comes to media reports about our natural world, headlines today are dominated by tales of doom and gloom.  Increasing pollution in our air and waterways, diminishing biodiversity the world over, and the ever-present threat of climate change all conspire to create images of a bleak future that can at times seem inevitable.  These are the reports our children have been faced with all their lives – but we have yet to meet even one that responds with despair.<br><br>\n\nThat’s because there’s an even stronger environmental narrative emerging from Canada’s youth today; one of realistic optimism.  The next generation is a hopeful generation, and one who is ready to roll up their sleeves and do what it takes to make a better future their reality.<br><br>\n\nEarth Rangers is the kids’ conservation organization, committed to instilling environmental knowledge, positivity, and the confidence to take action in every child in Canada. We do this through a variety of free programming that children can participate in at school, at home, and in their communities. All of these programs are educational and engaging – but more importantly, they show children that it’s not too late to help the planet, and the things we do today will matter tomorrow.<\/p>\n <\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px;\">\n<div class=\"col-md-6\"style=\"padding-right: 30px;\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_63.png?v=1660756112\" width=\"100%\" >\n<\/div>\n<div class=\"col-md-6\"style=\"padding-left: 30px;\">\n  <h4> Our Mission<\/h4>\n<p>When it comes to media reports about our natural world, headlines today are dominated by tales of doom and gloom.  Increasing pollution in our air and waterways, diminishing biodiversity the world over, and the ever-present threat of climate change all conspire to create images of a bleak future that can at times seem inevitable.  These are the reports our children have been faced with all their lives – but we have yet to meet even one that responds with despair.<br><br>\n\nThat’s because there’s an even stronger environmental narrative emerging from Canada’s youth today; one of realistic optimism.  The next generation is a hopeful generation, and one who is ready to roll up their sleeves and do what it takes to make a better future their reality.<br><br>\n\nEarth Rangers is the kids’ conservation organization, committed to instilling environmental knowledge, positivity, and the confidence to take action in every child in Canada. We do this through a variety of free programming that children can participate in at school, at home, and in their communities. All of these programs are educational and engaging – but more importantly, they show children that it’s not too late to help the planet, and the things we do today will matter tomorrow.<\/p>\n <\/div>\n<\/div>"
       }
     },
     "1660756081b58c4bb0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px; margin-bottom: 40px;\">\n<div class=\"col-md-6\">\n  <h4> Conservation<\/h4>\n<p>Each year, Earth Rangers works with a variety of national, regional and local conservation organizations to identify Canadian species that are facing threats in the wild. We then develop tangible projects to protect those animals, ranging from conservation research, to land acquisition, to habitat stewardship.<br><br>\n\nEarth Rangers Members are encouraged to make a symbolic adoption of one of the animals to help them. Through the program, our members learn about the full breadth and depth of the conservation issue and are given the tools to make a meaningful contribution. To date, Earth Rangers members have raised more than $3 million to help Canadian species at risk!<\/p>\n<a style=\"display: block; margin-top: 30px; font-size: 20px; color: #8CC63E; font-weight: bold; text-decoration: underline; text-transform: uppercase;\">Our Current Projects<\/a>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_64.png?v=1660756151\" width=\"100%\" >\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px; margin-bottom: 40px;\">\n<div class=\"col-md-6\" style=\"padding-right: 30px;\">\n  <h4> Conservation<\/h4>\n<p>Each year, Earth Rangers works with a variety of national, regional and local conservation organizations to identify Canadian species that are facing threats in the wild. We then develop tangible projects to protect those animals, ranging from conservation research, to land acquisition, to habitat stewardship.<br><br>\n\nEarth Rangers Members are encouraged to make a symbolic adoption of one of the animals to help them. Through the program, our members learn about the full breadth and depth of the conservation issue and are given the tools to make a meaningful contribution. To date, Earth Rangers members have raised more than $3 million to help Canadian species at risk!<\/p>\n<a style=\"display: block; margin-top: 30px; font-size: 20px; color: #8CC63E; font-weight: bold; text-decoration: underline; text-transform: uppercase;\">Our Current Projects<\/a>\n <\/div>\n<div class=\"col-md-6\" style=\"padding-left: 30px;\"> \n<img style=\"margin-bottom: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_64.png?v=1660756151\" width=\"100%\" >\n<\/div>\n<\/div>"
       }
     },
     "1660756668f43e4900": {
@@ -144,7 +144,7 @@
             "text_alignment": "left",
             "bg_color_box": "#ffffff",
             "color_border_box": "#bcbcbc",
-            "heading": "Shop and Show Your <br> Support",
+            "heading": "Shop and Show Your  Support",
             "font_size_heading": "40px",
             "font_size_heading_mb": "24px",
             "color_heading": "#232323",
@@ -156,11 +156,11 @@
             "color_sub_heading": "#ffffff",
             "color_sub_heading_mb": "#ffffff",
             "slide-des": "Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo lacus meleifend menean diverra loremous.",
-            "font_size_des": "18px",
+            "font_size_des": "14x",
             "font_size_des_mb": "12px",
             "color_des": "#232323",
             "color_des_mb": "#ffffff",
-            "button_slide": "Shop The Collection",
+            "button_slide": "<span style=\"font-size: 25px;\">Shop The Collection<\/span>",
             "link": "",
             "button_slide_2": "",
             "link_2": "",

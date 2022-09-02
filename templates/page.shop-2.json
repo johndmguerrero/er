@@ -20,7 +20,7 @@
             "text_alignment": "left",
             "bg_color_box": "#ffffff",
             "color_border_box": "#bcbcbc",
-            "heading": "New Earth Ranger <br> Youth T-shirts For Your Kids",
+            "heading": "New Earth Ranger <br>Youth T-shirts For Your Kids",
             "font_size_heading": "40px",
             "font_size_heading_mb": "24px",
             "color_heading": "#000000",
@@ -32,11 +32,11 @@
             "color_sub_heading": "#ffffff",
             "color_sub_heading_mb": "#ffffff",
             "slide-des": "You and your kids can influence others to protect animals. \nGet your ‘I am an Earth Ranger’ t-shirt today.",
-            "font_size_des": "16px",
+            "font_size_des": "25px",
             "font_size_des_mb": "12px",
             "color_des": "#000000",
             "color_des_mb": "#ffffff",
-            "button_slide": "Buy one today",
+            "button_slide": "<span style=\"font-size: 25px;\">Buy one today<\/span>",
             "link": "",
             "button_slide_2": "",
             "link_2": "",
@@ -168,13 +168,13 @@
         "tabs_style": "style_1",
         "margin_bottom_mb": 40,
         "margin_bottom_tab": 40,
-        "margin_bottom": 10
+        "margin_bottom": 86
       }
     },
     "1660916906f79ccb71": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3 style=\"text-align: center; margin-bottom: 70px;\">Featured Products<\/h3>"
+        "custom_liquid": "<h3 style=\"font-size: 35px; text-align: center; margin-bottom: 70px;\">Featured Products<\/h3>"
       }
     },
     "1660239944ded7f844": {
@@ -237,7 +237,7 @@
         "block_style": "style_2",
         "margin_bottom_mb": 0,
         "margin_bottom_tab": 0,
-        "margin_bottom": 0
+        "margin_bottom": 75
       }
     },
     "16602400277bfbadb9": {
@@ -318,7 +318,7 @@
         "font_size_title_item": "",
         "font_size_desc_item": "",
         "font_size_button_item": "",
-        "margin_bottom": 0,
+        "margin_bottom": 86,
         "margin_bottom_mb": 0
       }
     }
