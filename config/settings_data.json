@@ -858,6 +858,7 @@
             "settings": {
               "dpl_slide_img": true,
               "image_slide": "shopify:\/\/shop_images\/ATF_Banner_3.png",
+              "image_slide_mb": "shopify:\/\/shop_images\/ATF_Banner_6.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -887,8 +888,8 @@
               "bg_button": "#8cc63e",
               "border_button": "#8cc63e",
               "color_button": "#ffffff",
-              "bg_button_mb": "#232323",
-              "border_button_mb": "#232323",
+              "bg_button_mb": "#8cc63e",
+              "border_button_mb": "#8cc63e",
               "color_button_mb": "#ffffff",
               "lb_product_1": "",
               "top_position_1": "10",
@@ -1834,7 +1835,6 @@
           "aadd1478-03d4-4fbe-b932-1d689163a598": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangle_88.png",
               "color": "#ffffff",
               "title": "Solades",
               "des": "",
@@ -1935,6 +1935,7 @@
             "settings": {
               "dpl_slide_img": true,
               "image_slide": "shopify:\/\/shop_images\/Rectangle_18.png",
+              "image_slide_mb": "shopify:\/\/shop_images\/Rectangle_19_15.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -1952,7 +1953,7 @@
               "font_size_sub_heading_mb": "18px",
               "color_sub_heading": "#ffffff",
               "color_sub_heading_mb": "#ffffff",
-              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-12 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n\n<div class=\"col-12 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">Our Mission<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n<\/div>",
+              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n\n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">Our Mission<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n<\/div>",
               "font_size_des": "12px",
               "font_size_des_mb": "12px",
               "color_des": "#ffffff",
@@ -2083,6 +2084,7 @@
             "settings": {
               "dpl_slide_img": true,
               "image_slide": "shopify:\/\/shop_images\/Rectangle_19_10.png",
+              "image_slide_mb": "shopify:\/\/shop_images\/Rectangle_20.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
@@ -2183,6 +2185,7 @@
             "settings": {
               "dpl_slide_img": true,
               "image_slide": "shopify:\/\/shop_images\/Rectangle_19_8.png",
+              "image_slide_mb": "shopify:\/\/shop_images\/Rectangle_20_1.png",
               "style_content": "style_4",
               "alignment": "right",
               "alignment_custom": "35%",

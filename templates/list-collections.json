@@ -163,6 +163,7 @@
           "type": "twoImage",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/Rectangle_16.png",
+            "image_mb_1": "shopify:\/\/shop_images\/Rectangle_20_3.png",
             "title_1": "<span style=\"text-transform: capitalize;\">Earth Rangers <br> Signature <br> Tee For Kids<\/span>",
             "des_1": "Available in different colors",
             "color_1": "#ffffff",
@@ -172,6 +173,7 @@
             "border_button_1": "#8cc63e",
             "color_button_1": "#ffffff",
             "image_2": "shopify:\/\/shop_images\/Rectangle_16_2.png",
+            "image_mb_2": "shopify:\/\/shop_images\/Rectangle_20_4.png",
             "title_2": "<span style=\"text-transform: capitalize;\">Bring Back the <br> Wild Birthday <br>Party Kits<\/span>",
             "des_2": "All priced at $9.99 each",
             "color_2": "#ffffff",
@@ -186,6 +188,7 @@
           "type": "twoImage",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/Rectangle_16_5.png",
+            "image_mb_1": "shopify:\/\/shop_images\/Rectangle_20_5.png",
             "title_1": "<span style=\"text-transform: capitalize;\">Adaption Kits<\/span>",
             "des_1": "Quisque eleifend ex urna, <br> ut efficitur tellus aliquam id.",
             "color_1": "#ffffff",
@@ -195,6 +198,7 @@
             "border_button_1": "#8cc63e",
             "color_button_1": "#ffffff",
             "image_2": "shopify:\/\/shop_images\/Rectangle_16_6.png",
+            "image_mb_2": "shopify:\/\/shop_images\/Rectangle_20_6.png",
             "title_2": "<span style=\"text-transform: capitalize;\">Teachers<\/span>",
             "des_2": "Pellentesque tempus eros eu tellus <br>accumsan porta. Integer mauris urna, <br> ornare maximus lobortis quis",
             "color_2": "#ffffff",

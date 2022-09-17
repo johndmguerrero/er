@@ -1,38 +1,38 @@
 {% if section.blocks.size > 0 %}
 <div class="home-sub-banner home-custom-banner-3 sub-banner-3-{{ section.blocks.size }}{% if section.settings.sub_banner_style == 'style_2' %} banner_style_2{% elsif section.settings.sub_banner_style == 'style_3' %} banner_style_3{% elsif section.settings.sub_banner_style == 'style_4' %} banner_style_4{% endif %}" id="sub-banner-3-{{section.id}}" data-loader-script="{{ 'halo.slide-blog.js' | asset_url }}">
     <div class="{% if section.settings.layout == 'default' %}container{% else %}container-fluid{% endif %}">
-    
+
         {% assign section_size = section.blocks.size | plus: 0 %}
         {% assign img_results_per_row = section.settings.img_results_per_row  | plus: 0 %}
 
         {% if section_size > img_results_per_row %}
-            {%- assign data = 'data-blogs-slider' -%}	
-            {%- assign class = 'banner-slider' -%}	
+            {%- assign data = 'data-blogs-slider' -%}
+            {%- assign class = 'banner-slider' -%}
         {% endif %}
 
         {% if section.settings.widget_title != blank %}
-        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">   
+        <div class="widget-title{% if section.settings.title_style == 'style_2' %} not-before{% endif %}">
             {% if section.settings.sub_banner_style == 'style_2' %}
                 {% if section.settings.widget_des != blank %}
                     <p>
                         {% render 'multilang' with section.settings.widget_des %}
-                    </p>        
+                    </p>
                 {% endif %}
                 <h3 class="box-title">
-                    <span class="title"> 
+                    <span class="title">
                         {% render 'multilang' with section.settings.widget_title %}
                     </span>
                 </h3>
             {% else %}
                  <h3 class="box-title">
-                    <span class="title"> 
+                    <span class="title">
                         {% render 'multilang' with section.settings.widget_title %}
                     </span>
                 </h3>
                 {% if section.settings.widget_des != blank %}
                 <p>
                     {% render 'multilang' with section.settings.widget_des %}
-                </p>        
+                </p>
                 {% endif %}
             {% endif %}
         </div>
@@ -41,25 +41,25 @@
         <div class="content_sub_banner {{ class }}">
             <div class="row" {{ data }} data-rows={{ section.settings.img_results_per_row }}>
                 {% for block in section.blocks %}
-                
+
                 {% case section.blocks.size %}
                     {% when 1 %}
                         {%- assign column_size = 'col-12 one-block' -%}
                     {% when 2 %}
                         {%- assign column_size = 'col-12 col-sm-6 two-blocks' -%}
                     {% when 3 %}
-                        {%- assign column_size = 'col-6 col-sm-4 three-blocks' -%}    
-                    {% else %}     
-                        {%- assign column_size = 'col-6 col-sm-4 more-blocks' -%}          
+                        {%- assign column_size = 'col-6 col-sm-4 three-blocks' -%}
+                    {% else %}
+                        {%- assign column_size = 'col-6 col-sm-4 more-blocks' -%}
                 {% endcase %}
-                    
-                <div class="item {{ column_size }} item-{{ section.settings.img_results_per_row }}">
+
+                <div class="item {{ column_size }} item-{{ section.settings.img_results_per_row }} {% if block.settings.image == blank %} d-none {% endif %}">
                     <div class="sub-banner banner-item">
                         <div class="img-box">
                             {%- assign preview_img = block.settings.image -%}
                             <a href="{{ block.settings.link }}" class="animate-scale adaptive_height" style="padding-top: {{ 1 | divided_by: preview_img.aspect_ratio | times: 100 }}%">
                                 {% if block.settings.image != blank %}
-                                
+
                                 {%- assign img_url = block.settings.image | img_url: 'original', crop: 'center' -%}
 
                                 <img data-src="{{ img_url }}" alt="{{ block.settings.image.alt | default: shop.name }}" itemprop="logo"
@@ -73,9 +73,9 @@
                                 {% else %}
                                     <div class="not_img">
                                         370 x 320px
-                                    </div>   
+                                    </div>
                                 {% endif %}
-                               
+
                                 {% endif %}
                             </a>
                         </div>
@@ -84,13 +84,13 @@
                         <div class="content-box" style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
                             {% if block.settings.title != blank %}
                             <h3 class="banner-title">
-                                {% render 'multilang' with block.settings.title %}                             
+                                {% render 'multilang' with block.settings.title %}
                             </h3>
                             {% endif %}
 
                             {% if block.settings.des != blank  %}
                             <p class="banner-des">
-                                {% render 'multilang' with block.settings.des %}                             
+                                {% render 'multilang' with block.settings.des %}
                             </p>
                             {% endif %}
 
@@ -100,7 +100,7 @@
                                     <a href="{{ block.settings.link }}" class="btn_link" style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
                                         {% render 'multilang' with block.settings.link_text %}
                                         <span class="border-bt-hover" style="{% if block.settings.color != blank %}background-color: {{ block.settings.color }};{% endif %}"></span>
-                                    </a>        
+                                    </a>
                                 </div>
                                 {% endif %}
                             {% endif %}
@@ -114,14 +114,14 @@
                                 <a href="{{ block.settings.link }}" class="btn_link" style="{% if block.settings.color != blank %}color: {{ block.settings.color }};{% endif %}">
                                     {% render 'multilang' with block.settings.link_text %}
                                     <span class="border-bt-hover" style="{% if block.settings.color != blank %}background-color: {{ block.settings.color }};{% endif %}"></span>
-                                </a>        
+                                </a>
                             </div>
                             {% endif %}
                         {% endunless %}
                     </div>
                 </div>
                 {% endfor %}
-            </div>       
+            </div>
         </div>
     </div>
 </div>
@@ -157,7 +157,7 @@
         font-weight: {{ font_weight_title }};
         text-transform: {{ text_transform_title }};
     }
-    
+
     @media (max-width: 767px) {
         #sub-banner-3-{{section.id}} {
             margin-bottom: {{ section.settings.margin_bottom_mb }}px;
@@ -174,7 +174,7 @@
             margin-bottom: {{ section.settings.margin_bottom_tab }}px;
         }
     }
-    
+
     @media (min-width: 1200px) {
         #sub-banner-3-{{section.id}} .banner-title {
             font-size: {{ fontsize_text }};
@@ -182,7 +182,7 @@
         #sub-banner-3-{{section.id}} {
             margin-bottom: {{ margin_bottom }}px;
         }
-    }	
+    }
     .home-custom-banner-3.banner_style_3 {
         background-color: {{ section.settings.bg_color_style_3 }}
     }
@@ -220,20 +220,20 @@
                 "options": [
                     {
                         "value": "style_1",
-                        "label": "Style 1" 
+                        "label": "Style 1"
                     },
-                    { 
+                    {
                         "value": "style_2",
-                        "label": "Style 2" 
-                    }, 
-                    { 
-                        "value": "style_3",
-                        "label": "Style 3" 
+                        "label": "Style 2"
                     },
-                    { 
+                    {
+                        "value": "style_3",
+                        "label": "Style 3"
+                    },
+                    {
                         "value": "style_4",
-                        "label": "Style 4" 
-                    }          
+                        "label": "Style 4"
+                    }
                 ],
                 "default": "style_1"
             },
@@ -249,7 +249,7 @@
                 {
                     "value": "3",
                     "label": "3"
-                }         
+                }
                 ],
                 "default": "3"
             },
@@ -336,12 +336,12 @@
                 "options": [
                     {
                         "value": "style_1",
-                        "label": "Style 1" 
+                        "label": "Style 1"
                     },
-                    { 
+                    {
                         "value": "style_2",
-                        "label": "Style 2" 
-                    }          
+                        "label": "Style 2"
+                    }
                 ],
                 "default": "style_1"
             },
@@ -453,13 +453,13 @@
                 "max": 100,
                 "step": 1,
                 "default": 0
-            }            	
+            }
         ],
         "blocks": [
             {
                 "type": "image",
                 "name": "Image",
-                "settings": [		  	
+                "settings": [
                 {
                     "type": "image_picker",
                     "id": "image",
@@ -476,18 +476,18 @@
                     "id" : "title",
                     "label" : "Title",
                     "default" : "Solades"
-                }, 
+                },
                 {
                     "type" : "textarea",
                     "id" : "des",
                     "label" : "Description"
-                },  
+                },
                 {
                     "type" : "text",
                     "id" : "link_text",
                     "label" : "Link Text",
                     "default" : "Shop Now"
-                },                
+                },
                 {
                     "type": "url",
                     "id": "link",

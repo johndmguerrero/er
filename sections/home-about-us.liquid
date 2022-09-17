@@ -13,7 +13,7 @@
               {% render 'multilang' with section.settings.title_sub %}
             </h3>
         {% endif %}
-        
+
         {% if section.settings.des != blank and section.settings.style_about != 'style_3' %}
             {% if section.settings.style_about != 'style_8' %}
                 <div class="des af">
@@ -28,10 +28,10 @@
       </div>
     </div>
     {% if section.blocks.size > 0 %}
-    <div class="list-item disable-srollbar">
+    <div class="list-item disable-srollbar" style="display: flex; align-items: flex-start;">
         {% for block in section.blocks %}
             {% if block.settings.image != blank or block.settings.content != blank %}
-            <div class="item column-{{section.blocks.size}}" id="item-{{block.id}}">
+            <div class="item col-4" id="item-{{block.id}}">
                 {% if section.settings.style_about == 'style_5' or section.settings.style_about == 'style_8' %}
                     <div class="content-left">
                         {% if block.settings.icon_type == 'image' %}
@@ -42,10 +42,10 @@
                             {% else %}
                                 <a class="animate-scale" href="{{ block.settings.link }}">
                                     {% if section.settings.style_about == 'style_4' %}
-                                        <div class="not_img">77 x 77px</div> 
+                                        <div class="not_img">77 x 77px</div>
                                     {% else %}
-                                        <div class="not_img">48 x 48px</div> 
-                                    {% endif %}    
+                                        <div class="not_img">48 x 48px</div>
+                                    {% endif %}
                                 </a>
                             {% endif %}
                         {% else %}
@@ -84,12 +84,12 @@
                         {% else %}
                             <a class="animate-scale" href="{{ block.settings.link }}">
                                 {% if section.settings.style_about == 'style_4' %}
-                                    <div class="not_img">77 x 77px</div> 
+                                    <div class="not_img">77 x 77px</div>
                                 {% elsif section.settings.style_about == 'style_6' %}
-                                    <div class="not_img">70 x 235px</div> 
+                                    <div class="not_img">70 x 235px</div>
                                 {% else %}
-                                    <div class="not_img">48 x 48px</div> 
-                                {% endif %}    
+                                    <div class="not_img">48 x 48px</div>
+                                {% endif %}
                             </a>
                         {% endif %}
                     {% else %}
@@ -117,7 +117,7 @@
                     <a class="btn button_text" href="{{block.settings.link_icon}}">{{ block.settings.text_button }}</a>
                     {% endif %}
 
-                    </a> 
+                    </a>
                 {% endif %}
 
                 <style>
@@ -206,7 +206,7 @@
                 background-size: cover;
             }
         {% endif %}
-        
+
     {% endif %}
 
     {% if section.settings.style_about == 'style_4' %}
@@ -239,11 +239,11 @@
             border-color: {{ section.settings.border_bg_color }};
         }
     {% endif %}
-  
+
     #home-about-{{ section.id }} .title {
         {% if section.settings.color_title != 'rgba(0,0,0,0)' %}
             color: {{ section.settings.color_title }};
-        {% endif %}    
+        {% endif %}
         font-size: {{ section.settings.font_size_title }};
         font-weight: {{ font_weight_title }};
         text-transform: {{ text_transform_title }};
@@ -264,7 +264,7 @@
         color: {{ section.settings.color_title_sub }};
         font-size: {{ section.settings.font_size_title_sub }};
     }
-    
+
     #home-about-{{ section.id }} .des,
     #home-about-{{ section.id }} .des a {
         color: {{ section.settings.color_des }};
@@ -274,7 +274,7 @@
         #home-about-{{ section.id }} .des.des-bottom a {
             text-decoration-color: {{ section.settings.color_des | color_modify: 'alpha', 0.3}};
         }
-    {% endif %}    
+    {% endif %}
 
     #home-about-{{ section.id }} .btn-about-us {
         color: {{ section.settings.color_button }};
