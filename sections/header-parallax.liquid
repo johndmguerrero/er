@@ -150,7 +150,7 @@
 
                         <div style="display: flex;">
                         {% if shop.customer_accounts_enabled %}
-                        <div class="acc-mb svg-mb">
+                        <div class="acc-mb svg-mb" {% if customer %} style="width: 100%;" {% endif %}>
                             {% if section.settings.style_header == 'style_1' %}
                                 <a href="#" title="User Icon" class="icon-user" data-user-mobile-toggle>
                                     {% render 'icon-user' %}

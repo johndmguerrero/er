@@ -14,13 +14,14 @@
           "settings": {
             "dpl_slide_img": true,
             "image_slide": "shopify:\/\/shop_images\/Rectangle_32_2.png",
+            "image_slide_mb": "shopify:\/\/shop_images\/ATF_Banner_8.png",
             "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",
             "text_alignment": "left",
             "bg_color_box": "#ffffff",
             "color_border_box": "#bcbcbc",
-            "heading": "Join the Earth Rangers Club, <br> Get a Club Starter Kit Today!",
+            "heading": "Join the Earth Rangers Club,  Get a Club Starter Kit Today!",
             "font_size_heading": "60px",
             "font_size_heading_mb": "24px",
             "color_heading": "#ffffff",
@@ -36,7 +37,7 @@
             "font_size_des_mb": "12px",
             "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
-            "button_slide": "<span style=\"font-size: 25px;\">Buy One Today<\/span>",
+            "button_slide": "Buy One Today",
             "link": "",
             "button_slide_2": "",
             "link_2": "",
@@ -121,7 +122,7 @@
     "16607511975e8605e9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\" style=\"margin-top: 70px; margin-bottom: 100px;\">\n<div class=\"col-md-6\" style=\"padding-right: 40px;\">\n  <h4> About Clubs<\/h4>\n<p>Earth Rangers Clubs are made up of elementary students, educators, and community groups who want to take action and help animals and the environment. The program is recommended for grades K-6 and can be adapted to 7 and 8.<br><br>\nClubs take on Club Missions throughout the year.<br><br>\n\nMissions include engaging and tangible environmental lessons, activities, and worksheets that help your Club take action for important environmental issues. <br><br>\n\nExplore all the Missions available to registered Clubs, then <span style=\"font-weight: bold;\">sign-up for free!<\/span><\/p>\n <\/div>\n<div class=\"col-md-6\"> \n<img  src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4.png?v=1660751568\" >\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"row flex-column-reverse flex-md-row\" style=\"margin-top: 70px; margin-bottom: 100px;\">\n<div class=\"col-md-6\" style=\"padding-right: 40px;\">\n  <h4> About Clubs<\/h4>\n<p>Earth Rangers Clubs are made up of elementary students, educators, and community groups who want to take action and help animals and the environment. The program is recommended for grades K-6 and can be adapted to 7 and 8.<br><br>\nClubs take on Club Missions throughout the year.<br><br>\n\nMissions include engaging and tangible environmental lessons, activities, and worksheets that help your Club take action for important environmental issues. <br><br>\n\nExplore all the Missions available to registered Clubs, then <span style=\"font-weight: bold;\">sign-up for free!<\/span><\/p>\n <\/div>\n<div class=\"col-md-6\"> \n<img style=\"margin-bottom: 15px;\"  src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/Rectangle_4.png?v=1660751568\" >\n<\/div>\n<\/div>"
       }
     }
   },

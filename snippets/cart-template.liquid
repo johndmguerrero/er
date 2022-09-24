@@ -37,9 +37,10 @@
         {{ 'cart.label.product' | t }}
       </div>
       <div class="cart--price">
-        {{ 'cart.label.price' | t }}
+        Price per item
+        {% comment %} {{ 'cart.label.price' | t }} {% endcomment %}
       </div>
-      <div class="cart--quantity h-mobile">
+      <div class="cart--quantity h-mobile" style="display: none;">
         {{ 'cart.label.quantity' | t }}
       </div>
       <div class="cart--total h-mobile">
@@ -75,6 +76,11 @@
                 {% endunless %}
                 {% endif %}
               </div>
+              <div>
+                <div class="qty-group" id="update-{{item.id}}" style="max-width: max-content;">
+                  <input type="number" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" {% if item.variant.inventory_management != null and item.variant.inventory_quantity > 0 %}data-line="{{ item.variant.inventory_quantity }}"{% endif %} min="1" class="update-cart--template">
+                </div>
+              </div>
 
               <div class="properties">
                 {%- for p in item.properties -%}
@@ -103,7 +109,7 @@
                 {{ item.original_price | money }}
               </span>
             </div>
-            <div class="qty-group" id="update-{{item.id}}">
+            <div class="qty-group" id="update-{{item.id}}" style="display: none;">
               <label for="updates_{{ item.id }}">{{ 'cart.label.quantity' | t }}</label>
               <input type="number" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" {% if item.variant.inventory_management != null and item.variant.inventory_quantity > 0 %}data-line="{{ item.variant.inventory_quantity }}"{% endif %} min="1" class="update-cart--template">
             </div>
@@ -120,7 +126,7 @@
             </div>
           </div>
 
-          <div class="cart--quantity h-mobile">
+          <div class="cart--quantity h-mobile"  style="display: none;">
             <div class="qty-group" id="update-{{item.id}}">
               <input type="number" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" {% if item.variant.inventory_management != null and item.variant.inventory_quantity > 0 %}data-line="{{ item.variant.inventory_quantity }}"{% endif %} min="1" class="update-cart--template">
             </div>

@@ -7,15 +7,15 @@
 
     <div class="header-bottom" data-sticky-mb>
         <div class="container-padd60">
-            {% render 'header-mobile' %} 
+            {% render 'header-mobile' %}
         </div>
     </div>
 
     <div class="wrapper-header-bt" data-sticky-pc>
-        <div class="container-padd60">       
+        <div class="container-padd60">
             <div class="header-panel-bt">
                 <div class="left-header header-items">
-                    <a href="#" class="icon-nav" title="Menu Mobile Icon" data-menu-mb-toogle>                       
+                    <a href="#" class="icon-nav" title="Menu Mobile Icon" data-menu-mb-toogle>
                         <span class="icon-line"></span>
                     </a>
 
@@ -43,7 +43,7 @@
 
                 <div class="right-header header-items">
                     {% if settings.enable_search %}
-                    <div class="nav-search">                    
+                    <div class="nav-search">
                         {% render 'search-bar' %}
                     </div>
                   	{% endif %}
@@ -58,18 +58,18 @@
                     <div class="svg-mb wishlist-icon">
                         <a class="wishlist" href="{{ pages['wish-list'].url }}" title='{% if settings.enable_multilang %}data-translate="wishlist.general.my_wishlist"{% endif %}'>
                             <svg aria-hidden="true" data-prefix="fal" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-2x"><path fill="currentColor" d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" class=""></path></svg>
-                        </a>                   
+                        </a>
                     </div>
                     {% endif %}
 
                     <div class="cart-icon svg-mb" data-cart-header-parallax>
-                        <a href="#" title="Cart Icon" data-cart-toggle>       
+                        <a href="#" title="Cart Icon" data-cart-toggle>
                             {% render 'icon-cart' %}
 
                             <span class="cartCount" data-cart-count>
                             {{ cart.item_count }}
                             </span>
-                        </a>                    
+                        </a>
                     </div>
                     {% if settings.enable_multilang_shopify or settings.enable_multiple_currencies or settings.enable_shopify_payments_currencies %}
                     <div class="hamburger-icon svg-mb">
@@ -87,7 +87,7 @@
                     <a class="wishlist" href="{{ pages['wish-list'].url }}" title='{% if settings.enable_multilang %}data-translate="wishlist.general.my_wishlist"{% endif %}'>
                         <span class="wishlist-text text-hover"{% if settings.enable_multilang %} data-translate="wishlist.general.my_wishlist"{% endif %}>
                             {{ 'wishlist.general.my_wishlist' | t }}
-                        </span>                  
+                        </span>
                     </a>
                     {% endif %}
                     {% if shop.customer_accounts_enabled %}
@@ -98,16 +98,16 @@
                         </a>
                         <a class="acc-links acc-title" href="{{ routes.account_url }}"{% if settings.enable_multilang %} data-translate="customer.account.title"{% endif %}>
                             {{ 'customer.account.title' | t }}
-                        </a>                                            
-                        {% else %}  
-                        
+                        </a>
+                        {% else %}
+
                         <a class="acc-links acc-sign-in" id="customer_login_link" href="{{ routes.account_login_url }}" {% if settings.enable_multilang %}data-translate="customer.login.sign_in"{% endif %}>
                             {{ 'customer.login.sign_in' | t }}
                         </a>
                         <a class="acc-links acc-regis" id="customer_register_link" href="{{ routes.account_register_url }}"{% if settings.enable_multilang %} data-translate="layout.customer.create_account"{% endif %}>
                             {{ 'layout.customer.create_account' | t }}
                         </a>
-                        {% endif %}                                   
+                        {% endif %}
                     </div>
                     {% endif %}
                     {% if settings.enable_multilang_shopify or settings.enable_multiple_currencies or settings.enable_shopify_payments_currencies %}
@@ -126,13 +126,13 @@
                         {% render 'new-currency-picker' %}
                     </div>
                     {% endif %}
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
-    </div>    
+    </div>
 </header>
 
-<script> 
+<script>
     window.fixtop_menu = {{ section.settings.display_fixtop_menu }};
 
     var appendPrependMenuMobile = function() {
@@ -148,7 +148,7 @@
     };
 
     $(document).ready(function() {
-        appendPrependMenuMobile();        
+        appendPrependMenuMobile();
     });
 
     var winWidth = $(window).innerWidth();
@@ -200,7 +200,7 @@
 {% schema %}
     {
         "name": "Header 09",
-        "settings": [    
+        "settings": [
             {
                 "type" : "header",
                 "content" : "Settings Header"
@@ -210,13 +210,13 @@
                 "id" : "bg_header",
                 "label" : "Background Color",
                 "default" : "#fff"
-            }, 
+            },
             {
                 "type" : "color",
                 "id" : "color_header",
                 "label" : "Text and Icons Color",
                 "default" : "#282828"
-            },       
+            },
             {
                 "type": "header",
                 "content": "Logo"
@@ -267,7 +267,7 @@
                 "type": "text",
                 "id": "max_height_logo_pc",
                 "label": "Max Width of Logo PC",
-                "default": "33px" 
+                "default": "33px"
             },
             {
                 "type": "image_picker",
@@ -278,7 +278,7 @@
                 "type": "text",
                 "id": "max_height_logo_mb",
                 "label": "Max Width of Logo Mobile",
-                "default": "26px" 
+                "default": "26px"
             },
             {
                 "type": "header",
@@ -289,19 +289,19 @@
                 "id": "bg_search_color",
                 "label": "Background Color",
                 "default": "#fff"
-            },      
+            },
             {
                 "type": "color",
                 "id": "search_color",
                 "label": "Search Color",
                 "default": "#969696"
-            },    
+            },
             {
                 "type": "color",
                 "id": "search_color_border",
                 "label": "Search Border Color",
                 "default": "#c1c1c1"
-            },           
+            },
             {
                 "type": "header",
                 "content": "Cart Header"
@@ -328,7 +328,7 @@
                 "id": "display_fixtop_menu",
                 "label": "Display Fix Top Menu?",
                 "default": true
-            }                  
-        ]  
+            }
+        ]
     }
 {% endschema %}
