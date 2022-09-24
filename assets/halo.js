@@ -4955,8 +4955,8 @@
 
             }
 
-            var progress = '<div class="progress_shipping" role="progressbar" aria-label="progressbar" style="border-radius: 25px;height: 15px; margin-top: 10px; margin-bottom: 10px;background-color: #e1dfd6;-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);box-shadow: inset 0 1px 2px rgba(0,0,0,.1);">\
-            <div class="progress-meter" style="border-radius: 25px;position: relative;display: block;height: 100%;background-color: #8CC63E;text-align: center; line-height: 15px;color: #ffffff;width: '+freeshipBar+'%;">'+freeshipBar+'%</div>\
+            var progress = '<div class="progress_shipping" role="progressbar" aria-label="progressbar" style="border-radius: 25px;height: 30px; margin-top: 10px; margin-bottom: 10px;background-color: #e1dfd6;-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);box-shadow: inset 0 1px 2px rgba(0,0,0,.1);">\
+            <div class="progress-meter" style="border-radius: 25px;position: relative;display: block;height: 100%;background-color: #8CC63E;text-align: center;color: #ffffff;width: '+freeshipBar+'%;">'+freeshipBar+'%</div>\
             </div>';
 
             $('.free_shipping_progress').html(progress);

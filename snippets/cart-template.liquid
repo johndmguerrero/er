@@ -170,6 +170,19 @@
 
   <div class="right-col">
     <div class="cart-header">
+      <div class="cart--title-discount">
+        {% if cart.cart_level_discount_applications.size > 0 %}
+          Discounts:
+
+          <ul>
+            {% for discount_application in cart.cart_level_discount_applications %}
+              <li>
+                {{ discount_application.title }}-{{ discount_application.total_allocated_amount | money }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
       <div class="cart--title summary">
         {{ 'cart.label.order_summary' | t }}
       </div>

@@ -87,6 +87,7 @@
     "fonts_name_2": "Jost",
     "font": "google_fonts",
     "fonts_name": "Jost",
+    "enable_multilang_shopify": false,
     "lange_1": "en",
     "lange_2": "de",
     "enable_multiple_currencies": true,
@@ -1866,7 +1867,7 @@
           "text_transform_text": "uppercase",
           "margin_bottom_mb": 30,
           "margin_bottom_tab": 30,
-          "margin_bottom": 60
+          "margin_bottom": 40
         }
       },
       "1660041229ef1b5ae6": {
@@ -1953,7 +1954,7 @@
               "font_size_sub_heading_mb": "18px",
               "color_sub_heading": "#ffffff",
               "color_sub_heading_mb": "#ffffff",
-              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n\n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">Our Mission<\/h5>\n<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <\/p>\n<\/div>\n<\/div>",
+              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <\/p>\n<\/div>\n\n<div class=\"col-6 col-md-4\" style=\"font-size: 14px;\">\n<h5 style=\"margin-bottom: 10px;\">Our Mission<\/h5>\n<p> Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <\/p>\n<\/div>\n<\/div>",
               "font_size_des": "12px",
               "font_size_des_mb": "12px",
               "color_des": "#ffffff",
@@ -2102,7 +2103,7 @@
               "font_size_sub_heading_mb": "18px",
               "color_sub_heading": "#ffffff",
               "color_sub_heading_mb": "#ffffff",
-              "slide-des": "<span style=\"font-size: 14px;\">Various sizes and colors available<\/span>",
+              "slide-des": "Various sizes and colors available",
               "font_size_des": "18px",
               "font_size_des_mb": "12px",
               "color_des": "#232323",
@@ -2148,7 +2149,7 @@
           "title_style": "style_1",
           "margin_bottom_mb": 20,
           "margin_bottom_tab": 20,
-          "margin_bottom": 70,
+          "margin_bottom": 0,
           "style_slideshow": "style_1",
           "autoplay": false,
           "slideshow_speed": "5000",
@@ -2356,7 +2357,7 @@
           "font_size_title_item": "",
           "font_size_desc_item": "",
           "font_size_button_item": "",
-          "margin_bottom": 30,
+          "margin_bottom": 0,
           "margin_bottom_mb": 30
         }
       },
@@ -2607,13 +2608,13 @@
           "display_brand_border": false,
           "display_bg_banner": false,
           "bg_color_banner": "#f5f5f5",
-          "brand_title": "<span style=\"font-size: 35px; margin-bottom: 50px; display: block;\">Our Awards<\/span>",
+          "brand_title": "<span style=\"font-size: 35px; margin-bottom: 30px; display: block;\">Our Awards<\/span>",
           "color_title": "#232323",
           "fontsize_title": "",
           "fontsize_title_mb": "",
           "font_weight_title": "700",
           "text_transform_title": "capitalize",
-          "brand_des": "<script>console.log('hello worlds') <\/script>",
+          "brand_des": "",
           "brands_view_all": "",
           "brands_view_all_link": "",
           "title_style": "style_2",
