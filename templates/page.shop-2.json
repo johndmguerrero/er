@@ -26,7 +26,7 @@
             "font_size_heading_mb": "24px",
             "color_heading": "#000000",
             "color_heading_style_4": "#10ffda",
-            "color_heading_mb": "#ffffff",
+            "color_heading_mb": "#003c53",
             "sub_heading": "",
             "font_size_sub_heading": "30px",
             "font_size_sub_heading_mb": "18px",
@@ -36,7 +36,7 @@
             "font_size_des": "25px",
             "font_size_des_mb": "12px",
             "color_des": "#000000",
-            "color_des_mb": "#ffffff",
+            "color_des_mb": "#000000",
             "button_slide": "Buy one today",
             "link": "",
             "button_slide_2": "",
@@ -175,7 +175,7 @@
     "1660916906f79ccb71": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h3 style=\"font-size: 35px; text-align: center; margin-bottom: 70px;\">Featured Products<\/h3>"
+        "custom_liquid": "<h3 class=\"d-none d-md-block\" style=\"font-size: 35px; text-align: center; margin-bottom: 70px;\">Featured Products<\/h3>\n\n<h3 class=\"d-block d-md-none\" style=\"font-size: 20px; text-align: center; margin-bottom: 40px;\">Featured Products<\/h3>"
       }
     },
     "1660239944ded7f844": {
@@ -241,7 +241,7 @@
         "block_style": "style_2",
         "margin_bottom_mb": 0,
         "margin_bottom_tab": 0,
-        "margin_bottom": 75
+        "margin_bottom": 35
       }
     },
     "16602400277bfbadb9": {

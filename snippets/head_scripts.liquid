@@ -7,7 +7,7 @@
     lazySizesConfig.loadMode = 1;
     window.lazySizesConfig.init = false;
     lazySizes.init();
-  
+
     window.ajax_cart = "{{ settings.ajax_popup_cart }}";
     window.money_format = "{{shop.money_format}}";//"{{ shop.money_with_currency_format }}";
     window.shop_currency = "{{ shop.currency }}";
@@ -26,7 +26,7 @@
     window.product_style = "{{ settings.product_layout }}";
     window.category_style = "{{ settings.category_layout }}";
     window.layout_body = "{{ settings.layout_body }}";
-        
+
     window.inventory_text = {
         in_stock: "{{ 'products.product.in_stock' | t }}",
         many_in_stock: "{{ 'products.product.many_in_stock' | t }}",
@@ -85,7 +85,7 @@
     window.option_ptoduct3 = "option 3"
 
     /* Free Shipping Message */
-    window.free_shipping_color1 = "{{ settings.free_shipping_color1 }}";  
+    window.free_shipping_color1 = "{{ settings.free_shipping_color1 }}";
     window.free_shipping_color2 = "{{ settings.free_shipping_color2 }}";
     window.free_shipping_color3 = "{{ settings.free_shipping_color3 }}";
     window.free_shipping_price = {% if settings.free_shipping_price != blank %}{{ settings.free_shipping_price }}{% else %}0{% endif %};

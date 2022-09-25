@@ -85,6 +85,9 @@
 	                        {
 	                            breakpoint: 480,
 	                            settings: {
+																centerMode: true,
+																centerPadding: '80px',
+																slidesToShow: 3,
 	                                get slidesToShow() {
 	                                	if (window.layout_style == 'layout_style_suppermarket') {
 			                                return this.slidesToShow = 2;

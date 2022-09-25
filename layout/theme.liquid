@@ -9,25 +9,25 @@
   <!-- Basic page needs ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
   <!-- Title and description ================================================== -->
    {% unless template contains 'search' %}
   <title>
     {{ page_title }}
-    {% if current_tags %} &ndash; {{'general.title.tagged' | t}} 
+    {% if current_tags %} &ndash; {{'general.title.tagged' | t}}
     "{{ current_tags | join: ', ' }}"
     {% endif %}
-    {% if current_page != 1 %} &ndash; {{'general.title.page' | t}} 
+    {% if current_page != 1 %} &ndash; {{'general.title.page' | t}}
     {{ current_page }}
     {% endif %}
 
-    {% unless page_title contains shop.name %} &ndash; 
+    {% unless page_title contains shop.name %} &ndash;
     {{ shop.name }}
     {% endunless %}
   </title>
   {% else %}
   <title>
-   {{'general.title.search' | t}} {{search.results_count}} {{'general.title.search_results' | t}} "{{search.terms}}"  &ndash; {{ shop.name }} 
+   {{'general.title.search' | t}} {{search.results_count}} {{'general.title.search_results' | t}} "{{search.terms}}"  &ndash; {{ shop.name }}
   </title>
   {% endunless %}
 
@@ -68,11 +68,11 @@
   {% if settings.favicon != blank %}
   <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
   {% endif %}
-  
+
   <!-- Styles -->
   {% render 'css-variables' %}
   {% render 'head_styles' %}
-  
+
    <!-- Scripts -->
   {% render 'head_scripts' %}
 
@@ -86,7 +86,7 @@
   {% comment %}
     If you store has customers disabled, you can remove the following JS file
   {% endcomment %}
-  
+
   {% if template contains 'customers' %}
     {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
     {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
@@ -99,10 +99,10 @@
 
 </head>
 
-    {% if settings.layout_body == 'full' %}    
-        {%- assign layout_class = 'body-full' -%}   
-    {% elsif settings.layout_body == 'boxed' %} 
-        {%- assign layout_class = 'body-boxed' -%} 
+    {% if settings.layout_body == 'full' %}
+        {%- assign layout_class = 'body-full' -%}
+    {% elsif settings.layout_body == 'boxed' %}
+        {%- assign layout_class = 'body-boxed' -%}
     {% endif %}
 
     {% if settings.header_layout == 'vertical' %}
@@ -131,28 +131,28 @@
       {%- assign home_class = 'layout_home_14' -%}
     {% elsif settings.layout_home == 'layout_home_18' %}
       {%- assign home_class = 'layout_home_18' -%}
-    {% endif %} 
+    {% endif %}
 
 
 <body data-url-lang="{{ routes.cart_url }}" id="{{ page_title | handle }}" class="{{ header_class }} {{ layout_class }} {% if customer %}customer-logged-in{% endif %}
 {% if template.suffix == 'landing' %} template-index{% else %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% endif %} {{settings.style_product_grid}}{% if settings.layout_style == 'layout_style_1' %} layout_default{% else %} {{settings.layout_style}}{% endif %} {{ home_class }}
 {% unless settings.enable_before_you_leave_mb %} before-you-leave-disableMobile{% endunless %}{% if settings.product_layout == 'skin_1' %} product_layout_skin_1{% elsif settings.product_layout == 'supermarket' %} product_layout_supermarket{% endif %}{% if settings.layout_body == 'custom_width' %} custom_width{% endif %}{% if settings.enable_button_add_to_cart_color %} enable_button_add_to_cart_color{% endif %}{% if settings.enable_hover_video_product_items %} enable_hover_video_product_items{% endif %}{% unless settings.enable_search %} no-search-header{% endunless %}
 " data-page-handle="{{ page_title | handle }}">
-  	{% if template contains 'index' %}  
+  	{% if template contains 'index' %}
     <h1 style="display: none">{{ page_title | split: '|' | first }}</h1>
     {% endif %}
-    {% render 'wrapper-header' %}   
+    {% render 'wrapper-header' %}
 
     {% if settings.header_layout == 'vertical' %}
     <div class="flex-nav-vertical">
-    {% endif %}    
+    {% endif %}
 
     {% if settings.header_layout == 'vertical' %}
     {% section 'navigation-vertical-menu' %}
     {% endif %}
 	{% render 'scheme' %}
-    <div class="wrapper-container wrapper-body">	
-        <main class="main-content" role="main">      
+    <div class="wrapper-container wrapper-body">
+        <main class="main-content" role="main">
             {{ content_for_layout }}
         </main>
 
@@ -169,14 +169,14 @@
               {% else %}
                 <div class="not_img">
                     200 x 100px
-                </div>   
+                </div>
               {% endif %}
             </a>
           </div>
-          {% endif %}    
-        {% endif %}    
+          {% endif %}
+        {% endif %}
 
-        {% if settings.footer_layout == 'default' %}        
+        {% if settings.footer_layout == 'default' %}
         {% section 'footer' %}
         {% elsif settings.footer_layout == 'parallax' %}
         {% section 'footer-parallax' %}
@@ -198,23 +198,23 @@
         {% section 'footer-9' %}
         {% endif %}
         {% section 'halo-toolbar-mobile' %}
-        
+
         <div class="footbar-fixed {% if template contains 'product' %}footbar-fixed-product{% endif %}">
             {% section 'someone-purchased' %}
             {% section 'GDPR-modal' %}
             {% if template contains 'product' %}
-              {% if settings.display_sticky %} 
+              {% if settings.display_sticky %}
                   {% render 'sticky-add-to-cart' with product as product %}
               {% endif %}
             {% endif %}
         </div>
-        
+
       {% if settings.enable_backtotop %}
         <div id="back-top" style="display: none;">
             <a class="nav_up" href="#top" title="Back to top">
                 <i class="fa fa-angle-up" aria-hidden="true"></i>
             </a>
-        </div>  
+        </div>
       {% endif %}
     </div>
 
@@ -230,13 +230,13 @@
         </a>
       </div>
     {% endif %}
-    
+
     {% render 'footer_scripts' %}
-    
+
     {% render 'sweettooth-widgets' %}
 
     {% render 'search-autocomplete' %}
-    
+
     {% if settings.header_layout == 'default' %}
       {% render 'customer_links' %}
     {% else %}
@@ -251,13 +251,13 @@
     {% endif %}
 
     {% render 'size-chart' %}
-  
+
   	{% render 'size-chart-quickview' %}
-        
+
     {% render 'message-modal' %}
-    
-    {% render 'newsletter' %}      
-    
+
+    {% render 'newsletter' %}
+
     {% if template contains 'product' or settings.enable_ask_an_expert_sticky %}
       {% render 'ask_an_expert' %}
     {% endif %}
@@ -265,7 +265,7 @@
     {% if template contains 'product'%}
       {% render 'compareColor-popup' %}
     {% endif %}
-    
+
     {% render 'recently-viewed-products'%}
     <div class="wrapper-overlay"></div>
 </body>

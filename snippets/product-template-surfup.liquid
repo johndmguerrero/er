@@ -564,16 +564,15 @@
                             {% if section.settings.display_product_detail_share %}
                               <a class="icon-share" href="javascript:void(0)">{% render 'icon-share' %}</a>
                             {% endif %}
+                            <div class="btn-shopify-beside-add">
+                            {% if section.settings.enable_payment_button and current_variant.available %}
+                            {{ form | payment_button }}
+                            {% endif %}
+                            </div>
                           </div>
 
                         </div>
                     <div class="groups-btn">
-
-                        <div class="">
-                        {% if section.settings.enable_payment_button and current_variant.available %}
-                        {{ form | payment_button }}
-                        {% endif %}
-                        </div>
                         <div class="wrapper-social-popup">
                           <div class="title-close">
                             <p class="social-title">{{ 'products.product.copy_link' | t }}</p>

@@ -145,9 +145,9 @@
             {% endif %}
           </a>
 
-          {% if settings.display_product_reviews %}
+          {% comment %} {% if settings.display_product_reviews %}
           <span class="shopify-product-reviews-badge" data-id="{{ product.id }}" style="min-height: 20px; display: block; margin-bottom: 9px;"></span>
-          {% endif %}
+          {% endif %} {% endcomment %}
 
           <div class="short-description">
             {% if product.description contains '[countdown]' %}
@@ -204,3 +204,14 @@
     </div>
   </div>
 </div>
+<script>
+        $(document).ready(function(){
+            if($('.shopify-product-reviews-badge').length){
+              try{
+                window.SPR.registerCallbacks(), window.SPR.initRatingHandler(), window.SPR.initDomEls(), window.SPR.loadProducts(), window.SPR.loadBadges();
+              }catch{
+
+              }
+            }
+        });
+</script>
