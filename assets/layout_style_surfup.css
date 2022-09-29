@@ -682,9 +682,9 @@ input[type=checkbox]+label:before {
 
 .recently-viewed-products .widget-title .box-title,
 .related-products .widget-title .box-title {
-    font-size: 24px !important;
+    font-size: 35px !important;
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0;
 }
 
@@ -2011,7 +2011,7 @@ input[type=checkbox]+label:before {
         padding-bottom: 10px;
     }
     .product-template-surfup .tabs__product-page .list-tabs .tab-title a {
-        font-size: var(--font_size_plus3);
+        font-size: 35px;
     }
     .product-template-surfup .tabs__product-page .list-tabs .tab-title {
         padding-left: 20px;

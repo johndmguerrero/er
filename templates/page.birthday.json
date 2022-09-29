@@ -37,7 +37,7 @@
             "font_size_des_mb": "12px",
             "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
-            "button_slide": "Get Started",
+            "button_slide": "<span style=\"font-size: 25px;\">Get Started<\/span>",
             "link": "",
             "button_slide_2": "",
             "link_2": "",
@@ -173,7 +173,7 @@
         "style_title": "style_3",
         "title": "How It Works",
         "color_title": "#232323",
-        "font_size_title": "25px",
+        "font_size_title": "35px",
         "font_size_title_mb": "",
         "font_weight_title": "700",
         "text_transform_title": "capitalize",
@@ -198,7 +198,7 @@
     "1660747692b34bfb2a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin-bottom: 40px;\"><a class=\"btn\" style=\"display: block; margin: auto; background-color: #8CC63E; border-radius: 10px; max-width: 356px; color: white; font-size: 25px;\">SET UP YOUR PARTY<\/a>\n<br>\n<span style=\"display: block; text-align: center; color: #8CC63E; text-decoration: underline; \">Done setting up your party? Purchase our birthday kit!<\/span>\n<\/div>"
+        "custom_liquid": "<div style=\"margin-bottom: 40px;\"><a class=\"btn btn-setup-up-party\" style=\"display: block; margin: auto; background-color: #8CC63E; border-radius: 10px; max-width: 356px; color: white; font-size: 25px;\">SET UP YOUR PARTY<\/a>\n<br>\n<span style=\"display: block; text-align: center; color: #8CC63E; text-decoration: underline; \">Done setting up your party? Purchase our birthday kit!<\/span>\n<\/div>"
       }
     },
     "1660748661719585d4": {
@@ -210,7 +210,7 @@
     "1660748726da2e29c2": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"margin-top: 60px; margin-bottom: 70px;\"><hr style=\"border-color: #8CC63E; border-width: 5px; \"><\/div>"
+        "custom_liquid": "<div style=\"margin-top: 50px; margin-bottom: 50px;\"><hr style=\"border-color: #8CC63E; border-width: 5px; \"><\/div>"
       }
     },
     "16607488282fa486e5": {
@@ -228,7 +228,7 @@
             "text_alignment": "right",
             "bg_color_box": "#ffffff",
             "color_border_box": "#bcbcbc",
-            "heading": "Looking to party like a true <br>  animal-saving hero?",
+            "heading": "Looking to party like a true   animal-saving hero?",
             "font_size_heading": "40px",
             "font_size_heading_mb": "24px",
             "color_heading": "#fffafa",
@@ -244,7 +244,7 @@
             "font_size_des_mb": "12px",
             "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
-            "button_slide": "Buy your kit",
+            "button_slide": "<span style=\"font-size: 25px;\">Buy your kit<\/span>",
             "link": "",
             "button_slide_2": "",
             "link_2": "",

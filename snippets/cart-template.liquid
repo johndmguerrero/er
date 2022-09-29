@@ -166,6 +166,10 @@
       <img src="{{ section.settings.img_trust | img_url: '800x'  }}">
     </div>
     {% endif %}
+
+    <div class="donation-box">
+      {% render 'donation' %}
+    </div>
   </div>
 
   <div class="right-col">
@@ -260,9 +264,6 @@
         {% if additional_checkout_buttons %}
         <div>{{ content_for_additional_checkout_buttons }}</div>
         {% endif %}
-        <div class="donation-box">
-          {% render 'donation' %}
-        </div>
       </div>
     </div>
   </div>
@@ -274,6 +275,13 @@
   .donation_button{
     margin: 0;
     height: auto;
+    background: #8CC63E;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: normal;
+    color: #fff;
+    padding: 2px 44px !important;
   }
   .btn-continue{
     border: #8cc63e 1px solid !important;
@@ -282,6 +290,8 @@
   }
   .fontpreview{
     box-shadow: none;
+    padding: 25px;
+    background-color: #DEDEDE4D;
   }
   .price-slider{
     padding: 0px !important;

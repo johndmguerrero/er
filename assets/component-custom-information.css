@@ -15,9 +15,10 @@
 
 .custom-information .icon svg{
 	position: relative;
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: auto;
     stroke: var(--icon);
+    color: transparent;
 }
 
 [data-custom-information] {
@@ -87,7 +88,7 @@
 	max-height: 85vh;
 	overflow-y: auto;
 }
-    
+
 body.custom-info-show{
     overflow: hidden;
     height: 100%;

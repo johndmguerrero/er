@@ -153,7 +153,7 @@
     "16609204296348e07d": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2 style=\"text-align: center; margin-bottom: 70px;\">Collections<\/h2>"
+        "custom_liquid": "<h2 style=\"text-align: center; margin-bottom: 70px;font-size: 35px;\">Collections<\/h2>"
       }
     },
     "16602263451c6a75e9": {
@@ -215,7 +215,7 @@
         "3a756d59-5412-4d0d-935d-edd315120a43"
       ],
       "settings": {
-        "font_size_title": "30px",
+        "font_size_title": "40px",
         "font_size_desc": "18px",
         "block_des": "",
         "block_style": "style_2",
