@@ -36,14 +36,14 @@
       <div class="cart--title">
         {{ 'cart.label.product' | t }}
       </div>
-      <div class="cart--price">
+      <div class="cart--price  h-mobile">
         Price per item
         {% comment %} {{ 'cart.label.price' | t }} {% endcomment %}
       </div>
       <div class="cart--quantity h-mobile" style="display: none;">
         {{ 'cart.label.quantity' | t }}
       </div>
-      <div class="cart--total h-mobile">
+      <div class="cart--total">
         {{ 'cart.label.total' | t }}
       </div>
       <div class="cart--remove h-mobile">
@@ -106,7 +106,12 @@
           <div class="cart--price h-desktop">
             <div class="price-box">
               <span>
-                {{ item.original_price | money }}
+                <span class="price" data-price="{{item.original_price}}">
+                  {{ item.original_price | times: item.quantity | money }}
+                </span>
+                <span class="h-mobile">
+                  {{ item.original_price | money }}
+                </span>
               </span>
             </div>
             <div class="qty-group" id="update-{{item.id}}" style="display: none;">
@@ -167,7 +172,7 @@
     </div>
     {% endif %}
 
-    <div class="donation-box">
+    <div class="donation-box h-mobile">
       {% render 'donation' %}
     </div>
   </div>
@@ -265,6 +270,10 @@
         <div>{{ content_for_additional_checkout_buttons }}</div>
         {% endif %}
       </div>
+    </div>
+
+    <div class="donation-box h-desktop">
+      {% render 'donation' %}
     </div>
   </div>
   <input type="hidden" id="invoice_language" name="attributes[lang]" value="{{ routes.cart_url | split: 'cart' | first | remove: '/'}}">
