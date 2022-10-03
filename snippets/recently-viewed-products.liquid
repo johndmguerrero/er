@@ -84,7 +84,7 @@
           <div class="title">
             <h4 {% if settings.enable_multilang %}data-translate="cart.general.shopping_cart"{% endif %}>{{ 'cart.general.shopping_cart' | t }}</h4>
             <div class="total">
-              <span data-cart-count>{{ cart.item_count }}</span> 
+              <span data-cart-count>{{ cart.item_count }}</span>
               <span {% if settings.enable_multilang %}data-translate="customer.order.product"{% endif %}>{{ 'customer.order.product' | t }}</span>
             </div>
           </div>
@@ -147,11 +147,11 @@
                     {% if item.product.variants.size != 0 %}
                       {% unless item.variant.title contains 'Default' %}
                         <small>{{ item.variant.title }}</small>
-                        <a href="JavaScript:void(0);" class="product-details__edit" data-cart-edit aria-label="link" data-url="{{item.url}}&view=cart_edit" data-id="{{item.id}}" data-quantity="{{ item.quantity }}">
+                        {% comment %} <a href="JavaScript:void(0);" class="product-details__edit" data-cart-edit aria-label="link" data-url="{{item.url}}&view=cart_edit" data-id="{{item.id}}" data-quantity="{{ item.quantity }}">
                           <svg viewBox="0 0 576 512" class="icon icon-edit" id="icon-edit">
                               <path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path>
                           </svg>
-                        </a>
+                        </a> {% endcomment %}
                       {% endunless %}
                     {% endif %}
                     </div>
@@ -196,7 +196,7 @@
                     {% endfor %}
                 </div>
             </div>
-            
+
             <div class="row sub-total"><div class="col-6">{{ 'cart.label.total' | t }}</div><div class="col-6 text-right"><span class="notranslate price">{{cart.total_price | money}}</span></div></div>
             <div class="btn-proceed-checkout">
               <button class="btn btn-checkout" onclick="window.location='{{ routes.cart_url | split: '/cart' | first }}/checkout'" {% if settings.enable_multilang %}data-translate="cart.general.checkout"{% endif %}>
@@ -204,7 +204,7 @@
               </button>
               <a class="btn btn-view-cart btn-block" href="{{ routes.cart_url }}" {% if settings.enable_multilang %}data-translate="cart.general.view_cart"{% endif %}>
                 {{ 'cart.general.view_cart' | t }}
-              </a> 
+              </a>
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@
     {% endif %}
     text-align: center;
     border-radius: 50%;
-    
+
     {% if settings.layout_style == 'layout_style_fullwidth' %}
       color: #ffffff;
       background-color: #8463d8;
@@ -479,7 +479,7 @@
   {% else %}
   	letter-spacing: 0.4px;
   {% endif %}
-  
+
 {% if settings.layout_style == 'layout_style_surfup' %}
   color: #000;
   font-size: 13px;
@@ -577,7 +577,7 @@
   pointer-events: initial;
 }
 .recently-viewed-products-sidebar .product-info  {
-  
+
 }
 .recently-viewed-products-sidebar .products-grid .second-info{
 	display:none;
@@ -649,7 +649,7 @@
   font-size: var(--font_size_btn) !important;
 }
 .layout_home_3 .lst-seen-widget .in-content .product-info .add-to-bag,
-.layout_home_4 .lst-seen-widget .in-content .product-info .add-to-bag, 
+.layout_home_4 .lst-seen-widget .in-content .product-info .add-to-bag,
 .layout_home_5 .lst-seen-widget .in-content .product-info .add-to-bag,
 .layout_home_6 .lst-seen-widget .in-content .product-info .add-to-bag,
 .layout_home_7 .lst-seen-widget .in-content .product-info .add-to-bag,
@@ -722,7 +722,7 @@
   padding: 35px 0;
   width: 100%;
   margin: 0 auto;
-} 
+}
 
 .recently-viewed-products-sidebar .products-grid .slick-arrow {
   text-align: center;
@@ -1078,22 +1078,22 @@ body.cart-active{
 <script>
   {% if settings.enable_multilang %}
   function splitTitle(title) {
-    if (title.indexOf("|") < 0) 
+    if (title.indexOf("|") < 0)
       return title;
     var titleArr = title.split("|")[0];
     return titleArr;
   }
 
   function splitTitle2(title) {
-    if (title.indexOf("|") < 0) 
+    if (title.indexOf("|") < 0)
       return title;
     var titleArr = title.split("|")[1];
     return titleArr;
   }
-  
+
   {% else %}
   function splitTitle(title) {
-    if (title.indexOf("|") < 0) 
+    if (title.indexOf("|") < 0)
       return title;
     var titleArr = title.split("|")[0];
     return titleArr;
@@ -1115,10 +1115,10 @@ body.cart-active{
             	{% if settings.show_vendor %}
                 {% raw %}
             <div class="product-vendor">
-                <a href="{% endraw %}{{ routes.cart_url | split: '/cart' | first }}{% raw %}/collections/vendors?q=${vendor}" title="${vendor}">${vendor}</a>                
+                <a href="{% endraw %}{{ routes.cart_url | split: '/cart' | first }}{% raw %}/collections/vendors?q=${vendor}" title="${vendor}">${vendor}</a>
   			</div>
             {% endraw %}
-                {% endif %}	
+                {% endif %}
                 {% raw %}
             <a class="product-title product-grid-image" href="${url}" data-collections-related="/collections/${collection}?view=related">
             {% endraw %}
@@ -1135,12 +1135,12 @@ body.cart-active{
                 {% raw %}
   			</a>
              <div class="price-box">
-    				{{if compare_at_price_min > price_min}} 
+    				{{if compare_at_price_min > price_min}}
                       <p class="sale">
                         <span class="old-price">
                         	{{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}
     					</span>
-                        
+
                         <span class="special-price">
                         	{{if price_varies}}
                             {% endraw %}{% render 'varies_from' %}{% raw %}
@@ -1201,9 +1201,9 @@ body.cart-active{
     }
   }
 
-    Shopify.Products.showRecentlyViewed({ 
+    Shopify.Products.showRecentlyViewed({
         howManyToShow: {{ settings.number_of_recently_viewed_products }},
-        wrapperId: 'recently-viewed-products-list', 
+        wrapperId: 'recently-viewed-products-list',
         templateId: 'recently-viewed-product-list-template',
         onComplete: function() {
             var recentlyViewBlock = $('.recently-viewed-products-sidebar');
@@ -1213,7 +1213,7 @@ body.cart-active{
    			if (window.location.pathname.indexOf("/products/") !== -1) {
               $.cookie("shopify_recently_viewed", cookieValue, { expires: {{ settings.recently_viewed_products_expires_date }}, path: "/", domain: window.location.hostname });
             }
-  			
+
             if(productGrid.length) {
               if (window.innerWidth > 767 && view) {
                 $(".lst-seen-widget").addClass("is-show-widget");
@@ -1222,12 +1222,12 @@ body.cart-active{
                 $(".wrap-icons").addClass("collapsed");
               }
 
-                if(recentlyViewBlock.is(':visible')) {          
+                if(recentlyViewBlock.is(':visible')) {
                     {% if settings.enable_multilang %}
                     if (translator.current_lang == 2)
                     translator.doTranslate('.recently-viewed-products-sidebar');
                     {% endif %}
-                    
+
                     if(!recentlyGrid.hasClass('slick-initialized')) {
       				var slidesToShow = 3;
                       if (window.innerWidth < 1024) {
@@ -1248,7 +1248,7 @@ body.cart-active{
                           $(".recently-viewed-products-sidebar .products-grid").css("padding","0");
                         }
                       }
-      				
+
                       recentlyGrid.slick({
                           infinite: false,
                           speed: 1000,
@@ -1276,22 +1276,22 @@ body.cart-active{
                             ]
                         });
   						          recentlyGrid.prepend('<div class="product-info"></div>');
-                	
+
                     };
-        
+
                     if(window.show_multiple_currencies && Currency.currentCurrency != shopCurrency){
                       Currency.convertAll(window.shop_currency, $('#currencies .active').attr('data-currency'), 'span.money', 'money_format');
                     }
-                }; 
+                };
             }
 
         }
-    
+
       });
 </script>
 
 <script>
-  
+
   $(document).on("click",".collapse-icon", function(){
   	$(".lst-seen-widget").removeClass("is-show-widget");
     $(".wrap-icons").addClass("collapsed");
@@ -1300,31 +1300,31 @@ body.cart-active{
   	$(".lst-seen-widget").addClass("is-show-widget");
     $(".wrap-icons").removeClass("collapsed");
   });
-  
-  
+
+
   $(document).ready(function(){
     $(document).on('click', 'a.recent_item_url', function(e){
       if (window.innerWidth <= 768) {
     	e.preventDefault();
       }
     });
-    
+
     if (window.innerWidth < 768) {
       $(".lst-seen-widget").removeClass("is-show-widget");
       $(".wrap-icons").addClass("collapsed");
     }
     $('.recently-viewed-products-sidebar .products-grid').on('mouseenter', '.item.slick-slide', function (e) {
       	e.preventDefault();
-		var $currTarget = $(e.currentTarget), 
+		var $currTarget = $(e.currentTarget),
     	index = $currTarget.index('.recently-viewed-products-sidebar .products-grid .slick-active'),
       	margin_top = index * $('.recently-viewed-products-sidebar .product-info').outerHeight();
-      	
+
 		$(".recently-viewed-products-sidebar .product-info").html( $(this).find(".second-info").html() ).css("margin-top",margin_top).show();
 	});
     $('.recently-viewed-products-sidebar .products-grid').on('mouseenter', '.slick-arrow', function (e) {
 		$(".recently-viewed-products-sidebar .product-info").hide();
 	});
-    
+
   	var backToTop = $('.recently-viewed-products-sidebar .backtoTop');
 	if ($(this).scrollTop() > 220) {
       $('.recently-viewed-products-sidebar').addClass("slided-up");
@@ -1373,7 +1373,7 @@ body.cart-active{
       	$("body").removeClass("cart-active");
       	$(".lst-seen-widget").addClass("is-show-widget");
     });
-    
+
     var sidebarCart = $('#sidebar-cart'),
         btnRemove = sidebarCart.find('.btn-remove'),
         sidebarCartNoItems = sidebarCart.find('.cart-empty'),
@@ -1381,7 +1381,7 @@ body.cart-active{
     	sidebarCartFooter = sidebarCart.find('.cart-footer');
     var cartNoItems = $('#dropdown-cart').find('.no-items'),
         cartHasItems = $('#dropdown-cart').find('.has-items');
-    
+
     if( sidebarCartHasItems.children().length ){
     	sidebarCartNoItems.hide();
         sidebarCartHasItems.show();
@@ -1392,7 +1392,7 @@ body.cart-active{
         sidebarCartHasItems.hide();
       	sidebarCartFooter.hide();
     }
-    
+
 	$(document).on('click', '#sidebar-cart .btn-remove', function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -1403,33 +1403,33 @@ body.cart-active{
 
       Shopify.removeItem(productKey, function (cart) {
         $("[data-key='"+productKey+"']").remove();
-        
+
         doUpdateSidebarCart(cart);
       });
     });
-    
+
     function doUpdateSidebarCart (cart) {
-            
+
             $('[data-cart-count]').text(cart.item_count);
 
             $('#dropdown-cart').find('.summary .price').html(Shopify.formatMoney(cart.total_price, window.money_format));
       		sidebarCart.find('.cart-footer .notranslate').html(Shopify.formatMoney(cart.total_price, window.money_format));
-			
+
       		var cartNoItems = $('#dropdown-cart').find('.no-items'),
                 cartHasItems = $('#dropdown-cart').find('.has-items');
-                
+
 
             if (sidebarCartHasItems.children().length) {
                 cartNoItems.hide();
               	cartHasItems.show();
-              
+
                 sidebarCartNoItems.hide();
         		sidebarCartHasItems.show();
               	sidebarCartFooter.show();
             } else {
                 cartNoItems.show();
               	cartHasItems.hide();
-              
+
                 sidebarCartNoItems.show();
         		sidebarCartHasItems.hide();
               	sidebarCartFooter.hide();
@@ -1438,7 +1438,7 @@ body.cart-active{
         Currency.convertAll(window.shop_currency, $('#currencies .active').attr('data-currency'), 'span.money', 'money_format');
       }
     }
-    
+
     function translateText (str) {
       if (!window.multi_lang || str.indexOf("|") < 0)
         return str;
@@ -1451,7 +1451,7 @@ body.cart-active{
         return textArr[0];
       };
     }
-    
+
     $( document ).ajaxComplete(function( event, xhr, settings ) {
       if ( settings.url === window.router + "/cart.js" ) {
         var cart = xhr.responseJSON;
@@ -1465,7 +1465,7 @@ body.cart-active{
             sidebarCartFooter.hide();
         	return;
         }
-        
+
 		var template = '<div class="product" id="sidebar-cart-item-{ID}" data-product-id="{ID}" data-key="{KEY}">\
               <a class="image" href="{URL}">\
                 <div class="jsx-1414334657 "><div class="placeholder">\
@@ -1484,7 +1484,7 @@ body.cart-active{
                   <div class="quantity">\
                     <div class="option">\
                     <small>{VARIANT}</small>\
-                    <a href="JavaScript:void(0);" class="product-details__edit" data-cart-edit aria-label="link" data-url="{URL}&view=cart_edit" data-id="{ID}" data-quantity="{QUANTITY}">\
+                    <a href="JavaScript:void(0);" style="display: none;" class="product-details__edit" data-cart-edit aria-label="link" data-url="{URL}&view=cart_edit" data-id="{ID}" data-quantity="{QUANTITY}">\
                       <svg viewBox="0 0 576 512" class="icon icon-edit" id="icon-edit">\
                           <path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path>\
                       </svg>\
@@ -1508,10 +1508,10 @@ body.cart-active{
                 </div>\
               </div>\
             </div>';
-        
+
         sidebarCart.find('.cart-footer .sub-total .price').html(Shopify.formatMoney(cart.total_price, window.money_format));
         sidebarCartHasItems.html('');
-        
+
         for (var i = 0; i < cart.items.length; i++) {
           var item = template;
           var cur_id = cart.items[i].id;
@@ -1543,11 +1543,11 @@ body.cart-active{
 
         doUpdateSidebarCart (cart);
         //console.log(cart);
-        
+
         //$( ".log" ).text( "Triggered ajaxComplete handler. The result is " +
           //xhr.responseText );
       }
-      
+
       if ( settings.url === window.router + "/cart/change.js" ) {
         var cart = xhr.responseJSON;
         if(cart.item_count == 0){
