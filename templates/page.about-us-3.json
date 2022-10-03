@@ -163,7 +163,7 @@
             "color_des": "#232323",
             "color_des_mb": "#ffffff",
             "button_slide": "<span style=\"font-size: 25px;\">Shop the Collection<\/span>",
-            "link": "",
+            "link": "shopify:\/\/pages\/shop",
             "button_slide_2": "",
             "link_2": "",
             "bg_button": "#8cc63e",

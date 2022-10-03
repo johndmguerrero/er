@@ -143,15 +143,16 @@
     "recently_viewed_products_title": "Recently Viewed",
     "enable_compare_product": false,
     "enable_compare_color": false,
-    "social_facebook_link": "http:\/\/facebook.com\/shopify",
+    "social_facebook_link": "https:\/\/www.facebook.com\/bringbackthewild\/",
     "social_twitter_link": "http:\/\/twitter.com\/shopify",
     "social_vimeo_link": "",
-    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_instagram_link": "https:\/\/www.instagram.com\/earth_rangers\/",
     "social_google_plus_link": "http:\/\/plus.google.com\/+shopify",
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_tumblr_link": "",
     "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/shopify",
-    "social_youtube_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/c\/EarthrangersOrg",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@earth_rangeeers",
     "body_bg": "#ffffff",
     "body_color": "#051c42",
     "link_color": "#234bbb",
@@ -883,7 +884,7 @@
               "color_des": "#232323",
               "color_des_mb": "#0f0f0f",
               "button_slide": "<span class=\"d-none d-md-block\">Get it now<\/span><span class=\"d-block d-md-none\" style=\"font-size: 16px;\">Get it now<\/span>",
-              "link": "",
+              "link": "shopify:\/\/products\/arctic-fox-adoption-kit-plush-bundle",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#8cc63e",
@@ -1558,7 +1559,7 @@
               "title": "Wildlife Adoption",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
               "link_text": "",
-              "link": "#"
+              "link": "shopify:\/\/collections\/wildlife-adoptions"
             }
           },
           "164506237419614160-1": {
@@ -1569,7 +1570,7 @@
               "title": "Kitten Shop",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
               "link_text": "",
-              "link": "#"
+              "link": "shopify:\/\/collections\/apparel"
             }
           }
         },
@@ -1613,20 +1614,20 @@
             "type": "footer_link",
             "settings": {
               "footer_title": "Shop",
-              "footer_linklist": "footer"
+              "footer_linklist": "footer-2022-about"
             }
           },
           "fc1fa83c-fd76-4143-9803-744064c02322": {
             "type": "footer_link",
             "settings": {
-              "footer_title": "Further Information",
-              "footer_linklist": ""
+              "footer_title": "More Options",
+              "footer_linklist": "footer-2-2022-info"
             }
           },
           "cb06cbdc-e8c1-4dcf-8f4a-7e4828b97a35": {
             "type": "footer_link",
             "settings": {
-              "footer_title": "Customer Service",
+              "footer_title": "Download Our App",
               "footer_linklist": ""
             }
           },
@@ -1778,7 +1779,7 @@
               "title": "Earth Rangers Merchandise",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
               "link_text": "",
-              "link": ""
+              "link": "shopify:\/\/collections\/lifestyle"
             }
           },
           "1659960696fb3daa02-1": {
@@ -1789,7 +1790,7 @@
               "title": "Earth Rangers Missions",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
               "link_text": "",
-              "link": ""
+              "link": "shopify:\/\/collections\/earth-rangers-missions"
             }
           }
         },
@@ -1830,7 +1831,7 @@
               "title": "Teachers",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
               "link_text": "",
-              "link": ""
+              "link": "shopify:\/\/collections\/parents-and-teachers"
             }
           },
           "aadd1478-03d4-4fbe-b932-1d689163a598": {
@@ -2109,7 +2110,7 @@
               "color_des": "#232323",
               "color_des_mb": "#0f0f0f",
               "button_slide": "<span class=\"d-none d-md-block\" style=\"font-size: 25px;\">Get it now<\/span><span class=\"d-block d-md-none\" style=\"font-size: 16px;\">Get it now<\/span>",
-              "link": "",
+              "link": "shopify:\/\/products\/i-am-an-earth-ranger-youth-t-shirt",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#8cc63e",
@@ -2210,7 +2211,7 @@
               "color_des": "#ffffff",
               "color_des_mb": "#ffffff",
               "button_slide": "<span style=\"font-size: 25px;\">Buy your kit<\/span>",
-              "link": "",
+              "link": "shopify:\/\/collections\/wildlife-adoptions",
               "button_slide_2": "",
               "link_2": "",
               "bg_button": "#ffffff",
