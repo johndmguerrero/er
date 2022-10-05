@@ -540,6 +540,7 @@
                           </div>
                           {% endif %}
 
+                        {% if product.tags contains localization.country.iso_code %}
                           <div class="wrapper-button">
                             {% if current_variant.available %}
 
@@ -570,7 +571,7 @@
                             {% endif %}
                             </div>
                           </div>
-
+                        {% endif %}
                         </div>
                     <div class="groups-btn">
                         <div class="wrapper-social-popup">

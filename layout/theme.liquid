@@ -151,6 +151,9 @@
     {% section 'navigation-vertical-menu' %}
     {% endif %}
 	{% render 'scheme' %}
+    <script>
+      var shopCurrency = "{{ shop.currency }}";
+    </script>
     <div class="wrapper-container wrapper-body">
         <main class="main-content" role="main">
             {{ content_for_layout }}

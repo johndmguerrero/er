@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {
         "overlay_color": "#ffffff",
         "overlay_opacity": "0.35",
@@ -15,14 +16,116 @@
         "btn_bgc_h": "#ffffff",
         "btn_txtc_h": "#232323",
         "btn_bdc_h": "#232323",
-        "btn_link_1": "\/",
-        "btn_text_1": "Return to Store",
-        "btn_link_2": "shopify:\/\/collections\/all",
-        "btn_text_2": "Shop the Collections"
+        "btn_link_1": "",
+        "btn_text_1": "Back to Home",
+        "btn_link_2": "",
+        "btn_text_2": ""
+      }
+    },
+    "166489384080ca0a8d": {
+      "type": "home-slideshow",
+      "blocks": {
+        "166489384072d3982d-0": {
+          "type": "image",
+          "settings": {
+            "dpl_slide_img": true,
+            "image_slide": "shopify:\/\/shop_images\/Group_140.png",
+            "image_slide_mb": "shopify:\/\/shop_images\/Group_141.png",
+            "style_content": "style_4",
+            "alignment": "left",
+            "alignment_custom": "35%",
+            "text_alignment": "left",
+            "bg_color_box": "#ffffff",
+            "color_border_box": "#bcbcbc",
+            "heading": "Oops! Looks like we  lost this page.",
+            "font_size_heading": "70px",
+            "font_size_heading_mb": "24px",
+            "color_heading": "#232323",
+            "color_heading_style_4": "#10ffda",
+            "color_heading_mb": "#000000",
+            "sub_heading": "",
+            "font_size_sub_heading": "30px",
+            "font_size_sub_heading_mb": "18px",
+            "color_sub_heading": "#ffffff",
+            "color_sub_heading_mb": "#ffffff",
+            "slide-des": "The page you are looking for could not be found. We’re not sure what went wrong. You can go back to Home page.",
+            "font_size_des": "30px",
+            "font_size_des_mb": "12px",
+            "color_des": "#232323",
+            "color_des_mb": "#000000",
+            "button_slide": "Back to home",
+            "link": "\/",
+            "button_slide_2": "",
+            "link_2": "",
+            "bg_button": "#8cc63e",
+            "border_button": "#8cc63e",
+            "color_button": "#ffffff",
+            "bg_button_mb": "#8cc63e",
+            "border_button_mb": "#8cc63e",
+            "color_button_mb": "#ffffff",
+            "lb_product_1": "",
+            "top_position_1": "10",
+            "left_position_1": "10",
+            "dots_color_1": "#ffffff",
+            "dots_bg_color_1": "#323232",
+            "dots_shadow_color_1": "#ffffff",
+            "lb_product_2": "",
+            "top_position_2": "10",
+            "left_position_2": "10",
+            "dots_color_2": "#ffffff",
+            "dots_bg_color_2": "#323232",
+            "dots_shadow_color_2": "#ffffff",
+            "lb_product_3": "",
+            "top_position_3": "10",
+            "left_position_3": "10",
+            "dots_color_3": "#ffffff",
+            "dots_bg_color_3": "#323232",
+            "dots_shadow_color_3": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "166489384072d3982d-0"
+      ],
+      "settings": {
+        "layout": "full",
+        "bg_color": "",
+        "widget_title": "",
+        "title_style": "style_1",
+        "margin_bottom_mb": 0,
+        "margin_bottom_tab": 0,
+        "margin_bottom": 0,
+        "style_slideshow": "style_1",
+        "autoplay": true,
+        "slideshow_speed": "5000",
+        "slideshow_transition": "true",
+        "dots": "true",
+        "dots_color": "#707979",
+        "dots_active_color": "#505656",
+        "dots_opacity": false,
+        "bg_dots_color": "#bababa",
+        "arrow_active": true,
+        "arrow_color": "#666d6d",
+        "arrow_border_color": "#666d6d",
+        "arrow_bg_color": "#ffffff",
+        "position_slick_arrow": "10%",
+        "min_width_banner_button": "273px",
+        "bg_video": "#866965",
+        "bg_overlay_opacity": 40,
+        "video_height": "41.7%",
+        "auto_playvideo": true,
+        "enable_categories": false,
+        "text_categories": "Shop by categories",
+        "label_color": "",
+        "bg_label": "",
+        "text_icon_color": "",
+        "menu": "",
+        "enable_banner": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "166489384080ca0a8d"
   ]
 }
