@@ -48,15 +48,15 @@
             <div class="products-grid row column-{{section.settings.collection_results_per_row1}}" data-products-to-show="{{ section.settings.product_list_limit_all | plus:0 }}">
                 {% assign product_limitation = 0 %}
                 {% if section.settings.display_infinite_scrolling_homepage %}
-                {% assign product_limitation = section.settings.product_list_limit_all | plus: 0 %}
+                    {% assign product_limitation = section.settings.product_list_limit_all | plus: 0 %}
                 {% endif %}
 
                 {% for product in collections[section.settings.product_list_collection].products limit:section.settings.product_list_limit_all %}
-
-                <div class="grid-item {{ grid_item_width }}{% if settings.product_image_border %} grid-item-border{% endif %} ">
-                    {% render 'before-load-grid-item', product: product %}
-                </div>
-
+                    {% if product.tags contains localization.country.iso_code %}
+                    <div class="grid-item {{ grid_item_width }}{% if settings.product_image_border %} grid-item-border{% endif %} ">
+                        {% render 'before-load-grid-item', product: product %}
+                    </div>
+                    {% endif %}
                 {% else %}
 
                 {% for product in (1..section.settings.product_list_limit_all) %}

@@ -84,6 +84,8 @@
     "show_shipping_calculator": false,
     "shipping_calculator_heading": "Get shipping estimates | Holen Versand Schätzungen",
     "shipping_calculator_default_country": "United States",
+    "redirect_button": "link_to",
+    "link_to_redirect": "shopify:\/\/pages\/shop",
     "fonts_name_2": "Jost",
     "font": "google_fonts",
     "fonts_name": "Jost",
