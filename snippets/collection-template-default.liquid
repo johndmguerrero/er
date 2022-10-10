@@ -5,7 +5,7 @@
 {% endif %}
 
 {% paginate collection.products by product_per_page %}
- 
+
 {% case section.settings.collection_results_per_row %}
 {% when '1' %}
     {%- assign grid_item_width = 'col-12' -%}
@@ -33,8 +33,9 @@
   <div id="CollectionProductGrid">
     <div data-section-id="{{ section.id }}" data-section-type="collection-template" id="main-collection-product-grid" data-id="{{ section.id }}">
       <div class="product-collection {{ rows }} row">
-        {% if collection.products_count > 0 %}  
+        {% if collection.products_count > 0 %}
         {% for product in collection.products %}
+        {% if product.tags contains localization.country.iso_code %}
         <div class="grid-item {{ grid_item_width }} {% if settings.product_image_border%}grid-item-border {% endif %}">
           {% if settings.style_product_grid == 'style_product_grid_2' %}
             {% render 'product-grid-item-style-2' with product as product, serial: forloop.index %}
@@ -46,10 +47,11 @@
             {% render 'product-grid-item-style-6' with product as product, serial: forloop.index %}
           {% elsif settings.style_product_grid == 'style_product_grid_7' %}
             {% render 'product-grid-item-style-7' with product as product, serial: forloop.index %}
-          {% else %}        
+          {% else %}
             {% render 'product-grid-item' with product as product, serial: forloop.index %}
           {% endif %}
         </div>
+        {% endif %}
         {% endfor %}
         {% else %}
         <p class="col-12 text-center" {% if settings.enable_multilang %}data-translate="collections.general.no_matches"{% endif %}>
@@ -67,4 +69,4 @@
     </div>
   </div>
 </div>
-{% endpaginate %} 
+{% endpaginate %}

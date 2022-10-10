@@ -1,18 +1,19 @@
 {% layout none %}
 
 {% if settings.cart_popup_related_title != blank %}
-<div class="widget-title not-before">   
+<div class="widget-title not-before">
   <h3 class="box-title">
-    <span class="title"> 
+    <span class="title">
       {% render 'multilang' with settings.cart_popup_related_title %}
     </span>
-  </h3>      
+  </h3>
 </div>
 {% endif %}
 
 <div class="row products-grid">
-  {% if collection.products_count > 0 %}    
+  {% if collection.products_count > 0 %}
   {% for product in collection.products limit: 4 %}
+  {% if product.tags contains localization.country.iso_code %}
   <div class="grid-item col-12 col-sm-6 col-md-4 col-xl-3">
     {% if settings.style_product_grid == 'style_product_grid_2' %}
       {% render 'product-grid-item-style-2' with product as product, serial: forloop.index %}
@@ -28,6 +29,7 @@
       {% render 'product-grid-item' with product as product, serial: forloop.index %}
     {% endif %}
   </div>
+  {% endif %}
   {% endfor%}
   {% else %}
   <div class="col-12 text-center" {% if settings.enable_multilang %}data-translate="collections.general.no_matches"{% endif %}>
