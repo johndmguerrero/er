@@ -445,7 +445,6 @@
 
 .product-template-surfup .product_bottom {
     position: relative;
-    border-top: 5px solid var(--border_bt_sidebar);
     padding-top: 50px;
     margin-top: 35px;
 }
@@ -460,7 +459,7 @@
 }
 .product-template-surfup .product_bottom:after {
     position: absolute;
-    content: "";
+    content: none;
     top: -5px;
     right: 100%;
     width: 100%;
@@ -472,7 +471,6 @@
     border: 0;
 }
 .product-template-surfup .tabs__product-page .list-tabs .tab-title {
-    padding: 0 45px;
     position: relative;
 }
 .product-template-surfup .tabs__product-page .list-tabs .tab-title + .tab-title:before {
@@ -485,7 +483,7 @@
 }
 .product-template-surfup .tabs__product-page .list-tabs .tab-title a {
     padding: 0;
-    font-size: var(--font_size_plus9);
+    font-size: 35px;
     text-transform: unset;
     border: 0 !important;
     background-color: transparent;
