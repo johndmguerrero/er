@@ -657,7 +657,7 @@
     border: 0;
     max-width: 1370px;
     padding-top: 0;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     margin-top: 22px;
 }
@@ -717,7 +717,7 @@
 }
 .product-template-surfup .tabs__product-page .spr-container .spr-review-header-byline {
     color: #969696;
-    margin-bottom: 16px;
+    margin-bottom: 0px !important;
 }
 .product-template-surfup .tabs__product-page .spr-container .spr-review-reportreview {
     font-size: var(--font_size_minus2);
@@ -988,7 +988,7 @@ body.style_product_grid_4 .tooltip .arrow {
         border-bottom: 0;
     }
     .product-template-surfup .tabs__product-page .spr-container .spr-reviews .spr-review .spr-review-content {
-        margin-top: 30px;
+        margin-top: 0px !important;
     }
 }
 

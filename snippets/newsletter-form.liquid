@@ -19,7 +19,7 @@
   <script>
     $(document).ready(function(){
       var newsletterSuccessPopup = (function(){
-        
+
             var popup = $('.newsletter-success-modal');
             var close = popup.find('.close');
         	var success = popup.find('.success');
@@ -75,10 +75,29 @@
 </script>
 {% endif %}
     <input type="hidden" name="contact[tags]" value="newsletter">
-    <input class="input-group-field" type="email" name="contact[email]" {% if settings.enable_multilang %}data-translate="general.newsletter_form.newsletter_text" translate-item="placeholder"{%endif%} aria-label="Email Address" placeholder="{% if settings.footer_layout == '06' or settings.footer_layout == '08' or settings.footer_layout == '04'%}{{ 'general.newsletter_form.newsletter_text_1' | t }}{% elsif settings.footer_layout == '07' %}{{ 'general.newsletter_form.newsletter_text_2' | t }}{% else %}{{ 'general.newsletter_form.newsletter_text' | t }}{% endif %}" required="required">
+    <div>
+      <input class="input-group-field" type="email" name="contact[email]" {% if settings.enable_multilang %}data-translate="general.newsletter_form.newsletter_text" translate-item="placeholder"{%endif%} aria-label="Email Address" placeholder="{% if settings.footer_layout == '06' or settings.footer_layout == '08' or settings.footer_layout == '04'%}{{ 'general.newsletter_form.newsletter_text_1' | t }}{% elsif settings.footer_layout == '07' %}{{ 'general.newsletter_form.newsletter_text_2' | t }}{% else %}{{ 'general.newsletter_form.newsletter_text' | t }}{% endif %}" required="required">
+      <input class="form-control" id="form-agree" type="checkbox" value="agree" name="contact[note][agree]" style="display: block;width: auto;margin: 10px;" required="required">
+      <label for="form-agree" id="form-agree-custom">by checking this lorem ipsum dolor sit</label>
+    </div>
     <input class="btn" type="submit" value="{% if settings.footer_layout == '06' or settings.footer_layout == '09' %}{{ 'general.newsletter_form.submit_1' | t }}{% else %}{{ 'general.newsletter_form.submit' | t }}{% endif %}">
 
 {%- endform -%}
 {% endcapture %}
 
 {{ newsletter_form }}
+<style>
+  #form-agree-custom{
+    margin-top: -27px;
+    display: block;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  label#form-agree-custom::before {
+    content: none;
+  }
+  label#form-agree-custom::after {
+    content: none;
+  }
+</style>

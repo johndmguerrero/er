@@ -42,6 +42,7 @@
 	position: relative;
     top: 1px;
     margin-left: 10px;
+    display: none;
 }
 
 .custom-information .wrapper-content .title .icon-help svg{
