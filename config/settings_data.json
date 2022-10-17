@@ -1632,7 +1632,7 @@
             "type": "footer_text_content",
             "settings": {
               "custom_footer_title": "Download Our App",
-              "custom_footer_liquid": "<p>\n<img width=\"115px\" style=\" margin-bottom: 10px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/button.png?v=1665670051\"\/>\n<img width=\"115px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/AppStoreIcon-2-200x72.png?v=1664798338\"\/>\n<\/p>"
+              "custom_footer_liquid": "<p>\n<img width=\"115px\" style=\" margin: 10px 0; height: 41px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/button.png?v=1665670051\"\/>\n<img width=\"115px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0249\/7381\/files\/AppStoreIcon-2-200x72.png?v=1664798338\"\/>\n<\/p>"
             }
           },
           "30ce8e97-af3c-42e3-bb2f-95b7ad3e03dc": {

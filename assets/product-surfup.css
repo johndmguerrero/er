@@ -655,7 +655,6 @@
 }
 .product-template-surfup .tabs__product-page .spr-container .spr-form {
     border: 0;
-    max-width: 1370px;
     padding-top: 0;
     margin-left: 0;
     margin-right: auto;
@@ -670,7 +669,9 @@
     font-size: var(--font_size_plus3);
 }
 .product-template-surfup .tabs__product-page .spr-container .spr-form-title {
+    display: none;
     margin-bottom: 15px;
+    text-align: center;
 }
 .product-template-surfup .tabs__product-page .spr-container input {
     max-width: 570px;
