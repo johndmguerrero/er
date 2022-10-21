@@ -863,15 +863,15 @@
             "type": "image",
             "settings": {
               "dpl_slide_img": true,
-              "image_slide": "shopify:\/\/shop_images\/ATF_Banner_3.png",
-              "image_slide_mb": "shopify:\/\/shop_images\/ATF_Banner_6.png",
+              "image_slide": "shopify:\/\/shop_images\/Arctic_Fox_desktop-3_1.png",
+              "image_slide_mb": "shopify:\/\/shop_images\/Arctic_Fox_mobile-3.png",
               "style_content": "style_4",
               "alignment": "left",
               "alignment_custom": "35%",
               "text_alignment": "left",
               "bg_color_box": "#ffffff",
               "color_border_box": "#bcbcbc",
-              "heading": "Help Protect the Arctic Fox, <br> get our Adoption Kit",
+              "heading": "Protect the Arctic Fox, <br> get our Adoption Kit",
               "font_size_heading": "60px",
               "font_size_heading_mb": "24px",
               "color_heading": "#232323",
@@ -1558,7 +1558,7 @@
           "164506237419614160-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Collection_Box.png",
+              "image": "shopify:\/\/shop_images\/Home_page_mid-page_collection_banner_-_Adoption_Kits_v2.jpg",
               "color": "#051c42",
               "title": "Wildlife Adoption",
               "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc in velit vestibulum pharetra nec nec metus. Vestibulum sed luctus est, pulvinar congue ex.",
