@@ -151,10 +151,10 @@
     "social_twitter_link": "http:\/\/twitter.com\/shopify",
     "social_vimeo_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/earth_rangers\/",
-    "social_google_plus_link": "http:\/\/plus.google.com\/+shopify",
+    "social_google_plus_link": "",
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_tumblr_link": "",
-    "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/shopify",
+    "social_snapchat_link": "",
     "social_youtube_link": "https:\/\/www.youtube.com\/c\/EarthrangersOrg",
     "social_tiktok_link": "https:\/\/www.tiktok.com\/@earth_rangeeers",
     "body_bg": "#ffffff",
@@ -2520,6 +2520,7 @@
       },
       "166067924910b841bb": {
         "type": "home-brands",
+        "disabled": true,
         "blocks": {
           "782b8c02-04f6-4a51-a96b-f063e5e3069d": {
             "type": "image",
