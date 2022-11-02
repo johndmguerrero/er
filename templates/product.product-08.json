@@ -73,7 +73,7 @@
         "title_view": "customers are viewing this product",
         "number_view": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
         "show_desc": "short",
-        "display_subtotal": true,
+        "display_subtotal": false,
         "display_qty": true,
         "display_product_detail_tag": false,
         "display_product_detail_share": false,

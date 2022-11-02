@@ -234,6 +234,7 @@
     },
     "1660756870028efec9": {
       "type": "home-brands",
+      "disabled": true,
       "blocks": {
         "1f9de9dd-5d65-472e-b101-d29713420d8c": {
           "type": "image",
