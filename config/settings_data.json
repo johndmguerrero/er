@@ -2255,7 +2255,7 @@
           "title_style": "style_1",
           "margin_bottom_mb": 20,
           "margin_bottom_tab": 20,
-          "margin_bottom": 40,
+          "margin_bottom": 100,
           "style_slideshow": "style_1",
           "autoplay": false,
           "slideshow_speed": "5000",
