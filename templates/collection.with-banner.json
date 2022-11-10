@@ -2,6 +2,7 @@
   "sections": {
     "16602410909a85e7b8": {
       "type": "home-slideshow",
+      "disabled": true,
       "blocks": {
         "166024108981d1e74a-0": {
           "type": "image",
@@ -103,6 +104,28 @@
     },
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "32b0b53b-b463-49c8-97df-46c69c415aba": {
+          "type": "header",
+          "settings": {
+            "display_collection_image": true,
+            "collection_header_layout": "full",
+            "collection_header_style": "style_1",
+            "display_collection_des": false,
+            "color_wrapper": "#202020",
+            "color_wrapper_mb": "#202020",
+            "bg_color_content": "#ffffff",
+            "border_color_content": "#bcbcbc",
+            "height_img": "240px",
+            "enable_sub": false,
+            "sub_title": "Jump to:",
+            "sub_style": "style_1"
+          }
+        }
+      },
+      "block_order": [
+        "32b0b53b-b463-49c8-97df-46c69c415aba"
+      ],
       "settings": {
         "limited_view": false,
         "view_as_enable": false,

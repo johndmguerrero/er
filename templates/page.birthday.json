@@ -14,7 +14,7 @@
           "settings": {
             "dpl_slide_img": true,
             "image_slide": "shopify:\/\/shop_images\/Birthday_page_hero_banner_1.png",
-            "image_slide_mb": "shopify:\/\/shop_images\/ATF_Banner_7.png",
+            "image_slide_mb": "shopify:\/\/shop_images\/Birthday_page_hero_banner_-_MOBILE.jpg",
             "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",
@@ -134,7 +134,7 @@
           "type": "block",
           "settings": {
             "icon_type": "image",
-            "image": "shopify:\/\/shop_images\/Rectangle_86.png",
+            "image": "shopify:\/\/shop_images\/300x250_2.png",
             "text_icon": "Step 2",
             "content": "<p>Step 2<\/p>",
             "description": "Choose custom invitations and <br>RSVPs to send to party guests",
@@ -148,7 +148,7 @@
           "type": "block",
           "settings": {
             "icon_type": "image",
-            "image": "shopify:\/\/shop_images\/Rectangle_87.png",
+            "image": "shopify:\/\/shop_images\/300x250_1.png",
             "text_icon": "Step 3",
             "content": "<p>Step 3<\/p>",
             "description": "Get ready to party! <br> <br>",
