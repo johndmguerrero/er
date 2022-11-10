@@ -1,4 +1,4 @@
-<div class="header-mb {% if settings.header_style_mobile == 'header_mobile_2' %}header_mobile_2{% elsif settings.header_style_mobile == 'header_mobile_3' %}header_mobile_3{% endif %}">          
+<div class="header-mb {% if settings.header_style_mobile == 'header_mobile_2' %}header_mobile_2{% elsif settings.header_style_mobile == 'header_mobile_3' %}header_mobile_3{% endif %}">
     <div class="header-mb-left header-mb-items{% unless settings.enable_search %} no-search{% endunless%}{% unless shop.customer_accounts_enabled %} no-account{% endunless%}">
         <div class="hamburger-icon svg-mb">
             <a href="#" class="icon-nav" title="Menu Mobile Icon" data-menu-mb-toogle>
@@ -16,9 +16,9 @@
               <a href="javascript:void(0)" title="close" class="close close-search">
                   {% render 'icon-close' %}
               </a>
-          
+
               {% render 'search-bar' %}
-          </div>  
+          </div>
         	{% endif %}
         {% endif %}
 
@@ -67,7 +67,7 @@
     {% endif %}
   </div>
 
-  <div class="header-mb-right header-mb-items{% unless settings.enable_search %} no-search{% endunless%}{% unless shop.customer_accounts_enabled %} no-account{% endunless%}">
+  <div class="header-mb-right header-lang-style2 header-mb-items{% unless settings.enable_search %} no-search{% endunless%}{% unless shop.customer_accounts_enabled %} no-account{% endunless%}">
     {% if settings.header_style_mobile == 'header_mobile_2' or settings.header_style_mobile == 'header_mobile_3' %}
       {% if settings.enable_search %}
         <div class="search-mb svg-mb">
@@ -78,9 +78,9 @@
             <a href="javascript:void(0)" title="close" class="close close-search">
                 {% render 'icon-close' %}
             </a>
-        
+
             {% render 'search-bar' %}
-        </div>  
+        </div>
       {% endif %}
     {% endif %}
 
@@ -110,12 +110,16 @@
           {% render 'icon-cart-2' %}
         {% else %}
           {% render 'icon-cart' %}
-        {% endif %}     
+        {% endif %}
         <span class="cartCount" data-cart-count>
           {{ cart.item_count }}
         </span>
       </a>
     </div>
+    <div class="lang-currency-groups mobile-curr lang-currency-groups-8">
+        {% render 'new-currency-picker' %}
+    </div>
 
-  </div>          
+
+  </div>
 </div>
