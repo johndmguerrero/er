@@ -933,6 +933,16 @@
         "id": "login_text_desc",
         "label": "Text Description - Login Page",
         "default": "Register with us for a faster checkout, to track the status of your order and more."
+      },
+      {
+        "type": "header",
+        "content": "footer newsletter checkbox sentence"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_footer_message",
+        "label": "Newsletter Footer Message",
+        "default": "Please check the checkbox before proceedings"
       }
     ]
   },

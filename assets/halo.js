@@ -4053,9 +4053,13 @@
                         $(this).next().slideToggle();
                     });
                     if (win.innerWidth() < 992) {
-                        $('.filters-toolbar__sortby').insertAfter('.column-left .sidebar-label');
+                    // console.log("992")
+
+                    //     $('.filters-toolbar__sortby').insertAfter('.column-left .sidebar-label');
                     } else {
-                        $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
+                    // console.log("false 992")
+
+                    //     $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
                     }
 
                     // var h_wrapper = wrapper.outerHeight() + 30;
@@ -4074,7 +4078,9 @@
                     //     }
                     // });
                 } else {
-                    $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
+                // console.log("higher than 1200")
+
+                //     $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
                     $('[data-section-type="collection-template"]').css('padding-top', 0);
                     wrapper.removeClass("toolbar-fix");
                     wrapper.css('top', 0);
