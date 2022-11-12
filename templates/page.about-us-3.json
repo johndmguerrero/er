@@ -139,7 +139,7 @@
           "settings": {
             "dpl_slide_img": true,
             "image_slide": "shopify:\/\/shop_images\/Shop_Page_Hero_-_Desktop.jpg",
-            "image_slide_mb": "shopify:\/\/shop_images\/Shop_Page_Hero_-_Mobile.jpg",
+            "image_slide_mb": "shopify:\/\/shop_images\/ER_Youth_Hoodie_-_Mobile.jpg",
             "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",
@@ -157,7 +157,7 @@
             "font_size_sub_heading_mb": "18px",
             "color_sub_heading": "#ffffff",
             "color_sub_heading_mb": "#ffffff",
-            "slide-des": "Check out our latest Earth Rangers collection.\n<br><br><br>",
+            "slide-des": "Check out our latest<br>Earth Rangers collection.\n<br>",
             "font_size_des": "14x",
             "font_size_des_mb": "12px",
             "color_des": "#ffffff",

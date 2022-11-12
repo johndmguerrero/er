@@ -87,9 +87,9 @@
     "shipping_calculator_default_country": "United States",
     "redirect_button": "link_to",
     "link_to_redirect": "shopify:\/\/pages\/shop",
-    "fonts_name_2": "Jost",
+    "fonts_name_2": "Inter",
     "font": "google_fonts",
-    "fonts_name": "Jost",
+    "fonts_name": "Inter",
     "enable_multilang_shopify": false,
     "lange_1": "en",
     "lange_2": "de",
@@ -1562,7 +1562,7 @@
               "image": "shopify:\/\/shop_images\/Home_page_-_Thumbnail_-_Wildlife_Adoption_Kits.jpg",
               "color": "#051c42",
               "title": "Wildlife Adoptions",
-              "des": "Every Wildlife Adoption Kit purchased results in a direct contribution to the conservation groups, scientists, researchers, and First Nations communities working in the field to protect the animals you love.",
+              "des": "<span style=\"font-weight: 300\">Every Wildlife Adoption Kit purchased results in a direct contribution to the conservation groups, scientists, researchers, and First Nations communities working in the field to protect the animals you love.<\/span>",
               "link_text": "",
               "link": "shopify:\/\/collections\/wildlife-adoptions"
             }
@@ -1638,7 +1638,6 @@
           },
           "30ce8e97-af3c-42e3-bb2f-95b7ad3e03dc": {
             "type": "info_store",
-            "disabled": true,
             "settings": {
               "info_icon_1": "<i class=\"fa fa-map-marker\"><\/i>",
               "info_text_1": "685 Market Street <br>\nSan Francisco, CA 94105, US",
@@ -1962,7 +1961,7 @@
               "font_size_sub_heading_mb": "18px",
               "color_sub_heading": "#ffffff",
               "color_sub_heading_mb": "#ffffff",
-              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-12 col-md-6\" style=\"font-size: 16px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p style=\"line-height: 16.8px;\"> Earth Rangers is the charity that transforms children’s concerns about the environment into positive action. When a child becomes an Earth Ranger, they become an animal saving hero, developing confidence that they can make a difference and optimism about the future.\n\n<\/p>\n<\/div>\n<\/div>",
+              "slide-des": "<div class=\"row\" style=\"color: #fff\"> \n<div class=\"col-12 col-md-6\" style=\"font-size: 16px;\">\n<h5 style=\"margin-bottom: 10px;\">About Us<\/h5>\n<p style=\"line-height: 25px;\"> Earth Rangers is the charity that transforms children’s concerns about the environment into positive action. When a child becomes an Earth Ranger, they become an animal saving hero, developing confidence that they can make a difference and optimism about the future.\n\n<\/p>\n<\/div>\n<\/div>",
               "font_size_des": "12px",
               "font_size_des_mb": "12px",
               "color_des": "#ffffff",
