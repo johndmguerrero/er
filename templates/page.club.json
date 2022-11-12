@@ -13,8 +13,8 @@
           "type": "image",
           "settings": {
             "dpl_slide_img": true,
-            "image_slide": "shopify:\/\/shop_images\/Rectangle_32_2.png",
-            "image_slide_mb": "shopify:\/\/shop_images\/Club-mobile.jpg",
+            "image_slide": "shopify:\/\/shop_images\/club_2.jpg",
+            "image_slide_mb": "shopify:\/\/shop_images\/club-mobile-2_1.jpg",
             "style_content": "style_4",
             "alignment": "left",
             "alignment_custom": "35%",
