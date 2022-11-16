@@ -1767,7 +1767,7 @@
           "view_all": "",
           "link_view_all": "",
           "product_list_collection": "best-sellers",
-          "product_list_limit_all": 5,
+          "product_list_limit_all": 4,
           "display_infinite_scrolling_homepage": true,
           "collection_results_per_row1": "4",
           "margin_bottom_mb": 40,
@@ -1821,7 +1821,7 @@
           "fontsize_text": "18px",
           "fontsize_text_mb": "18px",
           "font_weight_text": "700",
-          "text_transform_text": "uppercase",
+          "text_transform_text": "capitalize",
           "margin_bottom_mb": 0,
           "margin_bottom_tab": 0,
           "margin_bottom": 0
