@@ -4055,11 +4055,11 @@
                     if (win.innerWidth() < 992) {
                     // console.log("992")
 
-                    //     $('.filters-toolbar__sortby').insertAfter('.column-left .sidebar-label');
+                        $('.filters-toolbar__sortby').insertAfter('.column-left .sidebar-label');
                     } else {
                     // console.log("false 992")
 
-                    //     $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
+                        $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
                     }
 
                     // var h_wrapper = wrapper.outerHeight() + 30;
@@ -4078,9 +4078,8 @@
                     //     }
                     // });
                 } else {
-                // console.log("higher than 1200")
 
-                //     $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
+                    $('.filters-toolbar__sortby').appendTo('.toolbar .column-right');
                     $('[data-section-type="collection-template"]').css('padding-top', 0);
                     wrapper.removeClass("toolbar-fix");
                     wrapper.css('top', 0);
