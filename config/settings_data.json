@@ -32,7 +32,7 @@
     "enable_checkbox": false,
     "register_text_desc": "Sign up for a free account at Ella Boutique.",
     "login_text_desc": "Register with us for a faster checkout, <br> to track the status of your order and more.",
-    "newsletter_footer_message": "I agree to Earth Ranger's <a href=\"https:\/\/theearthrangersshop.com\/policies\/privacy-policy\">Privacy Policy<\/a>.",
+    "newsletter_footer_message": "I agree to receive communications from Earth Rangers, and consent to the Earth Rangers <a href=\"https:\/\/theearthrangersshop.com\/policies\/privacy-policy\">Privacy Policy<\/a>.",
     "image_swap": true,
     "image_default": false,
     "image_detail_default": false,
@@ -1610,20 +1610,22 @@
         "blocks": {
           "d1026982-26e5-4af6-9398-7d9551eeb9eb": {
             "type": "footer_text_content",
+            "disabled": true,
             "settings": {
               "custom_footer_title": "About Earth Rangers",
-              "custom_footer_liquid": "Earth Rangers is the kids’ conservation organization, dedicated to educating children and their families about biodiversity, inspiring them to adopt sustainable behaviours, and empowering them to become directly involved in protecting animals and their habitats.\n<br><br>\nEarth Rangers is a registered Canadian charity (#8922 00528 RR0001)."
+              "custom_footer_liquid": "Earth Rangers is the kids’ conservation organization! We are a registered charity (#8922 00528 RR0001)."
             }
           },
           "59860b83-08c5-4b12-8bcc-7e090a864f43": {
             "type": "footer_link",
             "settings": {
-              "footer_title": "Shop",
+              "footer_title": "About Us",
               "footer_linklist": "footer-2022-about"
             }
           },
           "fc1fa83c-fd76-4143-9803-744064c02322": {
             "type": "footer_link",
+            "disabled": true,
             "settings": {
               "footer_title": "More Options",
               "footer_linklist": "footer-2-2022-info"
@@ -1640,11 +1642,11 @@
             "type": "info_store",
             "settings": {
               "info_icon_1": "<i class=\"fa fa-map-marker\"><\/i>",
-              "info_text_1": "685 Market Street <br>\nSan Francisco, CA 94105, US",
+              "info_text_1": "9520 Pine Valley Drive <br>\nWoodbridge, Ontario, Canada",
               "info_icon_2": "<i class=\"fa fa-phone\" aria-hidden=\"true\"><\/i>",
-              "info_text_2": "Toll-Free: (012) 345-6789",
+              "info_text_2": "1 (905) 417-3447",
               "info_icon_3": "<i class=\"fa fa-envelope-o\"><\/i>",
-              "info_text_3": "Email: example@domain.com"
+              "info_text_3": "info@earthrangers.com"
             }
           }
         },
@@ -1668,7 +1670,7 @@
           "footer_link_hover_color": "#234bbb",
           "bg_footer_line_color": "rgba(0,0,0,0)",
           "footer_newsletter_enable": true,
-          "footer_newsletter_title": "<span class=\"d-block d-md-none\" style=\"text-transform: none; font-size: 25px;\">Join us in saving the planet<\/span><span style=\"text-transform: none; font-size: 35px;\" class=\"d-none d-md-block\">Join us in saving the planet<\/span><br>",
+          "footer_newsletter_title": "<span class=\"d-block d-md-none\" style=\"text-transform: none; font-size: 25px;\">Let's keep in touch!<\/span><span style=\"text-transform: none; font-size: 35px;\" class=\"d-none d-md-block\">Let's keep in touch!<\/span><br>",
           "des_newslette": "",
           "bg_newsletter_color": "#ffffff",
           "newsletter_color": "#808080",
@@ -1764,8 +1766,8 @@
           "title_style": "style_3",
           "view_all": "",
           "link_view_all": "",
-          "product_list_collection": "all-products",
-          "product_list_limit_all": 8,
+          "product_list_collection": "best-sellers",
+          "product_list_limit_all": 5,
           "display_infinite_scrolling_homepage": true,
           "collection_results_per_row1": "4",
           "margin_bottom_mb": 40,
@@ -2039,6 +2041,7 @@
       },
       "1660042548b8f4b9a5": {
         "type": "home-customer-reviews",
+        "disabled": true,
         "blocks": {
           "1660042548b8f4b9a5-0": {
             "type": "Review",
@@ -2099,7 +2102,7 @@
               "text_alignment": "left",
               "bg_color_box": "#ffffff",
               "color_border_box": "#f5f5f5",
-              "heading": "Check out our latest Earth Rangers apparels",
+              "heading": "Check out our latest Earth Rangers tees, <br> sweatshirts, and more!",
               "font_size_heading": "40px",
               "font_size_heading_mb": "24px",
               "color_heading": "#232323",
@@ -2110,7 +2113,7 @@
               "font_size_sub_heading_mb": "18px",
               "color_sub_heading": "#ffffff",
               "color_sub_heading_mb": "#ffffff",
-              "slide-des": "Available in tons of cool colours and styles.",
+              "slide-des": "Available in TONS of cool colors and styles.",
               "font_size_des": "18px",
               "font_size_des_mb": "12px",
               "color_des": "#232323",
@@ -2200,7 +2203,7 @@
               "text_alignment": "right",
               "bg_color_box": "#ffffff",
               "color_border_box": "#bcbcbc",
-              "heading": "Find out more about Earth Rangers Club",
+              "heading": "Have you heard about Earth Rangers Clubs?",
               "font_size_heading": "40px",
               "font_size_heading_mb": "24px",
               "color_heading": "#202020",
@@ -2448,7 +2451,7 @@
         "settings": {
           "style_header": "style_2",
           "display_header_top": true,
-          "top_message_text": "Free shipping with orders over $90 (Canada only)",
+          "top_message_text": "Free shipping in Canada on orders over $90!",
           "top_message_text_2": "",
           "top_message_text_3": "",
           "top_message_text_font_size": "12px",
