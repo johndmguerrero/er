@@ -15,7 +15,7 @@
 {% elsif template.suffix == 'supermarket' %}
 	{% render 'collection-supermarket' %}
 {% else %}
-	{% if settings.category_layout == "default" %} 
+	{% if settings.category_layout == "default" %}
 		{% render 'collection-default' %}
 	{% elsif settings.category_layout == "right_sidebar" %}
 		{% render 'collection-right-sidebar' %}
@@ -49,6 +49,13 @@
 	{
 		"type": "header",
 		"content": "Collection Content"
+	},
+	{
+		"type": "textarea",
+		"id": "catch_banner_description",
+		"label": "Catch content when description is empty",
+		"default": "Hello Earth Rangers",
+		"placeholder": "please input something"
 	},
 	{
 		"type": "checkbox",
@@ -190,7 +197,7 @@
 	  	"id" : "show_banner_1",
 	  	"label" : "Enable Banner #1",
 	  	"default" : true
-	},	  
+	},
 	{
 		"type" : "image_picker",
 		"id" : "img_banner1",
@@ -206,7 +213,7 @@
 		"id" : "show_banner_2",
 		"label" : "Enable Banner #2",
 		"default" : true
-	},	  
+	},
 	{
 		"type" : "image_picker",
 		"id" : "img_banner2",
@@ -222,7 +229,7 @@
 		"id" : "show_banner_3",
 		"label" : "Enable Banner #3",
 		"default" : true
-	},	  
+	},
 	{
 		"type" : "image_picker",
 		"id" : "img_banner3",
@@ -238,7 +245,7 @@
 		"id" : "show_banner_4",
 		"label" : "Enable Banner #4",
 		"default" : true
-	},	  
+	},
 	{
 		"type" : "image_picker",
 		"id" : "img_banner4",
@@ -259,7 +266,7 @@
 		"id" : "pro_image",
 		"label" : "Image",
 		"default" : "&nbsp;"
-	}, 
+	},
 	{
 		"type" : "text",
 		"id" : "pro_name",
@@ -424,7 +431,7 @@
 	                    {
 	                        "value": "style_2",
 	                        "label": "Style 2"
-	                    }          
+	                    }
 	                ],
 	                "default": "style_1",
 	                "info": "Default: Style 1"
@@ -441,7 +448,7 @@
 	                    {
 	                        "value": "right",
 	                        "label": "Right"
-	                    }          
+	                    }
 	                ],
 	                "default": "left",
 	                "info": "Default: Left"
@@ -505,7 +512,7 @@
 	                    {
 	                        "value": "style_little",
 	                        "label": "Only a few categories"
-	                    }                    
+	                    }
 	                ]
 	            },
 	            {
@@ -768,7 +775,7 @@
 	                "id": "limit",
 	                "label": "Number of products to show",
 	                "default": "8"
-	            },       
+	            },
 	            {
 	                "type": "header",
 	                "content": "Block Image 1"

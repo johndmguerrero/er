@@ -1,0 +1,37 @@
+<div class="collection-header-description">
+    <div class="bg-non-description banner-description">
+      {% if collection.description != blank %}
+        {{ collection.description }}
+      {% else %}
+          {{ section.settings.catch_banner_description }}
+      {% endif %}
+    </div>
+</div>
+
+<style>
+  .bg-non-description {
+    background: rgba(140, 198, 62, 0.2);
+  }
+
+  .banner-description {
+    margin: 0 16px;
+    padding: 25px 30px;
+  }
+
+  .banner-description p {
+    margin-bottom: 10px;
+  }
+
+  @media(max-width: 767px) {
+    .banner-description {
+      padding: 25px 15px;
+      margin: 0;
+    }
+    .banner-description p {
+      font-size: 14px;
+    }
+    .banner-description h1 {
+      font-size: 20px;
+    }
+  }
+</style>
