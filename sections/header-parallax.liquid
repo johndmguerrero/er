@@ -239,9 +239,6 @@
 
 <style>
 
-  .custom-flex-column {
-    flex-direction: column-reverse;
-  }
   @media(min-width: 1200px) {
     .wrapper_header_parallax .header-parallax.style_header_2 .lang-currency-groups {}
   }
@@ -257,24 +254,42 @@
       lang_currency = $('.right-header .lang-currency-groups');
 
     if (window.innerWidth < 1200) {
-      headerPc.appendTo(areaMb);{% if section.settings.style_header == 'style_2' %}lang_currency.insertAfter(headerPc);{% endif %}
+      headerPc.appendTo(areaMb);
+      {% if section.settings.style_header == 'style_2' %}
+        lang_currency.insertAfter(headerPc);
+      {% endif %}
 
-  } else {
-    headerPc.appendTo(translateHeaderBlock);{% if section.settings.style_header == 'style_2' %}$('.mb-area .lang-currency-groups').insertBefore('.right-header .acc-mb');{% endif %}
-};};$(document).ready(function() {
-appendPrependMenuMobile();});var winWidth = $(window).innerWidth();$(window).on('resize', function() {
-var resizeTimerId;
+    } else {
+      headerPc.appendTo(translateHeaderBlock);
+      {% if section.settings.style_header == 'style_2' %}
+        $('.mb-area .lang-currency-groups').insertAfter('.right-header .cart-icon');
+      {% endif %}
+    };
+  };
+  $(document).ready(function() {
+    appendPrependMenuMobile();
+  });
 
-clearTimeout(resizeTimerId);
+var winWidth = $(window).innerWidth();
 
-resizeTimerId = setTimeout(function() {
+$(window).on('resize', function() {
+  var resizeTimerId;
+
+  clearTimeout(resizeTimerId);
+
+  resizeTimerId = setTimeout(function() {
   var curWinWidth = $(window).innerWidth();
 
   if ((curWinWidth < 1200 && winWidth >= 1200) || (curWinWidth >= 1200 && winWidth < 1200)) {
     appendPrependMenuMobile();
   };
   winWidth = curWinWidth;
-}, 0);}){% if settings.enable_multilang %}translator.doTranslate('.site-header');{% endif %}
+  }, 0)
+;})
+
+{% if settings.enable_multilang %}
+  translator.doTranslate('.site-header');
+{% endif %}
 </script>
 
 <style>

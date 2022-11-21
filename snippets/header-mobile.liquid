@@ -116,10 +116,89 @@
         </span>
       </a>
     </div>
-    <div class="lang-currency-groups mobile-curr lang-currency-groups-8">
-        {% render 'new-currency-picker' %}
+    <div class="btn-group language-mobile-selector">
+      <button type="button" class="btn btn-secondary btn-language dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        {{ cart.currency.iso_code }}
+      </button>
+      <div class="dropdown-menu" id="currencies_mobile">
+      {%- for currency in shop.enabled_currencies -%}
+        <a class="dropdown-item{% if currency == cart.currency %} active {% endif %}" href="#" data-currency="{{currency.iso_code}}">
+          {% assign currency_iso = currency.iso_code %}
+          <span class="text">
+            {{currency.iso_code}}
+          </span>
+        </a>
+      {%- endfor -%}
+      </div>
     </div>
-
-
   </div>
 </div>
+<style>
+  .btn-language{
+    min-width: 65px;
+    background: transparent !important;
+    border: 0;
+    color: #000 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .language-mobile-selector .dropdown-menu{
+    padding: 0;
+    min-width: auto;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 10px 10px 37px -16px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 37px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 37px -16px rgba(0,0,0,0.75);
+    text-align: center;
+    min-width: 65px;
+    border-radius: 5px;
+  }
+
+  .language-mobile-selector .dropdown-menu .dropdown-item{
+    padding: 5px;
+    background: white;
+    color: #000;
+  }
+
+</style>
+
+<script>
+        // Select all your currencies buttons.
+    var currencySwitcher = $('#currencies_mobile'),
+        currencyItem = currencySwitcher.find('[data-currency]');
+
+    currencyItem.on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('active')) return false;
+
+        currencyItem.removeClass('active');
+
+        $(this).addClass('active');
+
+        var label = $('#currencies').prev('[data-currency-label]');
+
+        if(label.length && label.is(':visible')) {
+        var item = $(this).html();
+
+        label.html(item);
+
+        if($('.lang-currency-groups-8').length){
+          currencySwitcher.hide();
+        } else {
+          currencySwitcher.slideUp(300);
+        }
+
+        };
+
+        var cur = $(this).attr('data-currency');
+        $('#currency_form option').filter(function() {
+            return ($(this).text() == cur); //To select Blue
+        }).prop('selected', true);
+      	$('#currency_form').submit();
+
+    });
+
+</script>
